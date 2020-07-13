@@ -1,0 +1,27 @@
+uuid: 8d049029-c281-4b56-8211-08f0343708c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.reusable_block
+    - field.field.block_content.reusable_block.body
+  enforced:
+    module:
+      - gutenberg
+  module:
+    - text
+_core:
+  default_config_hash: d8IVKAh46_unVYJe6b43Y9UajSs7Dxw0SgOTR6eiyYY
+id: block_content.reusable_block.default
+targetEntityType: block_content
+bundle: reusable_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
