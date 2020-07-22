@@ -1,0 +1,19 @@
+uuid: 7c3c3102-41b9-4e51-9a05-2756d2af07fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_bad_examples
+field_name: field_bad_examples
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

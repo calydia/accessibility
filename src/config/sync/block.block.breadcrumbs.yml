@@ -1,4 +1,4 @@
-uuid: 20c6619d-fdd3-4dd8-9ea5-221c8f31f1a9
+uuid: fecbbe16-38d3-40c1-9db5-2b0a98123e51
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,7 @@ dependencies:
     - system
   theme:
     - bartik
-_core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
+id: breadcrumbs
 theme: bartik
 region: breadcrumb
 weight: 0

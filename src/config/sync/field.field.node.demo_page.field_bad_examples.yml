@@ -1,0 +1,21 @@
+uuid: 832b13df-c6fb-4084-bc93-50d548cdd8b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bad_examples
+    - node.type.demo_page
+  module:
+    - text
+id: node.demo_page.field_bad_examples
+field_name: field_bad_examples
+entity_type: node
+bundle: demo_page
+label: 'Bad examples'
+description: 'Bad accessibility examples.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 6e9fdd6f-c7e5-498a-a3ed-a54689a8da99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_better_examples
+    - node.type.demo_page
+  module:
+    - text
+id: node.demo_page.field_better_examples
+field_name: field_better_examples
+entity_type: node
+bundle: demo_page
+label: 'Better examples'
+description: 'Better accessibility examples. The same content as in the bad example, but with better accessibility.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

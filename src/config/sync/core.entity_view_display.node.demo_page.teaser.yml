@@ -1,0 +1,34 @@
+uuid: 48a96aad-460a-44bb-9b59-a7eae3d8c8ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.demo_page.body
+    - field.field.node.demo_page.field_bad_examples
+    - field.field.node.demo_page.field_better_examples
+    - node.type.demo_page
+  module:
+    - text
+    - user
+id: node.demo_page.teaser
+targetEntityType: node
+bundle: demo_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_bad_examples: true
+  field_better_examples: true

@@ -1,14 +1,14 @@
-uuid: 16a79ffa-7628-4670-aa08-4868a8e5ab41
+uuid: 619496ba-5338-4a81-9a3c-1162f604a41a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: base_pattern
-label: 'Base pattern'
+id: by_menu_parent
+label: 'By menu parent'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
 selection_criteria: {  }
 selection_logic: and
-weight: -9
+weight: -10
 relationships: {  }
