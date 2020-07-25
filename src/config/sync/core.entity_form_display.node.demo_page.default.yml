@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.demo_page.body
     - field.field.node.demo_page.field_bad_examples
     - field.field.node.demo_page.field_better_examples
+    - field.field.node.demo_page.field_final_comments
     - node.type.demo_page
   module:
     - path
@@ -47,6 +48,21 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_final_comments:
+    weight: 124
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

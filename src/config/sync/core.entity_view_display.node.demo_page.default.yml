@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.demo_page.body
     - field.field.node.demo_page.field_bad_examples
     - field.field.node.demo_page.field_better_examples
+    - field.field.node.demo_page.field_final_comments
     - node.type.demo_page
   module:
     - text
@@ -16,7 +17,7 @@ bundle: demo_page
 mode: default
 content:
   body:
-    label: hidden
+    label: above
     type: text_default
     weight: 101
     settings: {  }
@@ -36,9 +37,17 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  links:
-    weight: 100
+  field_final_comments:
+    weight: 104
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: text_default
     region: content
-hidden: {  }
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

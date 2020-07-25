@@ -1,0 +1,22 @@
+uuid: 19816f41-ccaf-4b5c-9a79-0c2dbeab147e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: demo_page
+label: 'Demo page'
+type: 'canonical_entities:node'
+pattern: '/demo/[node:title]'
+selection_criteria:
+  ed6b9ab6-7fb4-4316-9551-91735485c215:
+    id: node_type
+    bundles:
+      demo_page: demo_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ed6b9ab6-7fb4-4316-9551-91735485c215
+selection_logic: and
+weight: -10
+relationships: {  }

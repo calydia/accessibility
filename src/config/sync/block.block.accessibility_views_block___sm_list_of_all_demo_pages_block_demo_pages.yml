@@ -1,0 +1,32 @@
+uuid: f37d09cd-c9c1-4c69-b7a8-48cb264a1ea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view._sm_list_of_all_demo_pages
+  module:
+    - node
+    - views
+  theme:
+    - accessibility
+id: accessibility_views_block___sm_list_of_all_demo_pages_block_demo_pages
+theme: accessibility
+region: featured_bottom_first
+weight: -5
+provider: null
+plugin: 'views_block:_sm_list_of_all_demo_pages-block_demo_pages'
+settings:
+  id: 'views_block:_sm_list_of_all_demo_pages-block_demo_pages'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      demo_page: demo_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

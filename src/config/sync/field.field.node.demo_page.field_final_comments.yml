@@ -1,0 +1,21 @@
+uuid: 74dd1f78-8e4b-41cf-b0fe-e6a7edafec88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_final_comments
+    - node.type.demo_page
+  module:
+    - text
+id: node.demo_page.field_final_comments
+field_name: field_final_comments
+entity_type: node
+bundle: demo_page
+label: 'Final comments'
+description: 'Add final comments about the example.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

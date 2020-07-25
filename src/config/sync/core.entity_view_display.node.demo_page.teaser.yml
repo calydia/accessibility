@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.demo_page.body
     - field.field.node.demo_page.field_bad_examples
     - field.field.node.demo_page.field_better_examples
+    - field.field.node.demo_page.field_final_comments
     - node.type.demo_page
   module:
     - text
@@ -32,3 +33,5 @@ content:
 hidden:
   field_bad_examples: true
   field_better_examples: true
+  field_final_comments: true
+  langcode: true

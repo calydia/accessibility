@@ -1,0 +1,22 @@
+uuid: b2671044-540e-475d-9488-b1f6ef36e674
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - accessibility
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: accessibility_messages
+theme: accessibility
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

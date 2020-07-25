@@ -1,0 +1,22 @@
+uuid: c65aeb3d-906d-4753-a8a8-b5801b54fe3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - accessibility
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: accessibility_help
+theme: accessibility
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

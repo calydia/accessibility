@@ -1,0 +1,20 @@
+uuid: 009a7c10-add3-4432-a338-36213fe3a566
+langcode: en
+status: true
+dependencies:
+  theme:
+    - accessibility
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: accessibility_local_actions
+theme: accessibility
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

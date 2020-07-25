@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        title:
+          label: Otsikko
+      filters:
+        title:
+          expose:
+            label: Otsikko

@@ -1,0 +1,33 @@
+uuid: 73571cf3-35f5-4069-8d76-9603d2564be7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wysiwyg_media
+    - field.field.media.image.field_media_image
+    - image.style.large
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.wysiwyg_media
+targetEntityType: media
+bundle: image
+mode: wysiwyg_media
+content:
+  field_media_image:
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
