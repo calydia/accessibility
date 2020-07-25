@@ -1,0 +1,81 @@
+@import "variables";
+// Dark preference
+body.dark {
+  background-color: $dark_background;
+  color: $dark_text;
+  .header-wrapper {
+    background-color: $dark_complementary;
+  }
+
+  .site-name,
+  .site-slogan {
+    color: $dark_text;
+  }
+  .layout-container a {
+    color: $dark_link;
+    &:hover {
+      color: $dark_link_hover;
+    }
+    &:focus {
+      border-bottom: 5px solid $dark_grey;
+    }
+    &.mburger {
+      color: $dark_text;
+      &:hover {
+        color: $complementary;
+      }
+    }
+  }
+  .wp-block-quote {
+    border-left: 4px solid $dark_complementary;
+  }
+  .wp-block-quote__citation,
+  .wp-block-quote cite,
+  .wp-block-quote footer {
+    color: $dark_grey;
+  }
+  footer {
+    background-color: transparent;
+    border-top: 10px solid $dark_complementary;
+  }
+}
+
+// Light preference
+body.light {
+  background-color: $background;
+  color: $text;
+  .header-wrapper {
+    background-color: $complementary;
+  }
+  .layout-container a {
+    color: $link;
+    &:hover {
+      color: $link_hover;
+    }
+    &:focus {
+      border-bottom: 5px solid $grey;
+    }
+    &.mburger {
+      color: $text;
+      &:hover {
+        color: $dark_complementary;
+      }
+    }
+  }
+  .site-name,
+  .site-slogan {
+    color: $text;
+  }
+  .wp-block-quote {
+    border-left: 4px solid $complementary;
+  }
+  .wp-block-quote__citation,
+  .wp-block-quote cite,
+  .wp-block-quote footer {
+    color: $grey;
+  }
+  footer {
+    background-color: #ebf7ff;
+    border-top: 1px solid $complementary;
+  }
+}

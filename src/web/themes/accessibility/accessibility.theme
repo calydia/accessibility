@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Add current page title to breadcrumb
+ */
+function accessibility_preprocess_breadcrumb(&$variables) {
+  if (($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']) {
+    $variables['breadcrumb'][] = array(
+      'text' => $node->getTitle(),
+    );
+    $variables['#cache']['contexts'][] = 'url';
+  }
+}
+
+/**
+ * Implements hook_preprocess_media().
+ */
+function accessibility_preprocess_media(&$variables) {
+
+  if ($variables['view_mode'] == 'project_image') {
+    if ($variables['media']->bundle() == 'image') {
+      // Add the image url as a variable
+      $media_entity = $variables['content']['field_media_image']['#items']->getEntity();
+      $file_entity = $media_entity->field_media_image[0]->entity;
+      $variables['gallery_image_url'] = $file_entity->createFileUrl();
+    }
+  }
+}

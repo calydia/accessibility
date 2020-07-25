@@ -1,0 +1,90 @@
+.some-icon {
+  display: block;
+  height: 45px;
+  text-indent: -9999px;
+  transition: all 0.2s ease-in-out;
+  width: 45px;
+}
+
+.github-link {
+  background: url("../images/github.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+.gitlab-link {
+  background: url("../images/gitlab.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45px 45px;
+}
+
+.linkedin-link {
+  background: url("../images/linkedin.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+.twitter-link {
+  background: url("../images/twitter.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+.instagram-link {
+  background: url("../images/instagram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+.devto-link {
+  background: url("../images/dev.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+.footer-some-links {
+  .field--name-body {
+    ul {
+      display: flex;
+      list-style: none;
+      margin-left: -5px;
+      padding-left: 0;
+    }
+    a {
+      margin: 5px;
+    }
+    li {
+      background: white;
+      border-radius: 45px;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        transition: background-color 0.3s ease;
+      }
+    }
+  }
+}
+
+.some-container {
+  display: flex;
+  list-style: none;
+  margin-left: -5px;
+  padding-left: 0;
+  a {
+    margin: 5px;
+  }
+  li {
+    background: white;
+    border-radius: 45px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      transition: background-color 0.3s ease;
+    }
+  }
+}

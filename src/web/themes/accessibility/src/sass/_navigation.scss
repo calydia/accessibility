@@ -1,0 +1,93 @@
+@import "variables";
+
+:root {
+  --mm-sidebar-expanded-size: 300px;
+}
+.mm-menu {
+  --mm-listitem-size: 50px;
+  --mm-navbar-size: 50px;
+}
+
+.mm-navbar_tabs span {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+// Menu color scheme
+.dark {
+  #main-menu {
+    --mm-color-background: #191919;
+    --mm-color-button: white;
+    --mm-color-text: white;
+    --mm-color-background-emphasis: #242424; // Keyboard focus on menu items
+    .mm-navbar {
+      --mm-color-background: #47241e;
+      --mm-color-text: white;
+      --mm-color-text-dimmed: #fff;
+    }
+    ul.menu a.is-active {
+      color: $dark_link_hover;
+    }
+    .menu-item--active-trail .mm-listitem__btn:after {
+      border-color: $dark_link_hover;
+    }
+    .mm-navbar__title:hover,
+    .mm-navbar__title:focus {
+      color: $complementary;
+    }
+    .mm-listitem__text:hover {
+      color: $dark_link !important;
+    }
+    .mm-navbar__btn:hover {
+      &:after,
+      &:before {
+        border-color: #9edcff !important;
+      }
+    }
+    .mm-listitem__btn:hover {
+      &:after,
+      &:before {
+        border-color: #5d85fe !important;
+      }
+    }
+  }
+}
+.light {
+  #main-menu {
+    --mm-color-background: #f7f7f7;
+    --mm-color-button: #000;
+    --mm-color-background-highlight: #c7005d;
+    --mm-color-text: #000;
+    --mm-color-background-emphasis: #ebf7ff; // Keyboard focus on menu items
+    .mm-navbar {
+      --mm-color-background: #ebf7ff;
+      --mm-color-text: black;
+      --mm-color-text-dimmed: #000;
+    }
+    ul.menu a.is-active {
+      color: $link_hover;
+    }
+    .menu-item--active-trail .mm-listitem__btn:after {
+      border-color: $link_hover;
+    }
+    .mm-navbar__title:hover,
+    .mm-navbar__title:focus {
+      color: $link;
+    }
+    .mm-listitem__text:hover {
+      color: $link !important;
+    }
+    .mm-navbar__btn:hover {
+      &:after,
+      &:before {
+        border-color: #0162f4 !important;
+      }
+    }
+    .mm-listitem__btn:hover {
+      &:after,
+      &:before {
+        border-color: #0162f4 !important;
+      }
+    }
+  }
+}

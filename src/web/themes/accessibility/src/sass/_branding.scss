@@ -1,0 +1,23 @@
+@import "mixins";
+@import "variables";
+
+.site-name {
+  @include fontSize(22px);
+  font-family: "Rock Salt", cursive;
+  margin: 10px 0;
+  text-decoration: none;
+
+  @media only screen and (max-width: 1249px) {
+    text-align: center;
+  }
+}
+
+.site-slogan {
+  @include fontSize(18px);
+  margin: 10px 0;
+  text-decoration: none;
+
+  @media only screen and (max-width: 1249px) {
+    text-align: center;
+  }
+}

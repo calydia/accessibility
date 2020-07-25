@@ -1,0 +1,45 @@
+@import "variables";
+
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5em;
+}
+
+.layout-container {
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+header {
+  a {
+    font-weight: normal;
+  }
+}
+
+.wp-block-quote {
+  @include fontSize(20px);
+  padding: 0.2em 0 0.2em 1em;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.wp-block-quote__citation,
+.wp-block-quote cite,
+.wp-block-quote footer {
+  @include fontSize(13px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,21 @@
+// Drupal edit tools
+.block-local-tasks-block {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  z-index: 100;
+  ul.primary {
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  a {
+    &:hover {
+      background: white;
+    }
+  }
+  a.is-active {
+    background: #eee;
+  }
+}
