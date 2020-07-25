@@ -3,6 +3,13 @@
 :root {
   --mm-sidebar-expanded-size: 300px;
 }
+@media only screen and (max-width: 719px) {
+  .mburger {
+    --mb-button-size: 36px;
+    --mb-bar-spacing: 6px;
+    margin-top: 0.5em !important;
+  }
+}
 .mm-menu {
   --mm-listitem-size: 50px;
   --mm-navbar-size: 50px;

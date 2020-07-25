@@ -10,7 +10,7 @@
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   @media only screen and (min-width: 720px) {
     align-items: center;
     justify-content: space-between;
@@ -22,10 +22,21 @@
 
 .region-header {
   text-align: center;
+  width: 100%;
+  @media only screen and (min-width: 720px) {
+    width: auto;
+  }
 }
 
 .color-wrapper {
+  margin: 0 auto;
   padding: 1em 0;
+  @media only screen and (min-width: 720px) {
+    margin: 0 1em 0 0;
+  }
+  @media only screen and (min-width: 1250px) {
+    margin-right: 0;
+  }
   label {
     margin-right: 0.4em;
   }
