@@ -11,6 +11,16 @@ body.dark {
   .site-slogan {
     color: $dark_text;
   }
+
+  .color-wrapper {
+    select {
+      &:hover,
+      &:focus {
+        outline: 5px solid $complementary;
+      }
+    }
+  }
+
   .layout-container a {
     color: $dark_link;
     &:hover {
@@ -47,6 +57,16 @@ body.light {
   .header-wrapper {
     background-color: $complementary;
   }
+
+  .color-wrapper {
+    select {
+      &:hover,
+      &:focus {
+        outline: 5px solid $dark_complementary;
+      }
+    }
+  }
+
   .layout-container a {
     color: $link;
     &:hover {
