@@ -62,6 +62,11 @@ body.dark {
     border-top: 10px solid $dark_complementary;
   }
 }
+body.dark.path-sitemap {
+  .menu-item--expanded {
+    list-style-image: url("../images/menu-expanded.png");
+  }
+}
 
 // Light preference
 body.light {

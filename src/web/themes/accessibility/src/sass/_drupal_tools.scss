@@ -9,6 +9,9 @@
     display: flex;
     flex-flow: column nowrap;
     padding: 10px;
+    li {
+      margin: 0;
+    }
   }
   a {
     &:hover {
