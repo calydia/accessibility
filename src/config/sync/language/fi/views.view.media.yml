@@ -1,6 +1,6 @@
-label: Sisältö
 display:
   default:
+    display_title: Isäntä
     display_options:
       exposed_form:
         options:
@@ -10,30 +10,29 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       fields:
-        title:
-          label: Otsikko
-        type:
-          label: Sisältötyyppi
+        media_bulk_form:
+          action_title: Toiminto
+        thumbnail__target_id:
           separator: ', '
         name:
+          separator: ', '
+        bundle:
+          separator: ', '
+        uid:
           label: Tekijä
+          separator: ', '
         status:
           label: Tila
           settings:
             format_custom_true: Julkaistu
             format_custom_false: Julkaisematon
+          separator: ', '
+        changed:
+          separator: ', '
         operations:
           label: Toimenpiteet
       filters:
-        title:
-          expose:
-            label: Otsikko
-        type:
-          expose:
-            label: Sisältötyyppi
         status:
-          expose:
-            label: Tila
           group_info:
             label: Julkaisutila
             group_items:
@@ -44,11 +43,3 @@ display:
         langcode:
           expose:
             label: Kieli
-      title: Sisältö
-    display_title: Isäntä
-  page_1:
-    display_options:
-      menu:
-        title: Sisältö
-      tab_options:
-        title: Sisältö

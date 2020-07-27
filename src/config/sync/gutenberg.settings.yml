@@ -72,16 +72,18 @@ page_allowed_drupal_blocks:
   'entity_view:webform': 0
   'entity_view:webform_submission': 0
   page_title_block: 0
-  search_form_block: search_form_block
+  search_form_block: 0
   user_login_block: 0
   help_block: 0
+  'views_block:_sm_list_of_all_demo_pages-block_all_demo_pages': 'views_block:_sm_list_of_all_demo_pages-block_all_demo_pages'
+  'views_block:_sm_list_of_all_demo_pages-block_demo_pages': 0
   'views_block:comments_recent-block_1': 0
   'views_block:content_recent-block_1': 0
   'views_block:who_s_online-who_s_online_block': 0
   'system_menu_block:footer': 0
   'system_menu_block:main': 0
   'system_menu_block:account': 0
-  system_breadcrumb_block: system_breadcrumb_block
+  system_breadcrumb_block: 0
   'language_block:language_interface': 0
   system_messages_block: 0
   system_powered_by_block: 0

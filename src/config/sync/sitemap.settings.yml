@@ -1,0 +1,8 @@
+page_title: Sitemap
+message:
+  format: restricted_html
+  value: ''
+plugins: {  }
+include_css: true
+_core:
+  default_config_hash: Pq64GZUb-bJckfjkDVfY82wzyy-XmRDovFeC0rFIBBc

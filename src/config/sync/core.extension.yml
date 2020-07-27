@@ -27,6 +27,7 @@ module:
   gutenberg: 0
   help: 0
   history: 0
+  honeypot: 0
   image: 0
   jquery_ui: 0
   jquery_ui_datepicker: 0
@@ -48,8 +49,10 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  scheduler: 0
   search: 0
   shortcut: 0
+  sitemap: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -60,6 +63,7 @@ module:
   user: 0
   views_ui: 0
   webform: 0
+  webform_ui: 0
   pathauto: 1
   xmlsitemap: 1
   content_translation: 10

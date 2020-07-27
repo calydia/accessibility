@@ -9,16 +9,5 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       fields:
-        block_content_bulk_form:
-          action_title: Toiminto
-        info:
+        changed:
           separator: ', '
-        body:
-          separator: ', '
-      filters:
-        status:
-          expose:
-            label: Julkaistu
-        info:
-          expose:
-            label: Otsikko

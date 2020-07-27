@@ -4,21 +4,15 @@ display:
     display_options:
       exposed_form:
         options:
+          submit_button: Suodatin
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
           sort_desc_label: Desc
       fields:
-        block_content_bulk_form:
-          action_title: Toiminto
-        info:
+        message:
+          label: Viesti
+        name:
           separator: ', '
-        body:
-          separator: ', '
-      filters:
-        status:
-          expose:
-            label: Julkaistu
-        info:
-          expose:
-            label: Otsikko
+        link:
+          label: Toimenpiteet

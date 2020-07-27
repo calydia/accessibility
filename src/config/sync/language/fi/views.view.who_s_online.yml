@@ -8,8 +8,3 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
           sort_desc_label: Desc
-      fields:
-        title:
-          label: Otsikko
-        name:
-          label: Tekijä

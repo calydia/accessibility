@@ -1,4 +1,3 @@
-label: Sisältö
 display:
   default:
     display_options:
@@ -9,19 +8,37 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
           sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ edellinen'
+            next: 'seuraava ›'
+            first: '« ensimmäinen'
+            last: 'viimeinen »'
       fields:
+        node_bulk_form:
+          action_title: Toiminto
         title:
           label: Otsikko
+          separator: ', '
         type:
           label: Sisältötyyppi
           separator: ', '
         name:
           label: Tekijä
+          separator: ', '
         status:
           label: Tila
           settings:
             format_custom_true: Julkaistu
             format_custom_false: Julkaisematon
+          separator: ', '
+        publish_on:
+          label: Julkaisupäivämäärä
+          separator: ', '
+        unpublish_on:
+          label: 'Julkaisun peruutuspäivämäärä'
+          separator: ', '
         operations:
           label: Toimenpiteet
       filters:
@@ -44,11 +61,20 @@ display:
         langcode:
           expose:
             label: Kieli
-      title: Sisältö
     display_title: Isäntä
-  page_1:
+  overview:
     display_options:
       menu:
-        title: Sisältö
+        title: Ajastettu
       tab_options:
         title: Sisältö
+  user_page:
+    display_options:
+      menu:
+        title: Ajastettu
+      tab_options:
+        title: Sisältö
+      arguments:
+        uid:
+          exception:
+            title: Kaikki

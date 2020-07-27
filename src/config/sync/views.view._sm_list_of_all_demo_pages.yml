@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.demo_page
-    - system.menu.main
   module:
     - node
     - user
@@ -230,10 +229,27 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  block_all_demo_pages:
+    display_plugin: block
+    id: block_all_demo_pages
+    display_title: 'Block - all demos'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      block_description: 'All demo pages'
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   block_demo_pages:
     display_plugin: block
     id: block_demo_pages
-    display_title: Block
+    display_title: 'Block - other demos'
     position: 2
     display_options:
       display_extenders: {  }
@@ -280,36 +296,12 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: node_nid
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  page_demo_pages:
-    display_plugin: page
-    id: page_demo_pages
-    display_title: Page
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: demo-pages
-      rendering_language: '***LANGUAGE_language_interface***'
-      menu:
-        type: normal
-        title: 'Demo pages'
-        description: ''
-        expanded: false
-        parent: 'menu_link_content:ff8d60f7-309d-43a0-a01d-923b2b5e4505'
-        weight: 0
-        context: '0'
-        menu_name: main
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
