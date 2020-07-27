@@ -109,3 +109,9 @@ footer {
 .source-material {
   margin-top: 5em;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
