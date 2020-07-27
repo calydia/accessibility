@@ -1,13 +1,1 @@
 <?php
-
-/**
- * Add current page title to breadcrumb
- */
-function accessibility_preprocess_breadcrumb(&$variables) {
-  if (($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']) {
-    $variables['breadcrumb'][] = array(
-      'text' => $node->getTitle(),
-    );
-    $variables['#cache']['contexts'][] = 'url';
-  }
-}

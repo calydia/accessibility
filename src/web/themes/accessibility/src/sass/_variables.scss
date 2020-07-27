@@ -1,19 +1,21 @@
-$primary: #9edcff;
-$secondary: #00507d;
-$dark: #21004a;
-$accent: #46037e;
-$neutral: #eaeaea;
-
+// Light mode
 $text: #000000;
 $background: white;
 $link: #0162f4;
-$link_hover: #c7005d;
+$link_hover: #a8004f;
 $grey: #545454;
 $complementary: #9edcff;
 
+// Dark mode
 $dark_text: white;
 $dark_background: #0b1618;
 $dark_link: #5d85fe;
-$dark_link_hover: #ff4da0;
-$dark_grey: #ababab;
+$dark_link_hover: #ff7ab8;
+$dark_grey: #bababa;
 $dark_complementary: #47241e;
+
+// Width variables
+$medium: 768px;
+$large: 1250px;
+$mediummax: 767px;
+$largemax: 1249px;

@@ -1,9 +1,18 @@
 @import "variables";
 
+.skip-link.visually-hidden.focusable:active,
+.skip-link.visually-hidden.focusable:focus {
+  left: 0;
+  padding: 0.5em 1em;
+  position: absolute !important;
+  top: 25px;
+  z-index: 2;
+}
+
 :root {
   --mm-sidebar-expanded-size: 300px;
 }
-@media only screen and (max-width: 719px) {
+@media only screen and (max-width: $mediummax) {
   .mburger {
     --mb-button-size: 36px;
     --mb-bar-spacing: 6px;

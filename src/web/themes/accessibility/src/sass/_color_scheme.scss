@@ -3,6 +3,13 @@
 body.dark {
   background-color: $dark_background;
   color: $dark_text;
+
+  .skip-link.visually-hidden.focusable:active,
+  .skip-link.visually-hidden.focusable:focus {
+    background: black;
+    color: $dark_link;
+  }
+
   .header-wrapper {
     background-color: $dark_complementary;
   }
@@ -16,7 +23,7 @@ body.dark {
     select {
       &:hover,
       &:focus {
-        outline: 5px solid $complementary;
+        outline: 5px solid $dark_grey;
       }
     }
   }
@@ -28,16 +35,19 @@ body.dark {
     }
     &:focus {
       border-bottom: 5px solid $dark_grey;
+      outline: none;
+      padding-bottom: 2px;
     }
     &.mburger {
       color: $dark_text;
+      &:focus,
       &:hover {
-        color: $complementary;
+        color: $dark_grey;
       }
     }
   }
   .wp-block-quote {
-    border-left: 4px solid $dark_complementary;
+    border-left: 4px solid $dark_link;
   }
   .wp-block-quote__citation,
   .wp-block-quote cite,
@@ -54,6 +64,13 @@ body.dark {
 body.light {
   background-color: $background;
   color: $text;
+
+  .skip-link.visually-hidden.focusable:active,
+  .skip-link.visually-hidden.focusable:focus {
+    background: white;
+    color: $link;
+  }
+
   .header-wrapper {
     background-color: $complementary;
   }
@@ -62,7 +79,7 @@ body.light {
     select {
       &:hover,
       &:focus {
-        outline: 5px solid $dark_complementary;
+        outline: 5px solid $grey;
       }
     }
   }
@@ -74,11 +91,14 @@ body.light {
     }
     &:focus {
       border-bottom: 5px solid $grey;
+      outline: none;
+      padding-bottom: 2px;
     }
     &.mburger {
       color: $text;
+      &:focus,
       &:hover {
-        color: $dark_complementary;
+        color: $grey;
       }
     }
   }
@@ -87,7 +107,7 @@ body.light {
     color: $text;
   }
   .wp-block-quote {
-    border-left: 4px solid $complementary;
+    border-left: 4px solid $link;
   }
   .wp-block-quote__citation,
   .wp-block-quote cite,

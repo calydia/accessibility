@@ -1,6 +1,7 @@
 @import "variables";
 
 body {
+  @include fontSize(18px);
   font-family: "Quicksand", sans-serif;
   line-height: 1.5em;
 }
@@ -23,6 +24,7 @@ header {
 
 .wp-block-quote {
   @include fontSize(20px);
+  font-style: italic;
   padding: 0.2em 0 0.2em 1em;
   p {
     margin: 0;
@@ -32,7 +34,8 @@ header {
 .wp-block-quote__citation,
 .wp-block-quote cite,
 .wp-block-quote footer {
-  @include fontSize(13px);
+  @include fontSize(16px);
+  font-style: normal;
 }
 
 @media (prefers-reduced-motion: reduce) {

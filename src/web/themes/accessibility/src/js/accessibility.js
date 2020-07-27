@@ -69,7 +69,6 @@
             defaultRemove = "dark";
           }
           sessionStorage.viewed = 1;
-          console.log(sessionStorage.viewed);
           sessionStorage.mode = defaultMode;
           sessionStorage.remove = defaultRemove;
         } else {
