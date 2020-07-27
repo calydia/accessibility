@@ -35,24 +35,26 @@
     --mm-color-background: #191919;
     --mm-color-button: white;
     --mm-color-text: white;
-    --mm-color-background-emphasis: #242424; // Keyboard focus on menu items
+    --mm-color-background-emphasis: #242424;
+    --mm-color-border: #474747; // Keyboard focus on menu items
     .mm-navbar {
-      --mm-color-background: #47241e;
+      --mm-color-background: #2b4e55;
       --mm-color-text: white;
       --mm-color-text-dimmed: #fff;
     }
     ul.menu a.is-active {
       color: $dark_link_hover;
+      font-weight: bold;
     }
     .menu-item--active-trail .mm-listitem__btn:after {
       border-color: $dark_link_hover;
     }
-    .mm-navbar__title:hover,
-    .mm-navbar__title:focus {
-      color: $complementary;
+    .mm-navbar__title:hover {
+      text-decoration: underline;
     }
     .mm-listitem__text:hover {
-      color: $dark_link !important;
+      color: #a9bdfe !important;
+      text-decoration: underline;
     }
     .mm-navbar__btn:hover {
       &:after,
@@ -74,7 +76,7 @@
     --mm-color-button: #000;
     --mm-color-background-highlight: #c7005d;
     --mm-color-text: #000;
-    --mm-color-background-emphasis: #ebf7ff; // Keyboard focus on menu items
+    --mm-color-background-emphasis: #9edcff; // Keyboard focus on menu items
     .mm-navbar {
       --mm-color-background: #ebf7ff;
       --mm-color-text: black;
@@ -82,28 +84,36 @@
     }
     ul.menu a.is-active {
       color: $link_hover;
+      font-weight: bold;
     }
     .menu-item--active-trail .mm-listitem__btn:after {
       border-color: $link_hover;
     }
-    .mm-navbar__title:hover,
+    .mm-navbar__title:hover {
+      color: #014cbc;
+      text-decoration: underline;
+    }
     .mm-navbar__title:focus {
-      color: $link;
+      background: #9edcff;
     }
     .mm-listitem__text:hover {
-      color: $link !important;
+      color: #014cbc !important;
+      text-decoration: underline;
     }
     .mm-navbar__btn:hover {
       &:after,
       &:before {
-        border-color: #0162f4 !important;
+        border-color: #014cbc !important;
       }
     }
     .mm-listitem__btn:hover {
       &:after,
       &:before {
-        border-color: #0162f4 !important;
+        border-color: #014cbc !important;
       }
+    }
+    a.mm-btn.mm-btn_prev.mm-navbar__btn:focus {
+      background: #9edcff;
     }
   }
 }

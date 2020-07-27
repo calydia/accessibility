@@ -54,6 +54,9 @@ body.dark {
   .wp-block-quote footer {
     color: $dark_grey;
   }
+  code {
+    color: $dark_text;
+  }
   footer {
     background-color: transparent;
     border-top: 10px solid $dark_complementary;
@@ -113,6 +116,9 @@ body.light {
   .wp-block-quote cite,
   .wp-block-quote footer {
     color: $grey;
+  }
+  code {
+    color: $text;
   }
   footer {
     background-color: #ebf7ff;
