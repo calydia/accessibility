@@ -1,8 +1,68 @@
 page_title: Sitemap
 message:
-  format: restricted_html
   value: ''
-plugins: {  }
+  format: restricted_html
+plugins:
+  'vocabulary:tags':
+    enabled: false
+    weight: 0
+    settings:
+      title: Tags
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  book:
+    enabled: false
+    weight: 0
+  'menu:account':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'User account menu'
+      show_disabled: false
+  'menu:admin':
+    enabled: false
+    weight: 0
+    settings:
+      title: Administration
+      show_disabled: false
+  'menu:footer':
+    enabled: false
+    weight: 0
+    settings:
+      title: Footer
+      show_disabled: false
+  'menu:main':
+    enabled: true
+    weight: 0
+    settings:
+      title: 'Main navigation'
+      show_disabled: false
+  'menu:tools':
+    enabled: false
+    weight: 0
+    settings:
+      title: Tools
+      show_disabled: false
+  frontpage:
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
 include_css: true
 _core:
   default_config_hash: Pq64GZUb-bJckfjkDVfY82wzyy-XmRDovFeC0rFIBBc
+plugin_settings__active_tab: edit-plugins-menumain-settings
+submit: 'Save configuration'
+form_build_id: form-gIDa22xUm53qMHz2v_lP1YCEcU6_a-UaCB5WUYq-jcI
+form_token: 4vsI00q-NOHJO0u9RZinrx6Q5l4AxFBHBtZbLZS210s
+form_id: sitemap_settings
+op: 'Save configuration'
