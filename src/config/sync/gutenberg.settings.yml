@@ -34,13 +34,13 @@ page_allowed_blocks:
   core-embed/youtube: core-embed/youtube
   core-embed/facebook: core-embed/facebook
   core-embed/instagram: core-embed/instagram
-  core-embed/soundcloud: core-embed/soundcloud
   core-embed/spotify: core-embed/spotify
-  core-embed/flickr: core-embed/flickr
-  core-embed/vimeo: core-embed/vimeo
   embed: embed
   core-embed/all: 0
   core-embed/wordpress: 0
+  core-embed/soundcloud: 0
+  core-embed/flickr: 0
+  core-embed/vimeo: 0
   core-embed/amazon-kindle: 0
   core-embed/animoto: 0
   core-embed/cloudup: 0
@@ -83,6 +83,7 @@ page_allowed_drupal_blocks:
   'system_menu_block:footer': 0
   'system_menu_block:main': 0
   'system_menu_block:account': 0
+  sitemap_syndicate: 0
   system_breadcrumb_block: 0
   'language_block:language_interface': 0
   system_messages_block: 0

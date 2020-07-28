@@ -9,10 +9,10 @@ uid: 1
 template: false
 archive: false
 id: contact
-title: Contact
+title: 'Contact me'
 description: ''
 category: ''
-elements: "markup:\n  '#type': webform_markup\n  '#markup': 'If you wish to provide me with a way to contact you, fill in your name and email. Otherwise, you can leave these fields empty. The message field is required, the field is labeled with an asterisk (*).'\nname:\n  '#type': textfield\n  '#title': Name\nemail:\n  '#type': email\n  '#title': Email\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true\nmarkup_info:\n  '#type': webform_markup\n  '#markup': 'The messages will be stored for 60 days, after which they will be deleted.'"
+elements: "markup:\n  '#type': webform_markup\n  '#markup': |\n    <p>If you don&#39;t want to fill a form, you can also <a href=\"https://twitter.com/schalallalaa\" target=\"_blank\">contact me on Twitter (opens a new window)</a>.</p>\n    \n    <p>\n    If you want to provide me with a way to possibly contact you, fill in your name and email address. Otherwise, you can leave these fields empty. The message field is required, the field is labeled with an asterisk (*).\n    </p>\nname:\n  '#type': textfield\n  '#title': Name\nemail:\n  '#type': email\n  '#title': Email\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true\nmarkup_info:\n  '#type': webform_markup\n  '#markup': 'The messages will be stored for 60 days, after which they will be deleted.'"
 css: ''
 javascript: ''
 settings:
