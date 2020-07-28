@@ -27,6 +27,13 @@ h3 {
       text-decoration: none;
     }
   }
+  a[href^="https://"]:after
+  {
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+  }
 }
 
 header {

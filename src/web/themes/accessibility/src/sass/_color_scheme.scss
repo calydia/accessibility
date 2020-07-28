@@ -46,6 +46,13 @@ body.dark {
       }
     }
   }
+  .layout-container a[href^="https://"]:after
+  {
+    background-image: url(../images/icons8-external-link-white.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
   .wp-block-quote {
     border-left: 4px solid $dark_link;
   }
@@ -119,6 +126,13 @@ body.light {
         color: $grey;
       }
     }
+  }
+  .layout-container a[href^="https://"]:after
+  {
+    background-image: url(../images/icons8-external-link.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
   }
   .site-name,
   .site-slogan {
