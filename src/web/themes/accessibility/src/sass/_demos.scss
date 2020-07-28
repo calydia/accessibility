@@ -159,7 +159,12 @@ div.demo-close {
   }
   // 2.1.1
   .demo-close {
-    background-color: #47241e;
+    background-color: $dark_button;
+    color: black;
+    &:focus,
+    &:hover {
+      background: $dark_link_hover;
+    }
   }
 }
 .light {
@@ -172,6 +177,11 @@ div.demo-close {
   }
   // 2.1.1
   .demo-close {
-    background-color: #9edcff;
+    background-color: $button;
+    color: white;
+    &:focus,
+    &:hover {
+      background: $link_hover;
+    }
   }
 }

@@ -61,6 +61,16 @@ body.dark {
     background-color: transparent;
     border-top: 10px solid $dark_complementary;
   }
+  .webform-button--submit {
+    background-color: $dark_button;
+    border: none;
+    color: black;
+    &:focus,
+    &:hover {
+      background-color: $dark_link_hover;
+      text-decoration: underline;
+    }
+  }
 }
 body.dark.path-sitemap {
   .menu-item--expanded {
@@ -128,5 +138,18 @@ body.light {
   footer {
     background-color: #ebf7ff;
     border-top: 1px solid $complementary;
+  }
+  .webform-button--submit {
+    background-color: $button;
+    border: none;
+    color: white;
+    &:focus,
+    &:hover {
+      background-color: $link_hover;
+      text-decoration: underline;
+    }
+    &:focus {
+      outline: 5px solid black;
+    }
   }
 }
