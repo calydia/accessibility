@@ -68,7 +68,8 @@ body.dark {
     background-color: transparent;
     border-top: 10px solid $dark_complementary;
   }
-  .webform-button--submit {
+  .webform-button--submit,
+  .js-form-submit {
     background-color: $dark_button;
     border: none;
     color: black;
@@ -153,7 +154,8 @@ body.light {
     background-color: #ebf7ff;
     border-top: 1px solid $complementary;
   }
-  .webform-button--submit {
+  .webform-button--submit,
+  .js-form-submit {
     background-color: $button;
     border: none;
     color: white;

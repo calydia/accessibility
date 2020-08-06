@@ -1,5 +1,6 @@
 .js-form-type-textfield,
-.js-form-type-email {
+.js-form-type-email,
+.js-form-type-password {
   label {
     display: block;
   }
@@ -13,6 +14,7 @@
   }
 }
 
-.webform-button--submit {
+.webform-button--submit,
+.js-form-submit {
   padding: 0.6em 1em;
 }
