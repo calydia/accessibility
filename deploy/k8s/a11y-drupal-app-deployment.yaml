@@ -1,0 +1,160 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: a11y-drupal-app
+spec:
+  selector:
+    matchLabels:
+      app: a11y-drupal-app
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 100%
+      maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app: a11y-drupal-app
+    spec:
+      containers:
+        - name: php-fpm
+          image: strathos/php:7.4-fpm-alpine
+          env:
+            - name: CIRCLECI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: a11y-drupal-secret
+                  key: CIRCLECI_API_KEY
+            - name: SITE_HASH_SALT
+              valueFrom:
+                secretKeyRef:
+                  name: a11y-drupal-secret
+                  key: SITE_HASH_SALT
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: a11y-drupal-secret
+                  key: MYSQL_PASSWORD
+            - name: SITE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: a11y-drupal-configmap
+                  key: SITE_URL
+          resources:
+            limits:
+              cpu: 2000m
+            requests:
+              cpu: 10m
+          volumeMounts:
+            - name: a11y-drupal-files
+              mountPath: /var/www/html/web/sites/default/files
+            - name: a11y-drupal-settings-php-secret
+              mountPath: /var/www/html/web/sites/default/settings.php
+              subPath: settings.php
+            - name: a11y-drupal-code
+              mountPath: "/var/www/html"
+        - name: nginx
+          image: nginx:stable
+          volumeMounts:
+            - name: a11y-drupal-files
+              mountPath: /var/www/html/web/sites/default/files
+            - name: a11y-drupal-code
+              mountPath: "/var/www/html"
+            - name: a11y-drupal-configmap
+              mountPath: /etc/nginx/conf.d/default.conf
+              subPath: default.conf
+            - name: a11y-drupal-configmap
+              mountPath: /etc/nginx/fastcgi.conf
+              subPath: fastcgi.conf
+            - name: a11y-drupal-configmap
+              mountPath: /etc/nginx/nginx.conf
+              subPath: nginx.conf
+      initContainers:
+        - name: init-1
+          env:
+            - name: GIT_REPO_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: a11y-drupal-configmap
+                  key: GIT_REPO_URL
+            - name: GIT_REPO_DIR
+              valueFrom:
+                configMapKeyRef:
+                  name: a11y-drupal-configmap
+                  key: GIT_REPO_DIR
+            - name: GIT_REPO_BRANCH
+              valueFrom:
+                configMapKeyRef:
+                  name: a11y-drupal-configmap
+                  key: GIT_REPO_BRANCH
+          resources:
+            limits:
+              cpu: 2000m
+            requests:
+              cpu: 10m
+          image: strathos/php:7.4-fpm-alpine-drupal
+          command: [ "/bin/bash", "-c", "--" ]
+          args:
+            - su www-data
+              cd /var/www/html;
+              git clone ${GIT_REPO_URL};
+              cd ${GIT_REPO_DIR};
+              git checkout ${GIT_REPO_BRANCH};
+              cd /var/www/html/;
+              cp -r ${GIT_REPO_DIR}/src/* /var/www/html/;
+              rm -rf ${GIT_REPO_DIR};
+              composer install --no-dev --no-interaction;
+          volumeMounts:
+            - name: a11y-drupal-code
+              mountPath: "/var/www/html"
+        - name: init-2
+          env:
+            - name: SITE_HASH_SALT
+              valueFrom:
+                secretKeyRef:
+                  name: a11y-drupal-secret
+                  key: SITE_HASH_SALT
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: a11y-drupal-secret
+                  key: MYSQL_PASSWORD
+            - name: SITE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: a11y-drupal-configmap
+                  key: SITE_URL
+          resources:
+            limits:
+              cpu: 2000m
+            requests:
+              cpu: 10m
+          image: strathos/php:7.4-fpm-alpine-drupal
+          command: [ "/bin/bash", "-c", "--" ]
+          args:
+            - su www-data
+              cd /var/www/html;
+              drush updb -y;
+              drush cim -y;
+              drush cr -y;
+          volumeMounts:
+            - name: a11y-drupal-files
+              mountPath: /var/www/html/web/sites/default/files
+            - name: a11y-drupal-settings-php-secret
+              mountPath: /var/www/html/web/sites/default/settings.php
+              subPath: settings.php
+            - name: a11y-drupal-code
+              mountPath: "/var/www/html"
+      volumes:
+        - name: a11y-drupal-files
+          persistentVolumeClaim:
+            claimName: a11y-drupal-app-files-pvc
+        - name: a11y-drupal-settings-php-secret
+          secret:
+            secretName: a11y-drupal-secret
+        - name: a11y-drupal-configmap
+          configMap:
+            name: a11y-drupal-configmap
+        - name: a11y-drupal-code
+          emptyDir: {}

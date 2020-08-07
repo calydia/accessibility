@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: a11y-drupal-app-svc
+  namespace: default
+spec:
+  ports:
+    - name: nginx
+      port: 80
+  selector:
+    app: a11y-drupal-app

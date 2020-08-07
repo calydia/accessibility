@@ -1,0 +1,49 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: accessibility-drupal
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+configMapGenerator:
+  - name: a11y-drupal-configmap
+    literals:
+      - MYSQL_DATABASE=drupal
+      - MYSQL_USER=drupal
+      - GIT_REPO_URL=https://github.com/your/repo.git
+      - GIT_REPO_DIR=a11y
+      - GIT_REPO_BRANCH=master
+      - SITE_URL=site.url.here
+
+secretGenerator:
+  - name: a11y-drupal-secret
+    type: Opaque
+    files:
+      - settings.php
+    literals:
+      - SITE_HASH_SALT=set_site_hash_salt_here
+      - MYSQL_ROOT_PASSWORD=set_password_here
+      - MYSQL_PASSWORD=set_password_here
+      - CIRCLECI_API_KEY=replace_circleci_user_api_key_here
+
+resources:
+  - a11y-drupal-namespace.yaml
+  - a11y-drupal-mariadb-deployment.yaml
+  - a11y-drupal-mariadb-pma-deployment.yaml
+  - a11y-drupal-mariadb-pvc.yaml
+  - a11y-drupal-mariadb-svc.yaml
+  - a11y-drupal-app-deployment.yaml
+  - a11y-drupal-app-ingress.yaml
+  - a11y-drupal-app-pvc.yaml
+  - a11y-drupal-app-svc.yaml
+  - a11y-drupal-circleci-sa.yaml
+
+vars:
+  - name: SITE_URL
+    objref:
+      apiVersion: v1
+      kind: ConfigMap
+      name: a11y-drupal-configmap
+    fieldref:
+      fieldpath: data.SITE_URL
