@@ -34,8 +34,6 @@ mburger:
   dependencies:
     - core/jquery
     - core/drupalSettings
-  js:
-    libraries/mburger-css/dist/mburger.js: {}
   css:
     theme:
       libraries/mburger-css/dist/mburger.css: {}
