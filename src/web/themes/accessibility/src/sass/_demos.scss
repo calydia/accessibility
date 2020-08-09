@@ -39,6 +39,7 @@
     }
   }
 }
+.block-views-block-sm-list-of-all-demo-pages-block-all-demo-pages,
 .block-views-block-sm-list-of-all-demo-pages-block-demo-pages {
   margin-top: 2em;
   padding: 2em;
@@ -153,6 +154,7 @@ div.demo-close {
 }
 // Demo color scheme
 .dark {
+  .block-views-block-sm-list-of-all-demo-pages-block-all-demo-pages,
   .block-views-block-sm-list-of-all-demo-pages-block-demo-pages {
     border: 1px solid $dark_grey;
   }
@@ -171,6 +173,7 @@ div.demo-close {
   }
 }
 .light {
+  .block-views-block-sm-list-of-all-demo-pages-block-all-demo-pages,
   .block-views-block-sm-list-of-all-demo-pages-block-demo-pages {
     border: 1px solid $grey;
   }
