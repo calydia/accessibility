@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_meta_tags
     - node.type.page
   module:
+    - metatag
     - path
+    - scheduler
     - text
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
@@ -31,6 +34,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_meta_tags:
+    weight: 121
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -50,6 +60,12 @@ content:
       display_label: true
     weight: 15
     region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
@@ -82,5 +98,11 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

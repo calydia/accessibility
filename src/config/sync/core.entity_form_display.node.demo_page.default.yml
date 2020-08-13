@@ -7,9 +7,12 @@ dependencies:
     - field.field.node.demo_page.field_bad_examples
     - field.field.node.demo_page.field_better_examples
     - field.field.node.demo_page.field_final_comments
+    - field.field.node.demo_page.field_meta_tags
     - node.type.demo_page
   module:
+    - metatag
     - path
+    - scheduler
     - text
 id: node.demo_page.default
 targetEntityType: node
@@ -56,6 +59,13 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_meta_tags:
+    weight: 125
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -75,6 +85,12 @@ content:
       display_label: true
     weight: 15
     region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
@@ -107,5 +123,11 @@ content:
       placeholder: ''
       match_limit: 10
     region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }
