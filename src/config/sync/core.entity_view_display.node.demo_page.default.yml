@@ -7,8 +7,10 @@ dependencies:
     - field.field.node.demo_page.field_bad_examples
     - field.field.node.demo_page.field_better_examples
     - field.field.node.demo_page.field_final_comments
+    - field.field.node.demo_page.field_meta_tags
     - node.type.demo_page
   module:
+    - metatag
     - text
     - user
 id: node.demo_page.default
@@ -43,6 +45,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_meta_tags:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   links:
     weight: 100
