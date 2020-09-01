@@ -68,6 +68,20 @@ body.dark {
     background-color: transparent;
     border-top: 10px solid $dark_complementary;
   }
+
+  .js-form-type-textfield,
+  .js-form-type-email,
+  .js-form-type-password {
+    input {
+      color: black;
+    }
+  }
+  .js-form-type-textarea {
+    textarea {
+      color: black;
+    }
+  }
+
   .webform-button--submit,
   .js-form-submit {
     background-color: $dark_button;
