@@ -14,7 +14,8 @@
       var skip = $(".skip-link"),
         $target = $("#main-content"),
         darkMode = $("#setting-dark"),
-        lightMode = $("#setting-light");
+        lightMode = $("#setting-light"),
+        menuItem = $(".main-menu > ul");
 
       skip.click(function (event) {
         event.preventDefault();
@@ -34,19 +35,12 @@
         );
       });
 
-      $(document).ready(function () {
-        new Mmenu(
-          "#main-menu",
-          {
-            keyboardNavigation: {
-              enable: true,
-              enhance: true,
-            },
-            extensions: ["multiline"],
-          },
-          {}
-        );
+      $(".menu-toggle").click(function (event) {
+        event.preventDefault();
+        $(this).parent().toggleClass("show-children");
+      });
 
+      $(document).ready(function () {
         if (!sessionStorage.viewed) {
           var defaultMode = "dark",
             defaultRemove = "light";

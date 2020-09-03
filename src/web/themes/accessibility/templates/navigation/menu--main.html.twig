@@ -41,6 +41,7 @@
         {%
           set classes = [
             'menu-item',
+            menu_level ? 'menu-level-' ~ (menu_level + 1),
             item.is_expanded ? 'menu-item--expanded',
             item.is_collapsed ? 'menu-item--collapsed',
             item.in_active_trail ? 'menu-item--active-trail',
@@ -49,6 +50,7 @@
         <li{{ item.attributes.addClass(classes) }}>
           {{ link(item.title, item.url) }}
           {% if item.below %}
+            <button class="menu-toggle">Open submenu</button>
             {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
           {% endif %}
         </li>
