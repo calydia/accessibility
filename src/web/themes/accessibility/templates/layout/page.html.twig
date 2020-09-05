@@ -72,13 +72,15 @@
 
   {% if page.footer_first %}
     <footer>
-      {{ page.footer_first }}
-      <div class="color-wrapper">
-        <label for="color-mode">{{ 'Select color mode'|t }}</label>
-        <select id="color-mode" class="color-mode-select">
-          <option value="dark">{{ 'Dark'|t }}</option>
-          <option value="light">{{ 'Light'|t }}</option>
-        </select>
+      <div class="footer-container">
+        {{ page.footer_first }}
+        <div class="color-wrapper">
+          <label for="color-mode">{{ 'Select color mode'|t }}</label>
+          <select id="color-mode" class="color-mode-select">
+            <option value="dark">{{ 'Dark'|t }}</option>
+            <option value="light">{{ 'Light'|t }}</option>
+          </select>
+        </div>
       </div>
     </footer>
   {% endif %}

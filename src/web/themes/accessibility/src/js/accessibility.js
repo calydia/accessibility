@@ -9,13 +9,65 @@
     sessionStorage.remove = remove;
   }
 
+  function toggleSubMenuClass(button, parent, toState) {
+    if (!toState) {
+      button.classList.add("menu-open");
+      parent.classList.add("menu-open");
+    } else {
+      button.classList.remove("menu-open");
+      parent.classList.remove("menu-open");
+    }
+  }
+
+  /**
+   * Add necessary event listeners and create aria attributes
+   * @param {element} el - List item element that has a submenu.
+   */
+  function initSubmenu(el) {
+    const button = el.querySelector(".menu__link--button"),
+      parent = button.parentElement;
+    button.setAttribute("aria-controls", button.dataset.ariacontrols);
+    button.setAttribute("aria-expanded", "false");
+    button.addEventListener("click", (e) =>
+      toggleSubmenu(e.currentTarget, !getButtonState(e.currentTarget))
+    );
+    button.addEventListener("click", (e) =>
+      toggleSubMenuClass(button, parent, !getButtonState(e.currentTarget))
+    );
+  }
+
+  /**
+   * Toggles the aria-expanded attribute of a given button to a desired state.
+   * @param {element} button - Button element that should be toggled.
+   * @param {boolean} toState - State indicating the end result toggle operation.
+   */
+  function toggleSubmenu(button, toState) {
+    button.setAttribute("aria-expanded", toState);
+  }
+
+  /**
+   * Get the current aria-expanded state of a given button.
+   * @param {element} button - Button element to return state of.
+   */
+  function getButtonState(button) {
+    return button.getAttribute("aria-expanded") === "true";
+  }
+
+  Drupal.behaviors.submenu = {
+    attach(context) {
+      context
+        .querySelectorAll(".menu__item--has-children")
+        .forEach((el) => initSubmenu(el));
+    },
+  };
+
   Drupal.behaviors.accessibility = {
     attach: function (context, settings) {
       var skip = $(".skip-link"),
         $target = $("#main-content"),
         darkMode = $("#setting-dark"),
         lightMode = $("#setting-light"),
-        menuItem = $(".main-menu > ul");
+        menuToggle = $(".mobile-menu-toggle");
 
       skip.click(function (event) {
         event.preventDefault();
@@ -35,9 +87,10 @@
         );
       });
 
-      $(".menu-toggle").click(function (event) {
+      menuToggle.click(function (event) {
         event.preventDefault();
-        $(this).parent().toggleClass("show-children");
+        $(this).toggleClass("menu-open");
+        $(this).siblings().toggleClass("show");
       });
 
       $(document).ready(function () {

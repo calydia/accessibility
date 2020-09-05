@@ -38,11 +38,28 @@ body.dark {
       outline: none;
       padding-bottom: 2px;
     }
-    &.mburger {
-      color: $dark_text;
-      &:focus,
-      &:hover {
-        color: $dark_grey;
+  }
+  .menu__link--button {
+    &:focus {
+      border-bottom: 5px solid $dark_grey;
+      color: #a8004f;
+      outline: none;
+      padding-bottom: 2px;
+    }
+  }
+  #main-menu {
+    a.menu__link {
+      color: white;
+      &:hover,
+      &:focus {
+        color: $dark_link_hover;
+      }
+    }
+    .menu__link--button {
+      color: white;
+      &:hover,
+      &:focus {
+        color: $dark_link_hover;
       }
     }
   }
@@ -134,11 +151,28 @@ body.light {
       outline: none;
       padding-bottom: 2px;
     }
-    &.mburger {
-      color: $text;
-      &:focus,
-      &:hover {
-        color: $grey;
+  }
+  .menu__link--button {
+    &:focus {
+      border-bottom: none;
+      color: #a8004f;
+      outline: none;
+      padding-bottom: 0;
+    }
+  }
+  #main-menu {
+    a.menu__link {
+      color: black;
+      &:hover,
+      &:focus {
+        color: #a8004f;
+      }
+    }
+    .menu__link--button {
+      color: black;
+      &:hover,
+      &:focus {
+        color: #a8004f;
       }
     }
   }

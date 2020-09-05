@@ -32,14 +32,7 @@
 }
 
 .color-wrapper {
-  margin: 0 auto;
   padding: 1em 0;
-  @media only screen and (min-width: $medium) {
-    margin: 0 1em 0 0;
-  }
-  @media only screen and (min-width: $large) {
-    margin-right: 0;
-  }
   label {
     margin-right: 0.4em;
   }
@@ -84,14 +77,19 @@
 
 footer {
   margin-top: 5em;
-  padding: 1.5em 1em;
-  .region-footer-first {
+  .footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     margin: 0 auto;
-    width: 90%;
+    padding: 2em 0 1em 0;
+    width: 80%;
     @media only screen and (min-width: $large) {
       max-width: 70em;
       width: 100%;
     }
+  }
+  .region-footer-first {
     ul {
       margin: 0;
       padding: 0;
