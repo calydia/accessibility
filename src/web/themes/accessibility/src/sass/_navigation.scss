@@ -9,111 +9,171 @@
   z-index: 2;
 }
 
-:root {
-  --mm-sidebar-expanded-size: 300px;
-}
-@media only screen and (max-width: $mediummax) {
-  .mburger {
-    --mb-button-size: 36px;
-    --mb-bar-spacing: 6px;
-    margin-top: 0.5em !important;
+#main-menu {
+  @media only screen and (max-width: $largemax) {
+    display: none;
+    visibility: hidden;
+    &.show {
+      display: block;
+      visibility: visible;
+    }
+  }
+  ul.menu {
+    @media only screen and (min-width: $large) {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0;
+    }
+    li {
+      padding: 0;
+      position: relative;
+      @media only screen and (min-width: $large) {
+        align-items: center;
+        display: flex;
+        padding: 0.5em 1em;
+      }
+    }
+    li {
+      @media only screen and (min-width: $large) {
+        border: 2px solid transparent;
+      }
+      > ul {
+        @media only screen and (min-width: $large) {
+          background-color: $complementary;
+          border: 2px solid $grey;
+          left: -2px;
+          padding: 0.5em 1em;
+          position: absolute;
+          top: 46px;
+          width: 100%;
+          li {
+            margin: 5px 0;
+            padding: 0;
+          }
+        }
+      }
+      &.menu-open {
+        @media only screen and (min-width: $large) {
+          border: 2px solid $grey;
+        }
+      }
+    }
+    li:last-of-type {
+      > ul {
+        @media only screen and (min-width: $large) {
+          left: auto;
+          right: -2px;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 750px) and (max-width: $largemax) {
+    ul.menu--level-1 {
+      background-color: $complementary;
+      border: 2px solid $grey;
+      padding: 0.5em 1em;
+      position: absolute;
+      right: 38px;
+      top: 46px;
+      width: 300px;
+    }
   }
 }
-.mm-menu {
-  --mm-listitem-size: 50px;
-  --mm-navbar-size: 50px;
+button.menu__link {
+  background-color: transparent;
+  background-image: url("../images/chevron-down.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  border: 2px solid transparent;
+  border: none;
+  padding: 0 30px 0 0;
+  &.menu-open {
+    background-image: url("../images/chevron-up.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+}
+.menu--level-2 {
+  display: none;
+  visibility: hidden;
+}
+[aria-expanded="true"] + .menu--level-2 {
+  display: block;
+  visibility: visible;
 }
 
-.mm-navbar_tabs span {
-  display: inline-block;
-  margin-left: 8px;
+html:not(.js) .menu-item--has-children:focus-within .menu--level-2,
+html:not(.js) .menu-item--has-children:hover .menu--level-2,
+[aria-expanded="true"] + .menu--level-2 {
+  display: block;
+  visibility: visible;
 }
 
-// Menu color scheme
+.mobile-menu-toggle {
+  background-color: transparent;
+  background-image: url("../images/menu-icon.svg");
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  border: 2px solid $grey;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-left: 40px;
+  &.menu-open {
+    margin-bottom: 0;
+  }
+  @media only screen and (min-width: 750px) and (max-width: $largemax) {
+    margin-bottom: 0;
+  }
+  @media only screen and (min-width: $large) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .dark {
   #main-menu {
-    --mm-color-background: #191919;
-    --mm-color-button: white;
-    --mm-color-text: white;
-    --mm-color-background-emphasis: #242424;
-    --mm-color-border: #474747; // Keyboard focus on menu items
-    .mm-navbar {
-      --mm-color-background: #2b4e55;
-      --mm-color-text: white;
-      --mm-color-text-dimmed: #fff;
-    }
-    ul.menu a.is-active {
-      color: $dark_link_hover;
-      font-weight: bold;
-    }
-    .menu-item--active-trail .mm-listitem__btn:after {
-      border-color: $dark_link_hover;
-    }
-    .mm-navbar__title:hover {
-      text-decoration: underline;
-    }
-    .mm-listitem__text:hover {
-      color: #a9bdfe !important;
-      text-decoration: underline;
-    }
-    .mm-navbar__btn:hover {
-      &:after,
-      &:before {
-        border-color: #9edcff !important;
+    ul.menu {
+      li {
+        > ul {
+          @media only screen and (min-width: $large) {
+            background-color: $dark_complementary;
+            border: 2px solid $dark_grey;
+          }
+        }
+        &.menu-open {
+          @media only screen and (min-width: $large) {
+            border: 2px solid $dark_grey;
+          }
+        }
       }
     }
-    .mm-listitem__btn:hover {
-      &:after,
-      &:before {
-        border-color: #5d85fe !important;
+    @media only screen and (min-width: 750px) and (max-width: $largemax) {
+      ul.menu--level-1 {
+        background-color: $dark_complementary;
+        border: 2px solid $dark_grey;
       }
     }
   }
-}
-.light {
-  #main-menu {
-    --mm-color-background: #f7f7f7;
-    --mm-color-button: #000;
-    --mm-color-background-highlight: #c7005d;
-    --mm-color-text: #000;
-    --mm-color-background-emphasis: #9edcff; // Keyboard focus on menu items
-    .mm-navbar {
-      --mm-color-background: #ebf7ff;
-      --mm-color-text: black;
-      --mm-color-text-dimmed: #000;
-    }
-    ul.menu a.is-active {
-      color: $link_hover;
-      font-weight: bold;
-    }
-    .menu-item--active-trail .mm-listitem__btn:after {
-      border-color: $link_hover;
-    }
-    .mm-navbar__title:hover {
-      color: #014cbc;
-      text-decoration: underline;
-    }
-    .mm-navbar__title:focus {
-      background: #9edcff;
-    }
-    .mm-listitem__text:hover {
-      color: #014cbc !important;
-      text-decoration: underline;
-    }
-    .mm-navbar__btn:hover {
-      &:after,
-      &:before {
-        border-color: #014cbc !important;
-      }
-    }
-    .mm-listitem__btn:hover {
-      &:after,
-      &:before {
-        border-color: #014cbc !important;
-      }
-    }
-    a.mm-btn.mm-btn_prev.mm-navbar__btn:focus {
-      background: #9edcff;
+  .mobile-menu-toggle {
+    border: 2px solid $dark_grey;
+  }
+  button.menu__link {
+    background-color: transparent;
+    background-image: url("../images/chevron-down-dark.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: 2px solid transparent;
+    border: none;
+    padding: 0 30px 0 0;
+    &.menu-open {
+      background-image: url("../images/chevron-up-dark.svg");
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
     }
   }
 }

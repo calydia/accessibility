@@ -43,33 +43,17 @@
  */
 #}
 <div id="my-page">
-  {% if page.primary_menu %}
-    <div class="primary-menu">
-      {{ page.primary_menu }}
-    </div>
-  {% endif %}
 <div class="layout-container">
   <div class="header-wrapper">
     <header class="main-header">
-      <a class="mburger mburger--squeeze" href="#main-menu">
-        <b></b>
-        <b></b>
-        <b></b>
-        <span>{{ 'Menu'|t }}</span>
-    </a>
     {{ page.header }}
-    <div class="color-wrapper">
-      <label for="color-mode">{{ 'Select color mode'|t }}</label>
-      <select id="color-mode" class="color-mode-select">
-        <option value="dark">{{ 'Dark'|t }}</option>
-        <option value="light">{{ 'Light'|t }}</option>
-      </select>
-    </div>
+    {% if page.primary_menu %}
+      <div class="primary-menu">
+        {{ page.primary_menu }}
+      </div>
+    {% endif %}
     </header>
   </div>
-
-
-
 
   {{ page.breadcrumb }}
 
@@ -88,7 +72,16 @@
 
   {% if page.footer_first %}
     <footer>
-      {{ page.footer_first }}
+      <div class="footer-container">
+        {{ page.footer_first }}
+        <div class="color-wrapper">
+          <label for="color-mode">{{ 'Select color mode'|t }}</label>
+          <select id="color-mode" class="color-mode-select">
+            <option value="dark">{{ 'Dark'|t }}</option>
+            <option value="light">{{ 'Light'|t }}</option>
+          </select>
+        </div>
+      </div>
     </footer>
   {% endif %}
 
