@@ -160,6 +160,10 @@ html:not(.js) .menu-item--has-children:hover .menu--level-2,
     }
   }
   .mobile-menu-toggle {
+    background-image: url("../images/menu-icon-white.svg");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
     border: 2px solid $dark_grey;
   }
   button.menu__link {
