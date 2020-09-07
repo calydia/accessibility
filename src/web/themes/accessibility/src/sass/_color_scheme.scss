@@ -46,10 +46,16 @@ body.dark {
       outline: none;
       padding-bottom: 2px;
     }
+    &.menu__link--active-trail {
+      color: #a8004f;
+    }
   }
   #main-menu {
     a.menu__link {
       color: white;
+      &.is-active {
+        color: $dark_link;
+      }
       &:hover,
       &:focus {
         color: $dark_link_hover;
@@ -60,6 +66,13 @@ body.dark {
       &:hover,
       &:focus {
         color: $dark_link_hover;
+      }
+      &.menu__link--active-trail {
+        color: $dark_link;
+        &:hover,
+        &:focus {
+          color: $dark_link_hover;
+        }
       }
     }
   }
@@ -155,24 +168,37 @@ body.light {
   .menu__link--button {
     &:focus {
       border-bottom: none;
-      color: #a8004f;
+      color: $link_hover;
       outline: none;
       padding-bottom: 0;
+    }
+    &.menu__link--active-trail {
+      color: $button;
     }
   }
   #main-menu {
     a.menu__link {
       color: black;
+      &.is-active {
+        color: $button;
+      }
       &:hover,
       &:focus {
-        color: #a8004f;
+        color: $link_hover;
       }
     }
     .menu__link--button {
       color: black;
       &:hover,
       &:focus {
-        color: #a8004f;
+        color: $link_hover;
+      }
+      &.menu__link--active-trail {
+        color: $button;
+        &:hover,
+        &:focus {
+          color: $link_hover;
+        }
       }
     }
   }
