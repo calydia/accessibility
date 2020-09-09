@@ -17,3 +17,16 @@ fonts:
     theme:
       ? //fonts.googleapis.com/css?family=Rock+Salt%7CQuicksand:400,500,700&display=swap
       : { type: external, minified: true }
+
+megamenu:
+  version: VERSION
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+  css:
+    theme:
+      libraries/Accessible-Mega-Menu/css/megamenu.css: {}
+  js:
+    libraries/Accessible-Mega-Menu/js/jquery-accessibleMegaMenu.js: {}

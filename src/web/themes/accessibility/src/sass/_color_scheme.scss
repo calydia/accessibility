@@ -41,10 +41,10 @@ body.dark {
   }
   .menu__link--button {
     &:focus {
-      border-bottom: 5px solid $dark_grey;
+      border-bottom: none;
       color: #a8004f;
       outline: none;
-      padding-bottom: 2px;
+      padding-bottom: 1em;
     }
     &.menu__link--active-trail {
       color: #a8004f;
@@ -167,10 +167,7 @@ body.light {
   }
   .menu__link--button {
     &:focus {
-      border-bottom: none;
       color: $link_hover;
-      outline: none;
-      padding-bottom: 0;
     }
     &.menu__link--active-trail {
       color: $button;
