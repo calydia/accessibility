@@ -8,8 +8,7 @@ base theme: classy
 libraries:
   - accessibility/base
   - accessibility/fonts
-  - accessibility/mmenu
-  - accessibility/mburger
+  - accessibility/megamenu
 # Regions
 regions:
   header: Header

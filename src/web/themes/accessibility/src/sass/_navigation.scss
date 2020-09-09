@@ -30,7 +30,15 @@
       @media only screen and (min-width: $large) {
         align-items: center;
         display: flex;
-        padding: 0.5em 1em;
+      }
+      &.nav-item {
+        > a {
+          border: 2px solid transparent;
+          padding: 0.5em 1em;
+        }
+        > button {
+          padding: 0.5em 2em 0.5em 1em;
+        }
       }
     }
     li {
@@ -41,7 +49,7 @@
         @media only screen and (min-width: $large) {
           background-color: $complementary;
           border: 2px solid $grey;
-          left: -2px;
+          left: 0;
           padding: 0.5em 1em;
           position: absolute;
           top: 46px;
@@ -51,11 +59,6 @@
             margin: 5px 0;
             padding: 0;
           }
-        }
-      }
-      &.menu-open {
-        @media only screen and (min-width: $large) {
-          border: 2px solid $grey;
         }
       }
     }
@@ -84,17 +87,19 @@
 button.menu__link {
   background-color: transparent;
   background-image: url("../images/chevron-down.svg");
-  background-position: right center;
+  background-position: 95% center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
   border: 2px solid transparent;
-  border: none;
   padding: 0 30px 0 0;
-  &.menu-open {
+  &.open {
     background-image: url("../images/chevron-up.svg");
-    background-position: right center;
+    background-position: 95% center;
     background-repeat: no-repeat;
     background-size: 20px 20px;
+    @media only screen and (min-width: $large) {
+      border: 2px solid $grey;
+    }
   }
 }
 .menu--level-2 {
@@ -145,11 +150,6 @@ html:not(.js) .menu-item--has-children:hover .menu--level-2,
             border: 2px solid $dark_grey;
           }
         }
-        &.menu-open {
-          @media only screen and (min-width: $large) {
-            border: 2px solid $dark_grey;
-          }
-        }
       }
     }
     @media only screen and (min-width: 750px) and (max-width: $largemax) {
@@ -169,17 +169,19 @@ html:not(.js) .menu-item--has-children:hover .menu--level-2,
   button.menu__link {
     background-color: transparent;
     background-image: url("../images/chevron-down-dark.svg");
-    background-position: right center;
+    background-position: 95% center;
     background-repeat: no-repeat;
     background-size: 20px 20px;
     border: 2px solid transparent;
-    border: none;
     padding: 0 30px 0 0;
-    &.menu-open {
+    &.open {
       background-image: url("../images/chevron-up-dark.svg");
-      background-position: right center;
+      background-position: 95% center;
       background-repeat: no-repeat;
       background-size: 20px 20px;
+      @media only screen and (min-width: $large) {
+        border: 2px solid $dark_grey;
+      }
     }
   }
 }
