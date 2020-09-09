@@ -11,3 +11,4 @@ display:
       fields:
         changed:
           separator: ', '
+      use_more_text: Lisää
