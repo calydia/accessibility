@@ -25,7 +25,7 @@ dependencies:
       - easy_breadcrumb
 _core:
   default_config_hash: ey8bRwK17YbAVEX7GEm09YR5UneOQ_Nqzh6a3V-rIP0
-include_invalid_paths: false
+include_invalid_paths: true
 add_structured_data_json_ld: 0
 excluded_paths: ''
 replaced_titles: ''
