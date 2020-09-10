@@ -6,9 +6,9 @@ core_version_requirement: ^8 || ^9
 base theme: classy
 # Defines libraries group in which we can add css/js.
 libraries:
+  - accessibility/megamenu
   - accessibility/base
   - accessibility/fonts
-  - accessibility/megamenu
 # Regions
 regions:
   header: Header

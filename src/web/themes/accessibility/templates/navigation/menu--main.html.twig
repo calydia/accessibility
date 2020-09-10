@@ -47,6 +47,7 @@
             'menu__item--level-' ~ (menu_level + 1),
             item.in_active_trail ? 'menu__item--active-trail',
             item.below ? 'menu__item--has-children',
+            ((menu_level + 1) == 1) ? 'accessible-megamenu-top-nav-item'
           ]
         %}
         {% set link_classes = [

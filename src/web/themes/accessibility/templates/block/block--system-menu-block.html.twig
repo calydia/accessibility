@@ -34,8 +34,14 @@
 %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-    <button class="mobile-menu-toggle">Menu</button>
-    <nav id="main-menu">
+
+    <nav id="main-menu" class="megamenu">
+    <button class="mobile-menu-toggle accessible-megamenu-toggle">
+      <span class="sr-only">Menu</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
       {{ content }}
     </nav>
   {% endblock %}

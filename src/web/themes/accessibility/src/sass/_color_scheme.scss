@@ -1,5 +1,7 @@
 @import "variables";
-// Dark preference
+/**
+ * Dark preference
+ */
 body.dark {
   background-color: $dark_background;
   color: $dark_text;
@@ -17,6 +19,29 @@ body.dark {
   .site-name,
   .site-slogan {
     color: $dark_text;
+  }
+
+  // Reset some of the AMM styles, menu styles
+  .accessible-megamenu .accessible-megamenu-panel {
+    background-color: $dark_complementary !important;
+  }
+  .accessible-megamenu > .accessible-megamenu-top-nav-item {
+    background-color: $dark_complementary !important;
+  }
+  .accessible-megamenu-toggle > span:not(.sr-only) {
+    background: white !important;
+  }
+  #main-menu {
+    ul.menu {
+      li {
+        > ul {
+          @media only screen and (min-width: 1050px) {
+            background-color: $dark_complementary;
+            border: 2px solid $dark_grey;
+          }
+        }
+      }
+    }
   }
 
   .color-wrapper {
@@ -130,7 +155,9 @@ body.dark.path-sitemap {
   }
 }
 
-// Light preference
+/**
+ * Light preference
+ */
 body.light {
   background-color: $background;
   color: $text;
@@ -143,6 +170,26 @@ body.light {
 
   .header-wrapper {
     background-color: $complementary;
+  }
+
+  // Reset some of the AMM styles, menu styles
+  .accessible-megamenu .accessible-megamenu-panel {
+    background-color: $complementary !important;
+  }
+  .accessible-megamenu > .accessible-megamenu-top-nav-item {
+    background-color: $complementary !important;
+  }
+  #main-menu {
+    ul.menu {
+      li {
+        > ul {
+          @media only screen and (min-width: 1050px) {
+            background-color: $complementary;
+            border: 2px solid $grey;
+          }
+        }
+      }
+    }
   }
 
   .color-wrapper {

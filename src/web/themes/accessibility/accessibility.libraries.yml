@@ -30,3 +30,4 @@ megamenu:
       libraries/Accessible-Mega-Menu/css/megamenu.css: {}
   js:
     libraries/Accessible-Mega-Menu/js/jquery-accessibleMegaMenu.js: {}
+    libraries/Accessible-Mega-Menu/js/main.js: {}

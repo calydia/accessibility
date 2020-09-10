@@ -9,49 +9,106 @@
   z-index: 2;
 }
 
+// Reset some of the menu
+.accessible-megamenu {
+  background-color: transparent !important;
+  border: none !important;
+  text-shadow: none !important;
+  @media only screen and (max-width: 1049px) {
+    margin-bottom: 1em;
+  }
+}
+.accessible-megamenu > .accessible-megamenu-top-nav-item {
+  border-right: none !important;
+  text-shadow: none !important;
+}
+.accessible-megamenu .accessible-megamenu-panel {
+  background-image: none !important;
+  box-shadow: none !important;
+  @media only screen and (max-width: 1049px) {
+    margin-bottom: 0 !important;
+    margin-left: 1em !important;
+    padding-bottom: 0 !important;
+  }
+}
+.accessible-megamenu-toggle {
+  height: 36px !important;
+  padding: 0.1em !important;
+  right: 0 !important;
+  top: -35px !important;
+  width: 40px !important;
+  @media only screen and (min-width: $medium) and (max-width: 1049px) {
+    top: -55px !important;
+  }
+}
+.sr-only {
+  width: 1px;
+  height: 1px;
+  margin: 0 -1px -1px 0;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  position: absolute;
+}
+.accessible-megamenu-toggle > span:not(.sr-only) {
+  margin-left: auto;
+  margin-right: auto;
+}
+.primary-menu {
+  @media only screen and (max-width: 1049px) {
+    min-height: 50px;
+    width: 100%;
+  }
+  @media only screen and (min-width: $medium) and (max-width: 1049px) {
+    margin-top: -35px;
+  }
+}
+
 #main-menu {
-  @media only screen and (max-width: $largemax) {
-    display: none;
-    visibility: hidden;
-    &.show {
-      display: block;
-      visibility: visible;
-    }
+  position: relative;
+  @media only screen and (max-width: 1049px) {
+    margin-top: 30px;
   }
   ul.menu {
-    @media only screen and (min-width: $large) {
+    margin-left: 0;
+    @media only screen and (min-width: 1050px) {
       display: flex;
       flex-flow: row wrap;
       margin: 0;
     }
     li {
+      display: block;
+      margin: 0.1em 0;
       padding: 0;
       position: relative;
-      @media only screen and (min-width: $large) {
+      @media only screen and (min-width: 1050px) {
         align-items: center;
         display: flex;
+        margin: 0;
       }
-      &.nav-item {
+      &.accessible-megamenu-top-nav-item {
         > a {
           border: 2px solid transparent;
-          padding: 0.5em 1em;
+          display: block;
+          padding: 0.25em 1em;
+          @media only screen and (min-width: 1049px) {
+            padding: 0.5em 1em;
+          }
         }
         > button {
-          padding: 0.5em 2em 0.5em 1em;
+          padding: 0.25em 2em 0.25em 1em;
+          @media only screen and (min-width: 1049px) {
+            padding: 0.5em 2em 0.5em 1em;
+          }
         }
       }
     }
     li {
-      @media only screen and (min-width: $large) {
-        border: 2px solid transparent;
-      }
       > ul {
-        @media only screen and (min-width: $large) {
-          background-color: $complementary;
-          border: 2px solid $grey;
+        @media only screen and (min-width: 1049px) {
           left: 0;
           min-width: 12em;
-          padding: 0.5em 1em;
+          padding: 1em 1em 0.5em 1em;
           position: absolute;
           top: 46px;
           width: 100%;
@@ -59,29 +116,18 @@
           li {
             margin: 5px 0;
             padding: 0;
+            width: 100%;
           }
         }
       }
     }
     li:last-of-type {
       > ul {
-        @media only screen and (min-width: $large) {
+        @media only screen and (min-width: 1050px) {
           left: auto;
           right: -2px;
         }
       }
-    }
-  }
-  @media only screen and (min-width: 750px) and (max-width: $largemax) {
-    ul.menu--level-1 {
-      background-color: $complementary;
-      border: 2px solid $grey;
-      padding: 0.5em 1em;
-      position: absolute;
-      right: 38px;
-      top: 46px;
-      width: 300px;
-      z-index: 10;
     }
   }
 }
@@ -98,75 +144,25 @@ button.menu__link {
     background-position: 95% center;
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    @media only screen and (min-width: $large) {
+    @media only screen and (min-width: 1049px) {
       border: 2px solid $grey;
     }
+  }
+  &:focus {
+    outline: none;
   }
 }
 .menu--level-2 {
   display: none;
   visibility: hidden;
 }
-[aria-expanded="true"] + .menu--level-2 {
+
+.menu--level-2.open {
   display: block;
   visibility: visible;
-}
-
-html:not(.js) .menu-item--has-children:focus-within .menu--level-2,
-html:not(.js) .menu-item--has-children:hover .menu--level-2,
-[aria-expanded="true"] + .menu--level-2 {
-  display: block;
-  visibility: visible;
-}
-
-.mobile-menu-toggle {
-  background-color: transparent;
-  background-image: url("../images/menu-icon.svg");
-  background-position: 10px center;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  border: 2px solid $grey;
-  font-weight: bold;
-  margin-bottom: 1em;
-  padding-left: 40px;
-  &.menu-open {
-    margin-bottom: 0;
-  }
-  @media only screen and (min-width: 750px) and (max-width: $largemax) {
-    margin-bottom: 0;
-  }
-  @media only screen and (min-width: $large) {
-    display: none;
-    visibility: hidden;
-  }
 }
 
 .dark {
-  #main-menu {
-    ul.menu {
-      li {
-        > ul {
-          @media only screen and (min-width: $large) {
-            background-color: $dark_complementary;
-            border: 2px solid $dark_grey;
-          }
-        }
-      }
-    }
-    @media only screen and (min-width: 750px) and (max-width: $largemax) {
-      ul.menu--level-1 {
-        background-color: $dark_complementary;
-        border: 2px solid $dark_grey;
-      }
-    }
-  }
-  .mobile-menu-toggle {
-    background-image: url("../images/menu-icon-white.svg");
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    border: 2px solid $dark_grey;
-  }
   button.menu__link {
     background-color: transparent;
     background-image: url("../images/chevron-down-dark.svg");
@@ -180,7 +176,7 @@ html:not(.js) .menu-item--has-children:hover .menu--level-2,
       background-position: 95% center;
       background-repeat: no-repeat;
       background-size: 20px 20px;
-      @media only screen and (min-width: $large) {
+      @media only screen and (min-width: 1039px) {
         border: 2px solid $dark_grey;
       }
     }

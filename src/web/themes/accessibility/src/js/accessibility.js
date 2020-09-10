@@ -14,8 +14,7 @@
       var skip = $(".skip-link"),
         $target = $("#main-content"),
         darkMode = $("#setting-dark"),
-        lightMode = $("#setting-light"),
-        menuToggle = $(".mobile-menu-toggle");
+        lightMode = $("#setting-light");
 
       skip.click(function (event) {
         event.preventDefault();
@@ -35,39 +34,19 @@
         );
       });
 
-      menuToggle.click(function (event) {
-        event.preventDefault();
-        $(this).toggleClass("menu-open");
-        $(this).siblings().toggleClass("show");
-      });
-
-      $("nav#main-menu").accessibleMegaMenu({
-        /* prefix for generated unique id attributes, which are required
-           to indicate aria-owns, aria-controls and aria-labelledby */
+      // Megamenu
+      $(".megamenu").accessibleMegaMenu({
         uuidPrefix: "accessible-megamenu",
-
-        /* css class used to define the megamenu styling */
-        menuClass: "nav-menu",
-
-        /* css class for a top-level navigation item in the megamenu */
-        topNavItemClass: "nav-item",
-
-        /* css class for a megamenu panel */
-        panelClass: "sub-nav",
-
-        /* css class for a group of items within a megamenu panel */
-        panelGroupClass: "sub-nav-group",
-
-        /* css class for the hover state */
+        menuClass: "accessible-megamenu",
+        topNavItemClass: "accessible-megamenu-top-nav-item",
+        panelClass: "accessible-megamenu-panel",
+        panelGroupClass: "accessible-megamenu-panel-group",
         hoverClass: "hover",
-
-        /* css class for the focus state */
         focusClass: "focus",
-
-        /* css class for the open state */
         openClass: "open",
       });
 
+      // All things document ready
       $(document).ready(function () {
         if (!sessionStorage.viewed) {
           var defaultMode = "dark",
