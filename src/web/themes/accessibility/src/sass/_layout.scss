@@ -33,6 +33,11 @@
   }
 }
 
+.region-featured-top {
+  overflow: hidden;
+  width: 100%;
+}
+
 .color-wrapper {
   padding: 1em 0;
   label {
@@ -87,11 +92,11 @@ footer {
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 2em 0 1em 0;
+    padding: 2em 0 1em 0;
     width: 80%;
     @media only screen and (min-width: $large) {
       max-width: 74em;
-      padding: 0 2em;
+      padding: 2em 2em 1em 2em;
       width: calc(100% - 4em);
     }
   }
@@ -110,8 +115,9 @@ footer {
   }
 }
 
-.source-material {
+.field--name-field-source-material {
   margin-top: 3em;
+  padding: 2em;
   @media only screen and (min-width: $medium) {
     margin-top: 5em;
   }

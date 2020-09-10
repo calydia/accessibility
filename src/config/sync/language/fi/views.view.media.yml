@@ -1,3 +1,4 @@
+label: Media
 display:
   default:
     display_title: Isäntä
@@ -43,3 +44,9 @@ display:
         langcode:
           expose:
             label: Kieli
+      title: Media
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

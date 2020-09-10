@@ -1,0 +1,24 @@
+uuid: 4dc9de91-4e33-4fb6-b54d-30f2603c8929
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sm_random_image
+  module:
+    - views
+  theme:
+    - accessibility
+id: views_block__sm_random_image_block_random_image
+theme: accessibility
+region: featured_top
+weight: 0
+provider: null
+plugin: 'views_block:sm_random_image-block_random_image'
+settings:
+  id: 'views_block:sm_random_image-block_random_image'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

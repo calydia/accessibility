@@ -108,19 +108,17 @@ body.dark {
     background-repeat: no-repeat;
     background-size: 20px 20px;
   }
-  .wp-block-quote {
+  blockquote {
     border-left: 4px solid $dark_link;
   }
-  .wp-block-quote__citation,
-  .wp-block-quote cite,
-  .wp-block-quote footer {
+  cite {
     color: $dark_grey;
   }
   code {
     color: $dark_text;
   }
   footer {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
     border-top: 10px solid $dark_complementary;
   }
 
@@ -147,6 +145,17 @@ body.dark {
       background-color: $dark_link_hover;
       text-decoration: underline;
     }
+  }
+
+  .field--name-field-source-material {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid $dark_grey;
+  }
+
+  .code-container {
+    border: 1px solid $dark_grey;
+    border-radius: 5px;
+    padding: 1em;
   }
 }
 body.dark.path-sitemap {
@@ -257,12 +266,10 @@ body.light {
   .site-slogan {
     color: $text;
   }
-  .wp-block-quote {
+  blockquote {
     border-left: 4px solid $link;
   }
-  .wp-block-quote__citation,
-  .wp-block-quote cite,
-  .wp-block-quote footer {
+  cite {
     color: $grey;
   }
   code {
@@ -285,5 +292,16 @@ body.light {
     &:focus {
       outline: 5px solid black;
     }
+  }
+
+  .field--name-field-source-material {
+    background-color: #ebf7ff;
+    border: 1px solid $complementary;
+  }
+
+  .code-container {
+    border: 1px solid $grey;
+    border-radius: 5px;
+    padding: 1em;
   }
 }
