@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_form_mode.media.media_library
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_tag
     - image.style.thumbnail
     - media.type.image
   module:
@@ -41,6 +42,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_tag: true
   path: true
   status: true
   uid: true

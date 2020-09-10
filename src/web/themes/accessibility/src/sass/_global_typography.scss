@@ -71,18 +71,17 @@ header {
   }
 }
 
-.wp-block-quote {
+blockquote {
   @include fontSize(20px);
   font-style: italic;
+  margin: 0;
   padding: 0.2em 0 0.2em 1em;
   p {
     margin: 0;
     padding: 0;
   }
 }
-.wp-block-quote__citation,
-.wp-block-quote cite,
-.wp-block-quote footer {
+cite {
   @include fontSize(16px);
   font-style: normal;
 }

@@ -23,6 +23,7 @@ display:
         langcode:
           expose:
             label: Kieli
+      title: Media
   page:
     display_options:
       fields:

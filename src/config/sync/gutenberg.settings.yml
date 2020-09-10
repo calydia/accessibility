@@ -1,6 +1,7 @@
 page_enable_full: 1
 page_template: ''
 page_template_lock: none
+demo_page_enable_full: 0
 page_allowed_blocks:
   core/paragraph: core/paragraph
   core/image: core/image
@@ -34,13 +35,13 @@ page_allowed_blocks:
   core-embed/youtube: core-embed/youtube
   core-embed/facebook: core-embed/facebook
   core-embed/instagram: core-embed/instagram
+  core-embed/soundcloud: core-embed/soundcloud
   core-embed/spotify: core-embed/spotify
+  core-embed/flickr: core-embed/flickr
+  core-embed/vimeo: core-embed/vimeo
   embed: embed
   core-embed/all: 0
   core-embed/wordpress: 0
-  core-embed/soundcloud: 0
-  core-embed/flickr: 0
-  core-embed/vimeo: 0
   core-embed/amazon-kindle: 0
   core-embed/animoto: 0
   core-embed/cloudup: 0
@@ -72,10 +73,11 @@ page_allowed_drupal_blocks:
   'entity_view:webform': 0
   'entity_view:webform_submission': 0
   page_title_block: 0
-  search_form_block: 0
+  search_form_block: search_form_block
   user_login_block: 0
   help_block: 0
-  'views_block:_sm_list_of_all_demo_pages-block_all_demo_pages': 'views_block:_sm_list_of_all_demo_pages-block_all_demo_pages'
+  'views_block:sm_random_image-block_random_image': 0
+  'views_block:_sm_list_of_all_demo_pages-block_all_demo_pages': 0
   'views_block:_sm_list_of_all_demo_pages-block_demo_pages': 0
   'views_block:comments_recent-block_1': 0
   'views_block:content_recent-block_1': 0
@@ -84,7 +86,7 @@ page_allowed_drupal_blocks:
   'system_menu_block:main': 0
   'system_menu_block:account': 0
   sitemap_syndicate: 0
-  system_breadcrumb_block: 0
+  system_breadcrumb_block: system_breadcrumb_block
   'language_block:language_interface': 0
   system_messages_block: 0
   system_powered_by_block: 0
@@ -92,4 +94,3 @@ page_allowed_drupal_blocks:
   node_syndicate_block: 0
   webform_block: 0
   webform_submission_limit_block: 0
-demo_page_enable_full: 0
