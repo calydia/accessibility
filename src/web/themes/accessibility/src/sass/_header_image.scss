@@ -1,0 +1,47 @@
+.block-views-blocksm-random-image-block-random-image {
+  .views-field-field-media-image {
+    position: relative;
+  }
+  .field-content {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    display: block;
+  }
+}
+
+.light {
+  .views-field-field-media-image {
+    &::before {
+      background-color: rgba(158, 220, 255, 0.5);
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 210px;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}
+
+.dark {
+  .block-views-blocksm-random-image-block-random-image {
+    .views-field-field-media-image {
+      &::before {
+        background-color: rgba(2, 0, 19, 0.7);
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 210px;
+        right: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
