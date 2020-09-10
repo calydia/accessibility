@@ -26,6 +26,9 @@ h3 {
     &:hover {
       text-decoration: none;
     }
+    &:focus {
+      outline: none;
+    }
   }
   a[href^="https://"]:after
   {
@@ -38,16 +41,18 @@ h3 {
     a.menu__link {
       font-weight: bold;
       text-decoration: none;
-      &:hover,
       &:focus {
-        border-bottom: none;
+        border-bottom: 2px solid transparent;
       }
+    }
+    a.menu__link--level-2,
+    a.menu__link--level-3 {
+      font-weight: normal;
     }
     .menu__link--button {
       font-weight: bold;
-      &:hover,
       &:focus {
-        border-bottom: none;
+        border-bottom: 2px solid transparent;
       }
     }
   }
