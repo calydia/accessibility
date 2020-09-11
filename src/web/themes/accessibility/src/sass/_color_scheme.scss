@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 /**
  * Dark preference
  */
@@ -54,8 +55,10 @@ body.dark {
   }
 
   .layout-container a {
+    @include transition(color 0.5s ease);
     color: $dark_link;
     &:hover {
+      @include transition(color 0.5s ease);
       color: $dark_link_hover;
     }
     &:focus {
@@ -77,25 +80,32 @@ body.dark {
   }
   #main-menu {
     a.menu__link {
+      @include transition(color 0.5s ease);
       color: white;
       &.is-active {
+        @include transition(color 0.5s ease);
         color: $dark_link;
       }
       &:hover,
       &:focus {
+        @include transition(color 0.5s ease);
         color: $dark_link_hover;
       }
     }
     .menu__link--button {
+      @include transition(color 0.5s ease);
       color: white;
       &:hover,
       &:focus {
+        @include transition(color 0.5s ease);
         color: $dark_link_hover;
       }
       &.menu__link--active-trail {
+        @include transition(color 0.5s ease);
         color: $dark_link;
         &:hover,
         &:focus {
+          @include transition(color 0.5s ease);
           color: $dark_link_hover;
         }
       }
@@ -137,11 +147,13 @@ body.dark {
 
   .webform-button--submit,
   .js-form-submit {
+    @include transition(background-color 0.5s ease);
     background-color: $dark_button;
     border: none;
     color: black;
     &:focus,
     &:hover {
+      @include transition(background-color 0.5s ease);
       background-color: $dark_link_hover;
       text-decoration: underline;
     }
@@ -211,8 +223,10 @@ body.light {
   }
 
   .layout-container a {
+    @include transition(color 0.5s ease);
     color: $link;
     &:hover {
+      @include transition(color 0.5s ease);
       color: $link_hover;
     }
     &:focus {
@@ -223,33 +237,42 @@ body.light {
   }
   .menu__link--button {
     &:focus {
+      @include transition(color 0.5s ease);
       color: $link_hover;
     }
     &.menu__link--active-trail {
+      @include transition(color 0.5s ease);
       color: $button;
     }
   }
   #main-menu {
     a.menu__link {
+      @include transition(color 0.5s ease);
       color: black;
       &.is-active {
+        @include transition(color 0.5s ease);
         color: $button;
       }
       &:hover,
       &:focus {
+        @include transition(color 0.5s ease);
         color: $link_hover;
       }
     }
     .menu__link--button {
+      @include transition(color 0.5s ease);
       color: black;
       &:hover,
       &:focus {
+        @include transition(color 0.5s ease);
         color: $link_hover;
       }
       &.menu__link--active-trail {
+        @include transition(color 0.5s ease);
         color: $button;
         &:hover,
         &:focus {
+          @include transition(color 0.5s ease);
           color: $link_hover;
         }
       }
@@ -281,11 +304,13 @@ body.light {
   }
   .webform-button--submit,
   .js-form-submit {
+    @include transition(background-color 0.5s ease);
     background-color: $button;
     border: none;
     color: white;
     &:focus,
     &:hover {
+      @include transition(background-color 0.5s ease);
       background-color: $link_hover;
       text-decoration: underline;
     }

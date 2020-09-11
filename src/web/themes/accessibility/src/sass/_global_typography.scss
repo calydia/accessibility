@@ -3,6 +3,7 @@
 body {
   @include fontSize(18px);
   font-family: "Quicksand", sans-serif;
+  font-weight: 500;
   line-height: 1.6em;
 }
 
@@ -41,18 +42,29 @@ h3 {
     a.menu__link {
       font-weight: bold;
       text-decoration: none;
-      &:focus {
-        border-bottom: 2px solid transparent;
-      }
     }
-    a.menu__link--level-2,
-    a.menu__link--level-3 {
-      font-weight: normal;
+    .menu--level-1 {
+      a.menu__link {
+        font-weight: bold;
+        text-decoration: none;
+        &:focus {
+          border-bottom: 2px solid transparent;
+        }
+      }
     }
     .menu__link--button {
       font-weight: bold;
       &:focus {
         border-bottom: 2px solid transparent;
+      }
+    }
+    .menu--level-2 {
+      a.menu__link {
+        font-weight: 500;
+        &:focus {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
       }
     }
   }
@@ -66,7 +78,6 @@ header {
 
 .region-content {
   li {
-    //line-height: 2.2;
     margin: 0.5em 0;
   }
 }
