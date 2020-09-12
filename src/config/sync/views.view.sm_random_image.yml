@@ -1,6 +1,6 @@
 uuid: 8cfad239-9cf3-4f51-82d8-3969b194801a
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - field.storage.media.field_media_image
