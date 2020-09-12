@@ -15,6 +15,9 @@ display:
         status:
           label: Tila
       filters:
+        filename:
+          expose:
+            label: 'Tiedoston nimi'
         status:
           expose:
             label: Tila
