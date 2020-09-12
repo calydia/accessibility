@@ -9,7 +9,7 @@ base:
     theme:
       css/styles.css: {}
   js:
-    js/accessibility.js: { minified: true }
+    js/accessibility.js: { minified: true, attributes: { defer: true } }
 
 fonts:
   version: VERSION
@@ -29,5 +29,6 @@ megamenu:
     theme:
       libraries/Accessible-Mega-Menu/css/megamenu.css: {}
   js:
-    libraries/Accessible-Mega-Menu/js/jquery-accessibleMegaMenu.js: {}
-    libraries/Accessible-Mega-Menu/js/main.js: {}
+    libraries/Accessible-Mega-Menu/js/jquery-accessibleMegaMenu.js:
+      { attributes: { defer: true } }
+    libraries/Accessible-Mega-Menu/js/main.js: { attributes: { defer: true } }
