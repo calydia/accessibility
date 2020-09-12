@@ -31,6 +31,10 @@ display:
           action_title: Toiminto
         name:
           separator: ', '
+        edit_media:
+          text: Muokkaa
+        delete_media:
+          text: Poista
   widget:
     display_options:
       arguments:

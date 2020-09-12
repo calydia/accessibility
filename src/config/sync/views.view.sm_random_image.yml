@@ -1,17 +1,17 @@
 uuid: 8cfad239-9cf3-4f51-82d8-3969b194801a
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.media.field_media_image
-    - image.style.header_image
     - media.type.image
+    - responsive_image.styles.header_image
     - taxonomy.vocabulary.tags
   content:
     - 'taxonomy_term:tags:6124cfba-5bdd-48b9-b366-431b757e41bb'
   module:
-    - image
     - media
+    - responsive_image
     - taxonomy
     - user
 id: sm_random_image
@@ -112,9 +112,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: header_image
+            responsive_image_style: header_image
             image_link: ''
           group_column: ''
           group_columns: {  }

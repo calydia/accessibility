@@ -1,0 +1,20 @@
+uuid: 1c67c74c-a004-43b4-baf7-e3d43ad6ce3d
+langcode: en
+status: true
+dependencies: {  }
+name: header_image_small
+label: 'Header image (560x200)'
+effects:
+  a727769a-4613-4a07-9737-3280d2ee6ae0:
+    uuid: a727769a-4613-4a07-9737-3280d2ee6ae0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 560
+      height: 200
+      anchor: center-center
+  402efcc5-7fcc-4a10-b4cb-6346012f656c:
+    uuid: 402efcc5-7fcc-4a10-b4cb-6346012f656c
+    id: image_desaturate
+    weight: 2
+    data: {  }

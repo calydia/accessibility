@@ -1,0 +1,20 @@
+uuid: 1e095fe9-34a6-4889-ba68-514df282a542
+langcode: en
+status: true
+dependencies: {  }
+name: header_image_retina_small
+label: 'Header image (1120x400)'
+effects:
+  3190a437-db2b-4b71-b3be-25b89a845f93:
+    uuid: 3190a437-db2b-4b71-b3be-25b89a845f93
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1120
+      height: 400
+      anchor: center-center
+  075a84d8-b9d7-4d12-9a9e-0fee9a5fccca:
+    uuid: 075a84d8-b9d7-4d12-9a9e-0fee9a5fccca
+    id: image_desaturate
+    weight: 2
+    data: {  }
