@@ -1,0 +1,27 @@
+accessibility.small:
+  label: small
+  mediaQuery: ""
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+accessibility.medium:
+  label: medium
+  mediaQuery: "screen and (min-width: 560px)"
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+accessibility.wide:
+  label: wide
+  mediaQuery: "screen and (min-width: 760px)"
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+accessibility.xwide:
+  label: xwide
+  mediaQuery: "screen and (min-width: 1200px)"
+  weight: 2
+  multipliers:
+    - 1x
