@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^2.3",
+        "drupal/advagg": "^4.1",
         "drupal/backup_migrate": "^5.0",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
