@@ -3,5 +3,8 @@ settings:
   default_delete_button_label: Poista
   default_preview_next_button_label: Esikatselu
   default_preview_label: Esikatselu
+  dialog_options:
+    normal:
+      title: Normaali
 element:
   default_more_title: Lisää
