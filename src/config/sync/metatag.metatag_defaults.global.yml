@@ -9,3 +9,17 @@ label: Global
 tags:
   canonical_url: '[current-page:url]'
   title: '[current-page:title] | Accessibility - [site:name]'
+  og_url: '[current-page:url]'
+  og_image_width: '1200'
+  og_image_url: 'https://a11y.sanna.ninja/themes/accessibility/images/ines-alvarez-fdez-F-gfrzSIPZo-unsplash.jpg'
+  og_image_height: '630'
+  og_site_name: 'Accessibility - [site:name]'
+  og_image_alt: 'Snowy mountains'
+  og_title: '[current-page:title]'
+  twitter_cards_image_width: '1200'
+  twitter_cards_image: 'https://a11y.sanna.ninja/themes/accessibility/images/ines-alvarez-fdez-F-gfrzSIPZo-unsplash.jpg'
+  twitter_cards_image_height: '630'
+  twitter_cards_image_alt: 'Snowy mountains'
+  twitter_cards_title: '[current-page:title]'
+  twitter_cards_page_url: '[current-page:url]'
+  twitter_cards_type: summary_large_image
