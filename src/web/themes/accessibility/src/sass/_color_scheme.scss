@@ -29,6 +29,10 @@ body.dark {
   .accessible-megamenu > .accessible-megamenu-top-nav-item {
     background-color: $dark_complementary !important;
   }
+  .accessible-megamenu-toggle {
+    background: $dark_complementary;
+    border: 1px solid $dark_grey;
+  }
   .accessible-megamenu-toggle > span:not(.sr-only) {
     background: white !important;
   }
@@ -38,7 +42,7 @@ body.dark {
         > ul {
           @media only screen and (min-width: 1050px) {
             background-color: $dark_complementary;
-            border: 2px solid $dark_grey;
+            border: 1px solid $dark_grey;
           }
         }
       }
@@ -196,17 +200,30 @@ body.light {
   // Reset some of the AMM styles, menu styles
   .accessible-megamenu .accessible-megamenu-panel {
     background-color: $complementary !important;
+    @media only screen and (min-width: 1050px) {
+      background-color: $light !important;
+    }
+  }
+  .accessible-megamenu-toggle {
+    background: $complementary;
+    border: 1px solid $grey;
   }
   .accessible-megamenu > .accessible-megamenu-top-nav-item {
     background-color: $complementary !important;
   }
   #main-menu {
+    .menu--level-1 {
+      @media only screen and (max-width: 1049px) {
+        background-color: $complementary;
+        padding: 0.5em;
+      }
+    }
     ul.menu {
       li {
         > ul {
           @media only screen and (min-width: 1050px) {
-            background-color: $complementary;
-            border: 2px solid $grey;
+            background-color: $light;
+            border: 1px solid $grey;
           }
         }
       }
@@ -299,7 +316,7 @@ body.light {
     color: $text;
   }
   footer {
-    background-color: #ebf7ff;
+    background-color: $light;
     border-top: 1px solid $complementary;
   }
   .webform-button--submit,
