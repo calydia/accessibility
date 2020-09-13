@@ -19,11 +19,11 @@
   .views-field-field-media-image {
     &::before {
       background-color: rgba(158, 220, 255, 0.5);
+      bottom: 0;
       content: "";
       display: block;
       position: absolute;
       left: 0;
-      height: 210px;
       right: 0;
       top: 0;
       width: 100%;
@@ -37,11 +37,11 @@
     .views-field-field-media-image {
       &::before {
         background-color: rgba(2, 0, 19, 0.7);
+        bottom: 0;
         content: "";
         display: block;
         position: absolute;
         left: 0;
-        height: 210px;
         right: 0;
         top: 0;
         width: 100%;

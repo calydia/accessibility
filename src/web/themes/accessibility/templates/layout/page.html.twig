@@ -45,18 +45,19 @@
 <div id="my-page">
 <div class="layout-container">
   <div class="header-wrapper">
+    <div class="featured-top">
+      {{ page.featured_top }}
+    </div>
     <header class="main-header">
-    {{ page.header }}
-    {% if page.primary_menu %}
-      <div class="primary-menu">
-        {{ page.primary_menu }}
-      </div>
-    {% endif %}
+      {{ page.header }}
+      {% if page.primary_menu %}
+        <div class="primary-menu">
+          {{ page.primary_menu }}
+        </div>
+      {% endif %}
     </header>
   </div>
-  <div class="featured-top">
-    {{ page.featured_top }}
-  </div>
+
 
   {{ page.breadcrumb }}
 

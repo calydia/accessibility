@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: header_image_narrow
-label: 'Header image (1300x200)'
+label: 'Header image (1300x350)'
 effects:
   15a19f6c-20f6-439d-a5d8-e49c1fd0c4e0:
     uuid: 15a19f6c-20f6-439d-a5d8-e49c1fd0c4e0
@@ -11,7 +11,7 @@ effects:
     weight: 1
     data:
       width: 1300
-      height: 200
+      height: 350
       anchor: center-center
   f2375bca-3ebb-495d-abe9-f4aaaf3c502b:
     uuid: f2375bca-3ebb-495d-abe9-f4aaaf3c502b

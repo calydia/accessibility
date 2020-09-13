@@ -3,15 +3,15 @@ langcode: en
 status: true
 dependencies: {  }
 name: header_image_xwide
-label: 'Header image (1200x200)'
+label: 'Header image (1250x350)'
 effects:
   e287a82b-752f-4b6c-ae54-9e5ec0bd83ee:
     uuid: e287a82b-752f-4b6c-ae54-9e5ec0bd83ee
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 1200
-      height: 200
+      width: 1250
+      height: 350
       anchor: center-center
   e06b7dd2-5f13-47c7-a00e-024ac7b496d2:
     uuid: e06b7dd2-5f13-47c7-a00e-024ac7b496d2

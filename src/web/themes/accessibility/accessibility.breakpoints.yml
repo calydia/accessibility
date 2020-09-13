@@ -21,7 +21,7 @@ accessibility.wide:
     - 2x
 accessibility.xwide:
   label: xwide
-  mediaQuery: "screen and (min-width: 1200px)"
+  mediaQuery: "screen and (min-width: 1250px)"
   weight: 2
   multipliers:
     - 1x

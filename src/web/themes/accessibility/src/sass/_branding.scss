@@ -1,12 +1,26 @@
 @import "mixins";
 @import "variables";
 
+.block-system-branding-block {
+  background-color: $light;
+  padding: 1.5em;
+  border: 1px solid $grey;
+  @media only screen and (max-width: $largemax) {
+    padding: 2em;
+  }
+}
+.dark {
+  .block-system-branding-block {
+    background-color: $dark_background;
+    border: 1px solid $dark_grey;
+  }
+}
+
 .site-name {
   @include fontSize(22px);
   font-family: "Rock Salt", cursive;
   margin: 10px 0 5px 0;
   text-decoration: none;
-
   @media only screen and (max-width: $largemax) {
     text-align: center;
   }

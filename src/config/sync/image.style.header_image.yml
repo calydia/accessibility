@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: header_image
-label: 'Header image (3500x200)'
+label: 'Header image (3500x350)'
 effects:
   6ffa9640-411d-4ff5-a127-4f4a20a40cb2:
     uuid: 6ffa9640-411d-4ff5-a127-4f4a20a40cb2
@@ -11,7 +11,7 @@ effects:
     weight: 1
     data:
       width: 3500
-      height: 200
+      height: 350
       anchor: center-center
   4c770e80-f07b-4a67-97e3-d655b87083c2:
     uuid: 4c770e80-f07b-4a67-97e3-d655b87083c2

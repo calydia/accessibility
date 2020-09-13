@@ -32,16 +32,20 @@
   }
 }
 .accessible-megamenu-toggle {
-  height: 36px !important;
-  padding: 0.1em !important;
+  height: 3em !important;
+  padding: 0.5em !important;
   right: 0 !important;
   top: -35px !important;
-  width: 40px !important;
+  width: 3em !important;
   @media only screen and (min-width: $medium) and (max-width: 1049px) {
     top: -55px !important;
   }
 }
+.accessible-megamenu-toggle > span {
+  left: 2px;
+}
 .sr-only {
+  background: transparent !important;
   width: 1px;
   height: 1px;
   margin: 0 -1px -1px 0;
@@ -49,10 +53,6 @@
   border: 0;
   padding: 0;
   position: absolute;
-}
-.accessible-megamenu-toggle > span:not(.sr-only) {
-  margin-left: auto;
-  margin-right: auto;
 }
 .primary-menu {
   @media only screen and (max-width: 1049px) {
@@ -67,7 +67,10 @@
 #main-menu {
   position: relative;
   @media only screen and (max-width: 1049px) {
-    margin-top: 30px;
+    margin-top: 2.5em;
+  }
+  @media only screen and (min-width: 1050px) and (max-width: 1269px) {
+    margin-top: 1.5em;
   }
   ul.menu {
     margin-left: 0;
@@ -78,27 +81,27 @@
     }
     li {
       display: block;
-      margin: 0.1em 0;
-      padding: 0;
+      margin: 0;
+      padding: 0.3em;
       position: relative;
       @media only screen and (min-width: 1050px) {
         align-items: center;
         display: flex;
-        margin: 0;
+        padding: 0;
       }
       &.accessible-megamenu-top-nav-item {
         > a {
-          border: 2px solid transparent;
+          border: 1px solid transparent;
           display: block;
           padding: 0.25em 1em;
           @media only screen and (min-width: 1049px) {
-            padding: 0.5em 1em;
+            padding: 0.7em 1em;
           }
         }
         > button {
           padding: 0.25em 2em 0.25em 1em;
           @media only screen and (min-width: 1049px) {
-            padding: 0.5em 2em 0.5em 1em;
+            padding: 0.7em 2em 0.7em 1em;
           }
         }
       }
@@ -106,11 +109,15 @@
     li {
       > ul {
         @media only screen and (min-width: 1049px) {
+          border-top-left-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+          border-bottom-right-radius: 0 !important;
           left: 0;
           min-width: 12em;
           padding: 1em 1em 0.5em 1em;
           position: absolute;
-          top: 46px;
+          top: 54px;
           width: 100%;
           z-index: 10;
           li {
@@ -125,7 +132,7 @@
       > ul {
         @media only screen and (min-width: 1050px) {
           left: auto;
-          right: -2px;
+          right: 0;
         }
       }
     }
@@ -137,7 +144,7 @@ button.menu__link {
   background-position: 95% center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   padding: 0 30px 0 0;
   &.open {
     background-image: url("../images/chevron-up.svg");
@@ -145,7 +152,7 @@ button.menu__link {
     background-repeat: no-repeat;
     background-size: 20px 20px;
     @media only screen and (min-width: 1049px) {
-      border: 2px solid $grey;
+      border: 1px solid $grey;
     }
   }
   &:focus {
@@ -169,7 +176,7 @@ button.menu__link {
     background-position: 95% center;
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     padding: 0 30px 0 0;
     &.open {
       background-image: url("../images/chevron-up-dark.svg");
@@ -177,7 +184,7 @@ button.menu__link {
       background-repeat: no-repeat;
       background-size: 20px 20px;
       @media only screen and (min-width: 1039px) {
-        border: 2px solid $dark_grey;
+        border: 1px solid $dark_grey;
       }
     }
   }
