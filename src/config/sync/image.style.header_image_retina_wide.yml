@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: header_image_retina_wide
-label: 'Header image (1520x400)'
+label: 'Header image (1520x700)'
 effects:
   32473a7f-d0e2-477d-8e62-62e262b24d15:
     uuid: 32473a7f-d0e2-477d-8e62-62e262b24d15
@@ -11,7 +11,7 @@ effects:
     weight: 1
     data:
       width: 1520
-      height: 400
+      height: 700
       anchor: center-center
   fe8b828f-db4f-49fa-ab3e-013b8282b533:
     uuid: fe8b828f-db4f-49fa-ab3e-013b8282b533

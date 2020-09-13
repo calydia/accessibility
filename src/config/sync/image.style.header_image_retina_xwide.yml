@@ -3,15 +3,15 @@ langcode: en
 status: true
 dependencies: {  }
 name: header_image_retina_xwide
-label: 'Header image (2400x400)'
+label: 'Header image (2500x700)'
 effects:
   24c6a3a0-6027-492b-be84-f27ead9a4eb2:
     uuid: 24c6a3a0-6027-492b-be84-f27ead9a4eb2
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 2400
-      height: 400
+      width: 2500
+      height: 700
       anchor: center-center
   de34a0d2-ade5-4dd8-bed1-63ecf9143bcb:
     uuid: de34a0d2-ade5-4dd8-bed1-63ecf9143bcb

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: header_image_retina_small
-label: 'Header image (1120x400)'
+label: 'Header image (1120x700)'
 effects:
   3190a437-db2b-4b71-b3be-25b89a845f93:
     uuid: 3190a437-db2b-4b71-b3be-25b89a845f93
@@ -11,7 +11,7 @@ effects:
     weight: 1
     data:
       width: 1120
-      height: 400
+      height: 700
       anchor: center-center
   075a84d8-b9d7-4d12-9a9e-0fee9a5fccca:
     uuid: 075a84d8-b9d7-4d12-9a9e-0fee9a5fccca
