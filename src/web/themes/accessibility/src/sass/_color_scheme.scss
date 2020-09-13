@@ -23,7 +23,8 @@ body.dark {
   }
 
   // Reset some of the AMM styles, menu styles
-  .accessible-megamenu .accessible-megamenu-panel {
+  .accessible-megamenu .accessible-megamenu-panel,
+  .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
     background-color: $dark_complementary !important;
   }
   .accessible-megamenu > .accessible-megamenu-top-nav-item {
@@ -198,7 +199,8 @@ body.light {
   }
 
   // Reset some of the AMM styles, menu styles
-  .accessible-megamenu .accessible-megamenu-panel {
+  .accessible-megamenu .accessible-megamenu-panel,
+  .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
     background-color: $complementary !important;
     @media only screen and (min-width: 1050px) {
       background-color: $light !important;
