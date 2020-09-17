@@ -1478,16 +1478,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.0.5",
+            "version": "9.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "145671b8ac88322c43c8415cf287b76dfe45ad38"
+                "reference": "783122d82abb104cebc73ea1f0659f7ccd46f9a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/145671b8ac88322c43c8415cf287b76dfe45ad38",
-                "reference": "145671b8ac88322c43c8415cf287b76dfe45ad38",
+                "url": "https://api.github.com/repos/drupal/core/zipball/783122d82abb104cebc73ea1f0659f7ccd46f9a8",
+                "reference": "783122d82abb104cebc73ea1f0659f7ccd46f9a8",
                 "shasum": ""
             },
             "require": {
@@ -1718,11 +1718,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-09-03T21:05:44+00:00"
+            "time": "2020-09-16T11:21:49+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.0.5",
+            "version": "9.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1769,7 +1769,7 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.0.5",
+            "version": "9.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1807,16 +1807,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.0.5",
+            "version": "9.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "b78dd90192e614eeb1d3cd484ca2dd85c7a4cf03"
+                "reference": "69c0b587af74cff8ce74fd908b15a279f7d99082"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/b78dd90192e614eeb1d3cd484ca2dd85c7a4cf03",
-                "reference": "b78dd90192e614eeb1d3cd484ca2dd85c7a4cf03",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/69c0b587af74cff8ce74fd908b15a279f7d99082",
+                "reference": "69c0b587af74cff8ce74fd908b15a279f7d99082",
                 "shasum": ""
             },
             "require": {
@@ -1825,7 +1825,7 @@
                 "doctrine/annotations": "1.10.3",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.1",
-                "drupal/core": "9.0.5",
+                "drupal/core": "9.0.6",
                 "egulias/email-validator": "2.1.17",
                 "guzzlehttp/guzzle": "6.5.4",
                 "guzzlehttp/promises": "v1.3.1",
@@ -1885,7 +1885,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2020-09-03T21:05:44+00:00"
+            "time": "2020-09-16T11:21:49+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2416,55 +2416,6 @@
             "homepage": "https://www.drupal.org/project/jquery_ui",
             "support": {
                 "source": "https://git.drupalcode.org/project/jquery_ui"
-            }
-        },
-        {
-            "name": "drupal/jquery_ui_datepicker",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/jquery_ui_datepicker.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jquery_ui_datepicker-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "954f12f93e82b6c93e6797fe2e6e66604ad1d2b2"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/jquery_ui": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1589684301",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "jrockowitz",
-                    "homepage": "https://www.drupal.org/user/371407"
-                },
-                {
-                    "name": "zrpnr",
-                    "homepage": "https://www.drupal.org/user/1448368"
-                }
-            ],
-            "description": "Provides jQuery UI Datepicker library.",
-            "homepage": "https://www.drupal.org/project/jquery_ui_datepicker",
-            "support": {
-                "source": "https://git.drupalcode.org/project/jquery_ui_datepicker"
             }
         },
         {
@@ -3015,22 +2966,21 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.0.0-alpha15",
+            "version": "6.0.0-alpha16",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.0.0-alpha15"
+                "reference": "6.0.0-alpha16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.0.0-alpha15.zip",
-                "reference": "6.0.0-alpha15",
-                "shasum": "44c594ee138f6c09b49b3326f02f18d7081970d5"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.0.0-alpha16.zip",
+                "reference": "6.0.0-alpha16",
+                "shasum": "6652fb4f50dc7168b1ace5fe24fbad2945f22754"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
                 "drupal/jquery_ui": "~1.0",
-                "drupal/jquery_ui_datepicker": "~1.0",
                 "drupal/jquery_ui_tabs": "~1.0",
                 "drupal/jquery_ui_tooltip": "~1.0"
             },
@@ -3045,7 +2995,8 @@
                 "drupal/entity_print": "~2.0",
                 "drupal/gnode": "*",
                 "drupal/group": "1.0",
-                "drupal/jquery_ui_checkboxradio": "*",
+                "drupal/jquery_ui_checkboxradio": "~1.0",
+                "drupal/jquery_ui_datepicker": "~1.0",
                 "drupal/lingotek": "~3.0",
                 "drupal/mailsystem": "~4.0",
                 "drupal/paragraphs": "~1.0",
@@ -3067,11 +3018,15 @@
                 "drupal/webform_share": "*",
                 "drupal/webform_ui": "*"
             },
+            "suggest": {
+                "drupal/jquery_ui_checkboxradio": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
+                "drupal/jquery_ui_datepicker": "Provides jQuery UI Datepicker library. Required to support datepickers. The Webform jQueryUI Datepicker module is deprecated because jQueryUI is no longer maintained."
+            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.0.0-alpha15",
-                    "datestamp": "1599240333",
+                    "version": "6.0.0-alpha16",
+                    "datestamp": "1599851828",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
