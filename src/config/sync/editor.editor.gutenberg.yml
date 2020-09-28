@@ -1,6 +1,6 @@
 uuid: 981f0b10-0d0b-4b69-93a9-a02dfed3875f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - filter.format.gutenberg
