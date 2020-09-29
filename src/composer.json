@@ -40,7 +40,8 @@
         "drupal/view_unpublished": "^1.0@RC",
         "drupal/webform": "^6",
         "drupal/xmlsitemap": "^1.0",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.3",
+        "wikimedia/composer-merge-plugin": "^1.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -102,6 +103,18 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "merge-plugin": {
+            "include": [
+                "web/modules/contrib/webform/composer.libraries.json"
+            ],
+            "recurse": true,
+            "replace": false,
+            "ignore-duplicates": true,
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": false
         }
     }
 }
