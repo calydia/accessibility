@@ -4,6 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
+          submit_button: Käytä
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
@@ -15,6 +16,10 @@ display:
             next: 'seuraava ›'
             first: '« ensimmäinen'
             last: 'viimeinen »'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       fields:
         comment_bulk_form:
           action_title: Toiminto

@@ -9,10 +9,30 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
           sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
+        nothing:
+          admin_label: Ikoni
+        type:
+          label: Tyyppi
         message:
           label: Viesti
         name:
+          label: Käyttäjä
           separator: ', '
         link:
           label: Toimenpiteet
+      filters:
+        type:
+          expose:
+            label: Tyyppi
+  page:
+    display_title: Sivu

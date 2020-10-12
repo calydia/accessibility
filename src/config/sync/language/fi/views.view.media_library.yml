@@ -8,6 +8,15 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
           sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         media_bulk_form:
           action_title: Toiminto
@@ -23,8 +32,8 @@ display:
         langcode:
           expose:
             label: Kieli
-      title: Media
   page:
+    display_title: Sivu
     display_options:
       fields:
         media_bulk_form:
