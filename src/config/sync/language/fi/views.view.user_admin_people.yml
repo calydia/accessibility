@@ -9,6 +9,12 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
           sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       fields:
         status:
           label: Tila
@@ -20,7 +26,11 @@ display:
         status:
           group_info:
             label: Tila
+        roles_target_id:
+          expose:
+            label: Rooli
   page_1:
+    display_title: Sivu
     display_options:
       menu:
         title: Lista
