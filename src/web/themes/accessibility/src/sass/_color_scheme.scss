@@ -62,6 +62,7 @@ body.dark {
   .layout-container a {
     @include transition(color 0.5s ease);
     color: $dark_link;
+    text-decoration-color: $dark_link;
     &:hover {
       @include transition(color 0.5s ease);
       color: $dark_link_hover;
@@ -81,6 +82,10 @@ body.dark {
     }
     &.menu__link--active-trail {
       color: #a8004f;
+      text-decoration: underline;
+      text-decoration-color: #a8004f;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
     }
   }
   #main-menu {
@@ -90,11 +95,13 @@ body.dark {
       &.is-active {
         @include transition(color 0.5s ease);
         color: $dark_link;
+        font-weight: bold;
       }
       &:hover,
       &:focus {
         @include transition(color 0.5s ease);
         color: $dark_link_hover;
+        font-weight: bold;
       }
     }
     .menu__link--button {
@@ -108,10 +115,18 @@ body.dark {
       &.menu__link--active-trail {
         @include transition(color 0.5s ease);
         color: $dark_link;
+        text-decoration: underline;
+        text-decoration-color: $dark_link;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
         &:hover,
         &:focus {
           @include transition(color 0.5s ease);
           color: $dark_link_hover;
+          text-decoration: underline;
+          text-decoration-color: $dark_link;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 6px;
         }
       }
     }
@@ -161,6 +176,10 @@ body.dark {
       @include transition(background-color 0.5s ease);
       background-color: $dark_link_hover;
       text-decoration: underline;
+      text-decoration-color: black;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
+
     }
   }
 
@@ -244,6 +263,7 @@ body.light {
   .layout-container a {
     @include transition(color 0.5s ease);
     color: $link;
+    text-decoration-color: $link;
     &:hover {
       @include transition(color 0.5s ease);
       color: $link_hover;
@@ -262,6 +282,10 @@ body.light {
     &.menu__link--active-trail {
       @include transition(color 0.5s ease);
       color: $button;
+      text-decoration: underline;
+      text-decoration-color: $button;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
     }
   }
   #main-menu {
@@ -271,11 +295,13 @@ body.light {
       &.is-active {
         @include transition(color 0.5s ease);
         color: $button;
+        font-weight: bold;
       }
       &:hover,
       &:focus {
         @include transition(color 0.5s ease);
         color: $link_hover;
+        font-weight: bold;
       }
     }
     .menu__link--button {
@@ -289,10 +315,18 @@ body.light {
       &.menu__link--active-trail {
         @include transition(color 0.5s ease);
         color: $button;
+        text-decoration: underline;
+        text-decoration-color: $button;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
         &:hover,
         &:focus {
           @include transition(color 0.5s ease);
           color: $link_hover;
+          text-decoration: underline;
+          text-decoration-color: $button;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 6px;
         }
       }
     }
@@ -332,6 +366,9 @@ body.light {
       @include transition(background-color 0.5s ease);
       background-color: $link_hover;
       text-decoration: underline;
+      text-decoration-color: white;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
     }
     &:focus {
       outline: 5px solid black;
