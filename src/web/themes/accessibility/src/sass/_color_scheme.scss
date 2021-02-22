@@ -68,7 +68,7 @@ body.dark {
       color: $dark_link_hover;
     }
     &:focus {
-      border-bottom: 5px solid $dark_grey;
+      border-bottom: 5px solid $dark_link;
       outline: none;
       padding-bottom: 2px;
     }
@@ -269,7 +269,7 @@ body.light {
       color: $link_hover;
     }
     &:focus {
-      border-bottom: 5px solid $grey;
+      border-bottom: 5px solid $link;
       outline: none;
       padding-bottom: 2px;
     }
