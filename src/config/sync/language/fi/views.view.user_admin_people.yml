@@ -16,8 +16,12 @@ display:
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
       fields:
+        user_bulk_form:
+          label: Massapäivitys
         status:
           label: Tila
+          settings:
+            format_custom_true: Voimassa
         operations:
           label: Toimenpiteet
         mail:
@@ -26,6 +30,9 @@ display:
         status:
           group_info:
             label: Tila
+            group_items:
+              1:
+                title: Voimassa
         roles_target_id:
           expose:
             label: Rooli
