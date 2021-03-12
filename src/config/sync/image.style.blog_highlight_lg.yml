@@ -1,0 +1,15 @@
+uuid: cf1221c9-b3f7-47f1-9479-d6cbb263a08a
+langcode: en
+status: true
+dependencies: {  }
+name: blog_highlight_lg
+label: 'Blog highlight (420x246)'
+effects:
+  4b2885ac-491b-4c50-a4b9-08bca21285e4:
+    uuid: 4b2885ac-491b-4c50-a4b9-08bca21285e4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 420
+      height: 246
+      anchor: center-center
