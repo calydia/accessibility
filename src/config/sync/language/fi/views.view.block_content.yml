@@ -20,6 +20,8 @@ display:
           separator: ', '
         type:
           separator: ', '
+        changed:
+          label: Päivitetty
         operations:
           label: Toimenpiteet
   page_1:

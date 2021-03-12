@@ -1,5 +1,6 @@
 settings:
   default_form_close_message: 'Sorry&hellip; This form is closed to new submissions.'
+  default_submit_button_label: Lähetä
   default_reset_button_label: Palauta
   default_delete_button_label: Poista
   default_preview_next_button_label: Esikatselu

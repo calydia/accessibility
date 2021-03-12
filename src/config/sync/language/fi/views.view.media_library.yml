@@ -14,9 +14,6 @@ display:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         media_bulk_form:
           action_title: Toiminto
@@ -29,6 +26,9 @@ display:
                 title: Julkaistu
               2:
                 title: Julkaisematon
+        name:
+          expose:
+            label: Nimi
         langcode:
           expose:
             label: Kieli
@@ -46,6 +46,10 @@ display:
           text: Poista
   widget:
     display_options:
+      filters:
+        name:
+          expose:
+            label: Nimi
       arguments:
         bundle:
           exception:
@@ -53,8 +57,16 @@ display:
   widget_table:
     display_options:
       fields:
+        name:
+          label: Nimi
         uid:
           label: Tekijä
+        changed:
+          label: Päivitetty
+      filters:
+        name:
+          expose:
+            label: Nimi
       arguments:
         bundle:
           exception:

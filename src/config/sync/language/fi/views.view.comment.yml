@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Käytä
+          submit_button: Suodatin
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
@@ -33,12 +33,16 @@ display:
         entity_id:
           separator: ', '
         changed:
+          label: Päivitetty
           separator: ', '
         operations:
           label: Toimenpiteet
         name_1:
           separator: ', '
       filters:
+        combine:
+          expose:
+            label: 'Kirjoittajan nimi'
         langcode:
           expose:
             label: Kieli
@@ -61,6 +65,7 @@ display:
         entity_id:
           separator: ', '
         changed:
+          label: Päivitetty
           separator: ', '
         operations:
           label: Toimenpiteet

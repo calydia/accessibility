@@ -17,6 +17,7 @@ display:
             offset_label: Offset
       fields:
         filename:
+          label: Nimi
           separator: ', '
         status:
           label: Tila
