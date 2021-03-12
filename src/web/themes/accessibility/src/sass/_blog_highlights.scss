@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2em;
+    margin-top: 2em;
     @media only screen and (min-width: $medium) {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -13,5 +14,8 @@
   img {
     height: auto;
     width: 100%;
+  }
+  .view-footer {
+    margin-top: 3em;
   }
 }
