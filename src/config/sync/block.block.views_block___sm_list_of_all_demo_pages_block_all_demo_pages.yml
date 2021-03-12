@@ -12,7 +12,7 @@ dependencies:
 id: views_block___sm_list_of_all_demo_pages_block_all_demo_pages
 theme: accessibility
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: 'views_block:_sm_list_of_all_demo_pages-block_all_demo_pages'
 settings:

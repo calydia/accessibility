@@ -403,7 +403,18 @@ display:
           granularity: second
       title: '(SM) Blog highlights'
       header: {  }
-      footer: {  }
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: 'In addition to writing about accessibility, I also write about gaming, tech-related things, cats, and just about life in general. If you got interested in my thoughts, <a href="https://blog.sanna.ninja">visit my blog</a>.'
+          plugin_id: text_custom
       empty: {  }
       relationships: {  }
       arguments: {  }
@@ -426,6 +437,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
