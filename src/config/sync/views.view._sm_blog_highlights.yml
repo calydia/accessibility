@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_blog_post_link
     - field.storage.node.field_highlight_image
+    - image.style.blog_highlight_lg
     - node.type.blog_highlight
   module:
     - image
@@ -232,7 +233,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: blog_highlight_lg
             image_link: ''
           group_column: ''
           group_columns: {  }
