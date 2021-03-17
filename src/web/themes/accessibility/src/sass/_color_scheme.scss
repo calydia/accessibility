@@ -24,7 +24,7 @@ body.dark {
 
   code {
     background-color: $dark_complementary;
-    border: 1px solid white;
+    border: 1px solid #18399A;
     display: inline-block;
     margin: 0 0.2em;
     padding: 0.2em 0.5em;
@@ -218,8 +218,8 @@ body.dark {
   }
 
   .field--name-field-source-material {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 1px solid $dark_grey;
+    background-color: $dark_complementary;
+    border: 5px solid #18399A;
   }
 
   .code-container {
@@ -257,8 +257,8 @@ body.light {
   }
 
   code {
-    background-color: #ebf7ff;
-    border: 1px solid $complementary;
+    background-color: #DFE7FC;
+    border: 1px solid #BBC9F7;
     display: inline-block;
     margin: 0 0.2em;
     padding: 0.2em 0.5em;
@@ -440,8 +440,8 @@ body.light {
   }
 
   .field--name-field-source-material {
-    background-color: #ebf7ff;
-    border: 1px solid $complementary;
+    background-color: #DFE7FC;
+    border: 5px solid #BBC9F7;
   }
 
   .code-container {
