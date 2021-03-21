@@ -119,6 +119,12 @@ body.dark {
         color: $dark_link_hover;
         font-weight: bold;
       }
+      &.menu__link--level-1:hover {
+        text-decoration: underline;
+        text-decoration-color: $dark_link_hover;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
+      }
       &:focus {
         outline: 2px solid $dark_link_hover;
         outline-offset: -2px;
@@ -138,6 +144,12 @@ body.dark {
       &:focus {
         @include transition(color 0.5s ease);
         color: $dark_link_hover;
+      }
+      &.menu__link--level-1:hover {
+        text-decoration: underline;
+        text-decoration-color: $dark_link_hover;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
       }
       &:focus {
         outline: 2px solid $dark_link_hover;
@@ -357,6 +369,12 @@ body.light {
         color: $link_hover;
         font-weight: bold;
       }
+      &.menu__link--level-1:hover {
+        text-decoration: underline;
+        text-decoration-color: $link_hover;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
+      }
       &:focus {
         outline: 2px solid $link_hover;
         outline-offset: -2px;
@@ -375,6 +393,12 @@ body.light {
       &:focus {
         @include transition(color 0.5s ease);
         color: $link_hover;
+      }
+      &.menu__link--level-1:hover {
+        text-decoration: underline;
+        text-decoration-color: $link_hover;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
       }
       &.menu__link--active-trail {
         @include transition(color 0.5s ease);
