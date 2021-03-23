@@ -13,6 +13,7 @@
 
 .site-slogan {
   @include fontSize(18px);
+  letter-spacing: 0.5px;
   margin: 5px 0 10px 0;
   text-decoration: none;
 
