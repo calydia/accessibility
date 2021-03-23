@@ -34,7 +34,7 @@ body.dark {
   .accessible-megamenu .accessible-megamenu-panel,
   .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
     background-color: transparent !important;
-    @media only screen and (min-width: 1050px) {
+    @media only screen and (min-width: 1100px) {
       background-color: $dark_complementary !important;
     }
   }
@@ -52,7 +52,7 @@ body.dark {
     ul.menu {
       li {
         > ul {
-          @media only screen and (min-width: 1050px) {
+          @media only screen and (min-width: 1100px) {
             background-color: $dark_complementary;
             border: 1px solid $dark_grey;
           }
@@ -280,7 +280,7 @@ body.light {
   .accessible-megamenu .accessible-megamenu-panel,
   .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
     background-color: transparent !important;
-    @media only screen and (min-width: 1050px) {
+    @media only screen and (min-width: 1100px) {
       background-color: $light !important;
     }
   }
@@ -293,7 +293,7 @@ body.light {
   }
   #main-menu {
     .menu--level-1 {
-      @media only screen and (max-width: 1049px) {
+      @media only screen and (max-width: 1099px) {
         background-color: transparent;
         padding: 0.5em;
       }
@@ -301,7 +301,7 @@ body.light {
     ul.menu {
       li {
         > ul {
-          @media only screen and (min-width: 1050px) {
+          @media only screen and (min-width: 1100px) {
             background-color: $light;
             border: 1px solid $grey;
           }
