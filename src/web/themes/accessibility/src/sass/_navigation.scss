@@ -14,7 +14,7 @@
   background-color: transparent !important;
   border: none !important;
   text-shadow: none !important;
-  @media only screen and (max-width: 1049px) {
+  @media only screen and (max-width: 1099px) {
     margin-bottom: 1em;
   }
 }
@@ -26,7 +26,7 @@
 .nav-menu.show .sub-nav.open {
   background-image: none !important;
   box-shadow: none !important;
-  @media only screen and (max-width: 1049px) {
+  @media only screen and (max-width: 1099px) {
     margin-bottom: 0 !important;
     margin-left: 1em !important;
     padding-bottom: 0 !important;
@@ -38,7 +38,7 @@
   right: 0 !important;
   top: -35px !important;
   width: 3em !important;
-  @media only screen and (min-width: $medium) and (max-width: 1049px) {
+  @media only screen and (min-width: $medium) and (max-width: 1099px) {
     top: -75px !important;
   }
 }
@@ -56,26 +56,26 @@
   position: absolute;
 }
 .primary-menu {
-  @media only screen and (max-width: 1049px) {
+  @media only screen and (max-width: 1099px) {
     min-height: 50px;
     width: 100%;
   }
-  @media only screen and (min-width: $medium) and (max-width: 1049px) {
+  @media only screen and (min-width: $medium) and (max-width: 1099px) {
     margin-top: -35px;
   }
 }
 
 #main-menu {
   position: relative;
-  @media only screen and (max-width: 1049px) {
+  @media only screen and (max-width: 1099px) {
     margin-top: 2.5em;
   }
-  @media only screen and (min-width: 1050px) and (max-width: 1269px) {
+  @media only screen and (min-width: 1100px) and (max-width: 1269px) {
     margin-top: 1.5em;
   }
   ul.menu {
     margin-left: 0;
-    @media only screen and (min-width: 1050px) {
+    @media only screen and (min-width: 1100px) {
       display: flex;
       flex-flow: row wrap;
       margin: 0;
@@ -85,7 +85,7 @@
       margin: 0;
       padding: 0.3em;
       position: relative;
-      @media only screen and (min-width: 1050px) {
+      @media only screen and (min-width: 1100px) {
         align-items: center;
         display: flex;
         padding: 0;
@@ -95,13 +95,13 @@
           border: 1px solid transparent;
           display: block;
           padding: 0.25em 1em;
-          @media only screen and (min-width: 1050px) {
+          @media only screen and (min-width: 1100px) {
             padding: 0.7em 1em;
           }
         }
         > button {
           padding: 0.25em 2em 0.25em 1em;
-          @media only screen and (min-width: 1050px) {
+          @media only screen and (min-width: 1100px) {
             padding: 0.7em 2em 0.7em 1em;
           }
         }
@@ -109,7 +109,7 @@
     }
     li {
       > ul {
-        @media only screen and (min-width: 1050px) {
+        @media only screen and (min-width: 1100px) {
           border-top-left-radius: 0 !important;
           border-top-right-radius: 0 !important;
           border-bottom-left-radius: 0 !important;
@@ -131,7 +131,7 @@
     }
     li:last-of-type {
       > ul {
-        @media only screen and (min-width: 1050px) {
+        @media only screen and (min-width: 1100px) {
           left: auto;
           right: 0;
         }
@@ -152,7 +152,7 @@ button.menu__link {
     background-position: 95% center;
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    @media only screen and (min-width: 1050px) {
+    @media only screen and (min-width: 1100px) {
       border: 1px solid $grey;
     }
   }
