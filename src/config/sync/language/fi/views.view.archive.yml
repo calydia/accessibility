@@ -15,5 +15,8 @@ display:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
   page_1:
     display_title: Sivu
