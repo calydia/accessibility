@@ -111,13 +111,22 @@ body.dark {
       &.is-active {
         @include transition(color 0.5s ease);
         color: $dark_link;
-        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: $dark_link;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
       }
-      &:hover,
+      &:hover {
+        @include transition(color 0.5s ease);
+        color: $dark_link_hover;
+        text-decoration: underline;
+        text-decoration-color: $dark_link_hover;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
       &:focus {
         @include transition(color 0.5s ease);
         color: $dark_link_hover;
-        font-weight: bold;
       }
       &.menu__link--level-1:hover {
         text-decoration: underline;
@@ -272,6 +281,7 @@ body.light {
     background-color: #DFE7FC;
     border: 1px solid #BBC9F7;
     display: inline-block;
+    letter-spacing: 0.5px;
     margin: 0 0.2em;
     padding: 0.2em 0.5em;
   }
@@ -361,13 +371,22 @@ body.light {
       &.is-active {
         @include transition(color 0.5s ease);
         color: $button;
-        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: $link_hover;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
       }
-      &:hover,
+      &:hover {
+        @include transition(color 0.5s ease);
+        color: $link_hover;
+        text-decoration: underline;
+        text-decoration-color: $link_hover;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
       &:focus {
         @include transition(color 0.5s ease);
         color: $link_hover;
-        font-weight: bold;
       }
       &.menu__link--level-1:hover {
         text-decoration: underline;

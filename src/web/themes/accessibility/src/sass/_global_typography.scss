@@ -42,12 +42,13 @@ h3 {
   }
   #main-menu {
     a.menu__link {
-      font-weight: bold;
+      font-weight: normal;
+      letter-spacing: 0.5px;
       text-decoration: none;
     }
     .menu--level-1 {
       a.menu__link {
-        font-weight: bold;
+        font-weight: normal;
         text-decoration: none;
         &:focus {
           border-bottom: 2px solid transparent;
@@ -55,14 +56,15 @@ h3 {
       }
     }
     .menu__link--button {
-      font-weight: bold;
+      font-weight: normal;
       &:focus {
         border-bottom: 2px solid transparent;
       }
     }
     .menu--level-2 {
       a.menu__link {
-        font-weight: 500;
+        font-weight: normal;
+        line-height: 1.5em;
         &:focus {
           border-bottom: none;
           padding-bottom: 0;
