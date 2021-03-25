@@ -164,6 +164,11 @@ button.menu__link {
   display: none;
   visibility: hidden;
 }
+.menu--level-2:not(.open) {
+  border: none !important;
+  height: 0;
+  padding: 0 !important;
+}
 
 .menu--level-2.open {
   display: block;
