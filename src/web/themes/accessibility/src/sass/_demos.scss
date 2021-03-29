@@ -46,6 +46,9 @@
   h2 {
     margin-top: 0;
   }
+  li {
+    margin: 0.5em 0;
+  }
 }
 
 .demo-hidden {
@@ -162,6 +165,7 @@ div.demo-close {
   //2.4.7
   .layout-container .demo-new-focus:focus {
     border-bottom: 5px dashed white !important;
+    border-top: none;
   }
   // 2.1.1
   .demo-close {
@@ -181,6 +185,7 @@ div.demo-close {
   //2.4.7
   .layout-container .demo-new-focus:focus {
     border-bottom: 5px dashed black !important;
+    border-top: none;
   }
   // 2.1.1
   .demo-close {
@@ -203,5 +208,13 @@ div.demo-close {
     &::before {
       content: "\200B";
     }
+  }
+}
+
+// Form field instructions
+.input-description-test {
+  input {
+    color: black;
+    padding: 0.5em 0.8em;
   }
 }
