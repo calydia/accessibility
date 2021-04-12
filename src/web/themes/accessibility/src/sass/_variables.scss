@@ -18,7 +18,9 @@ $dark_complementary: #070038;
 $dark_button: #9edcff;
 
 // Width variables
-$medium: 768px;
-$large: 1250px;
-$mediummax: 767px;
-$largemax: 1249px;
+$medium: 48em;//768px;
+$large: 78.125em;//1250px;
+$mediummax: 47.9375em;//767px;
+$largemax: 78.625em;//1249px;
+$narrowmax: 68.6875em; //1099px
+$narrow: 68.75em;//1100px

@@ -34,7 +34,7 @@ body.dark {
   .accessible-megamenu .accessible-megamenu-panel,
   .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
     background-color: transparent !important;
-    @media only screen and (min-width: 1100px) {
+    @media only screen and (min-width: $narrow) {
       background-color: $dark_complementary !important;
     }
   }
@@ -52,9 +52,9 @@ body.dark {
     ul.menu {
       li {
         > ul {
-          @media only screen and (min-width: 1100px) {
+          @media only screen and (min-width: $narrow) {
             background-color: $dark_complementary;
-            border: 1px solid $dark_grey;
+            border: 2px solid $dark_grey;
           }
         }
       }
@@ -192,7 +192,7 @@ body.dark {
     background-image: url(../images/icons8-external-link-white.svg);
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: 20px 20px;
+    background-size: 1.25em 1.25em;
   }
   blockquote {
     border-left: 4px solid $dark_link;
@@ -290,7 +290,7 @@ body.light {
   .accessible-megamenu .accessible-megamenu-panel,
   .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
     background-color: transparent !important;
-    @media only screen and (min-width: 1100px) {
+    @media only screen and (min-width: $narrow) {
       background-color: $light !important;
     }
   }
@@ -303,7 +303,7 @@ body.light {
   }
   #main-menu {
     .menu--level-1 {
-      @media only screen and (max-width: 1099px) {
+      @media only screen and (max-width: $narrowmax) {
         background-color: transparent;
         padding: 0.5em;
       }
@@ -311,9 +311,9 @@ body.light {
     ul.menu {
       li {
         > ul {
-          @media only screen and (min-width: 1100px) {
+          @media only screen and (min-width: $narrow) {
             background-color: $light;
-            border: 1px solid $grey;
+            border: 2px solid $grey;
           }
         }
       }
@@ -447,7 +447,7 @@ body.light {
     background-image: url(../images/icons8-external-link.svg);
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: 20px 20px;
+    background-size: 1.25em 1.25em;
   }
 
   blockquote {

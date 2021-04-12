@@ -11,7 +11,7 @@
 @import "blog_highlights";
 @import "sitemap";
 
-@media only screen and (max-width: 1099px) {
+@media only screen and (max-width: $narrowmax) {
   .megamenu {
     .mobile-menu-toggle[aria-expanded="false"] + ul.menu--level-1 {
       display: none !important;
