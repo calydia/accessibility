@@ -43,7 +43,7 @@
         "drupal/webform": "^6",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10.3",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
