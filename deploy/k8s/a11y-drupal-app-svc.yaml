@@ -7,6 +7,6 @@ metadata:
 spec:
   ports:
     - name: nginx
-      port: 80
+      port: 8080
   selector:
     app: a11y-drupal-app
