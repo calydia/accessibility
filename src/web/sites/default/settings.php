@@ -6,6 +6,7 @@ $settings['file_private_path'] = '../private';
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 $settings['trusted_host_patterns'] = [
     '^'.addcslashes(getenv('SITE_URL'), ".").'$',
+    'localhost'
 ];
 $settings['file_scan_ignore_directories'] = [
     'node_modules',
@@ -14,13 +15,12 @@ $settings['file_scan_ignore_directories'] = [
 $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = TRUE;
 $settings['config_sync_directory'] = '../config/sync';
-$config['build_hooks_circleci.circleCiConfig']['circleci_api_key'] = getenv('CIRCLECI_API_KEY');
 $databases['default']['default'] = array (
-    'database' => 'drupal',
-    'username' => 'drupal',
-    'password' => getenv('MYSQL_PASSWORD'),
+    'database' => getenv('DB_NAME'),
+    'username' => getenv('DB_USER'),
+    'password' => getenv('DB_PASSWORD'),
     'prefix' => '',
-    'host' => 'a11y-drupal-mariadb',
+    'host' => getenv('DB_HOST'),
     'port' => '3306',
     'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
     'driver' => 'mysql',
