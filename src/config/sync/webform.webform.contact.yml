@@ -12,7 +12,32 @@ id: contact
 title: 'Contact me'
 description: ''
 category: ''
-elements: "markup:\n  '#type': webform_markup\n  '#markup': |\n    <p>I&#39;m currently at the beginning of my own accessibility path, I&#39;ve been a part of several accessibility audits and I&#39;m constantly improving my expertise in accessibility. I wanted to have a single place for all the nice accessibility-related content I&#39;ve collected to my notes, I hope you find this site useful! And please let me know if you have some good links or content I should add here!<br />\n    <br />\n    If you don&#39;t want to fill a form, you can also <a href=\"https://twitter.com/schalallalaa\" rel=\"noopener noreferrer\" target=\"_blank\">contact me on Twitter (opens a new window)</a>.</p>\n    \n    <p>If you want to provide me with a way to possibly contact you, fill in your name and email address. Otherwise, you can leave these fields empty. The message field is required, the field is labeled with an asterisk (*).</p>\nname:\n  '#type': textfield\n  '#title': Name\nemail:\n  '#type': email\n  '#title': Email\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#required': true\nmarkup_info:\n  '#type': webform_markup\n  '#markup': 'The messages will be stored for 60 days, after which they will be deleted.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: |-
+  markup:
+    '#type': webform_markup
+    '#markup': |
+      <p>I&#39;m currently at the beginning of my own accessibility path, I&#39;ve been a part of several accessibility audits and I&#39;m constantly improving my expertise in accessibility. I wanted to have a single place for all the nice accessibility-related content I&#39;ve collected to my notes, I hope you find this site useful! And please let me know if you have some good links or content I should add here!<br />
+      <br />
+      If you don&#39;t want to fill a form, you can also <a href="https://twitter.com/schalallalaa" rel="noopener noreferrer" target="_blank">contact me on Twitter (opens a new window)</a>.</p>
+      
+      <p>If you want to provide me with a way to possibly contact you, fill in your name and email address. Otherwise, you can leave these fields empty. The message field is required, the field is labeled with an asterisk (*).</p>
+  name:
+    '#type': textfield
+    '#title': Name
+  email:
+    '#type': email
+    '#title': Email
+  message:
+    '#type': textarea
+    '#title': Message
+    '#required': true
+  markup_info:
+    '#type': webform_markup
+    '#markup': 'The messages will be stored for 60 days, after which they will be deleted.'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Send message'
 css: ''
 javascript: ''
 settings:
