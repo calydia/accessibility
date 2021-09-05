@@ -7,8 +7,8 @@
     "gulp-cli": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
     "babel-polyfill": "^6.26.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
