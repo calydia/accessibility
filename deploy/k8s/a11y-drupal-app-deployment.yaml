@@ -55,8 +55,8 @@ spec:
               httpHeaders:
                 - name: Host
                   value: localhost
-            initialDelaySeconds: 5
-            periodSeconds: 3
+            failureThreshold: 2
+            periodSeconds: 15
           livenessProbe:
             httpGet:
               path: /user/login
@@ -64,8 +64,19 @@ spec:
               httpHeaders:
                 - name: Host
                   value: localhost
-            initialDelaySeconds: 5
-            periodSeconds: 3
+            failureThreshold: 2
+            periodSeconds: 15
+          startupProbe:
+            httpGet:
+              path: /user/login
+              port: 8080
+              httpHeaders:
+                - name: Host
+                  value: localhost
+            failureThreshold: 30
+            periodSeconds: 5
+            successThreshold: 1
+            timeoutSeconds: 1
           resources:
             requests:
               cpu: 100m
