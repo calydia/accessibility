@@ -38,11 +38,16 @@
       outline: 1px solid black;
     }
   }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
 }
 .block-views-block-sm-list-of-all-demo-pages-block-all-demo-pages,
 .block-views-block-sm-list-of-all-demo-pages-block-demo-pages {
   margin-top: 2em;
-  padding: 2em;
+  padding: $gutter-32;
   h2 {
     margin-top: 0;
   }
