@@ -223,3 +223,38 @@ div.demo-close {
     padding: 0.5em 0.8em;
   }
 }
+
+// Pseudo elements
+
+.pseudo-test-triangle-bad {
+  display: flex;
+  &::before {
+    content: '\25BA';
+    display: block;
+    height: 10px;
+    padding-right: 30px;
+    width: 10px;
+  }
+}
+
+.pseudo-test-triangle-better {
+  display: flex;
+  &::before {
+    content: '\25BA' / '';
+    display: block;
+    height: 10px;
+    padding-right: 30px;
+    width: 10px;
+  }
+}
+
+.pseudo-test-alternative {
+  display: flex;
+  &::before {
+    content: '\25BA' / 'This is the alt text for the icon';
+    display: block;
+    height: 10px;
+    padding-right: 30px;
+    width: 10px;
+  }
+}
