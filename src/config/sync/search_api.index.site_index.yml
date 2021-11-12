@@ -1,0 +1,157 @@
+uuid: 162d346e-1adc-4456-9879-d24950930999
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_bad_examples
+    - field.storage.node.field_better_examples
+    - field.storage.node.field_final_comments
+    - field.storage.node.field_source_material
+    - search_api.server.database_server
+  module:
+    - node
+    - search_api
+id: site_index
+name: 'Site index'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Introduction
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_bad_examples:
+    label: 'Bad examples'
+    datasource_id: 'entity:node'
+    property_path: field_bad_examples
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_bad_examples
+  field_better_examples:
+    label: 'Better examples'
+    datasource_id: 'entity:node'
+    property_path: field_better_examples
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_better_examples
+  field_final_comments:
+    label: 'Final comments'
+    datasource_id: 'entity:node'
+    property_path: field_final_comments
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_final_comments
+  field_source_material:
+    label: 'Source material'
+    datasource_id: 'entity:node'
+    property_path: field_source_material
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_source_material
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  status:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 5
+    dependencies:
+      module:
+        - node
+  uid:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - article
+        - blog_highlight
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_status: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - body
+      - field_bad_examples
+      - field_better_examples
+      - field_final_comments
+      - field_source_material
+      - title
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: false
+    fields:
+      - body
+      - field_bad_examples
+      - field_better_examples
+      - field_final_comments
+      - field_source_material
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  track_changes_in_references: true
+  cron_limit: 50
+server: database_server

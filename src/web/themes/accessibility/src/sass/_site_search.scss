@@ -1,0 +1,16 @@
+.view-site-search {
+  .view-content {
+    margin: 2rem 0;
+  }
+  .views-row {
+    border-top: 1px dashed #616161;
+    padding: 30px 20px;
+
+    &:last-of-type {
+      border-bottom: 1px dashed #616161;
+    }
+  }
+  h2 {
+    margin-top: 0;
+  }
+}

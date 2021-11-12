@@ -23,6 +23,8 @@ display:
           admin_label: Ikoni
         type:
           label: Tyyppi
+        timestamp:
+          label: Päivämäärä
         message:
           label: Viesti
         name:
