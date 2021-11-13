@@ -1,6 +1,6 @@
 .view-site-search {
   .view-content {
-    margin: 2rem 0;
+    margin: 2em 0;
   }
   .views-row {
     border-top: 1px dashed #616161;
@@ -12,5 +12,14 @@
   }
   h2 {
     margin-top: 0;
+  }
+  .pager {
+    margin-top: 4em;
+  }
+}
+
+.node--view-mode-search-index {
+  p:last-of-type {
+    margin-bottom: 0;
   }
 }

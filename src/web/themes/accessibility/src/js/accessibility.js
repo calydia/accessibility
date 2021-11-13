@@ -76,6 +76,8 @@
           setColorMode(sessionStorage.mode, sessionStorage.remove);
         }
 
+        $('form').attr('role', 'search');
+
         $("#color-mode")
           .unbind()
           .change(function () {
