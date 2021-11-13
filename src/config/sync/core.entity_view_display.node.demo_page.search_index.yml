@@ -9,24 +9,24 @@ dependencies:
     - field.field.node.demo_page.field_better_examples
     - field.field.node.demo_page.field_final_comments
     - field.field.node.demo_page.field_meta_tags
-    - field.field.node.demo_page.field_search_result_content
     - node.type.demo_page
   module:
+    - text
     - user
 id: node.demo_page.search_index
 targetEntityType: node
 bundle: demo_page
 mode: search_index
 content:
-  field_search_result_content:
-    type: basic_string
+  body:
+    type: text_summary_or_trimmed
     weight: 0
     region: content
-    label: hidden
-    settings: {  }
+    label: above
+    settings:
+      trim_length: 150
     third_party_settings: {  }
 hidden:
-  body: true
   field_bad_examples: true
   field_better_examples: true
   field_final_comments: true

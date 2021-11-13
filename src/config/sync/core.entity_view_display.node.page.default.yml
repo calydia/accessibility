@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_meta_tags
-    - field.field.node.page.field_search_result_content
     - field.field.node.page.field_source_material
     - node.type.page
   module:
@@ -46,6 +45,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_search_result_content: true
   langcode: true
   search_api_excerpt: true
