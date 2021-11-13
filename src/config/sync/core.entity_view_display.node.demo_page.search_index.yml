@@ -1,0 +1,36 @@
+uuid: 25957862-f4ac-4490-aced-5f43e2ad19f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.demo_page.body
+    - field.field.node.demo_page.field_bad_examples
+    - field.field.node.demo_page.field_better_examples
+    - field.field.node.demo_page.field_final_comments
+    - field.field.node.demo_page.field_meta_tags
+    - node.type.demo_page
+  module:
+    - text
+    - user
+id: node.demo_page.search_index
+targetEntityType: node
+bundle: demo_page
+mode: search_index
+content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 0
+    region: content
+    label: above
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+hidden:
+  field_bad_examples: true
+  field_better_examples: true
+  field_final_comments: true
+  field_meta_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

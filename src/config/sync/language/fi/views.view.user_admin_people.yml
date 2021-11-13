@@ -22,6 +22,8 @@ display:
           label: Tila
           settings:
             format_custom_true: Voimassa
+        roles_target_id:
+          label: Käyttäjäroolit
         operations:
           label: Toimenpiteet
         mail:

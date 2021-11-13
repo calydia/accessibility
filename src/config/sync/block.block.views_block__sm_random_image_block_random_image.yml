@@ -11,7 +11,7 @@ dependencies:
 id: views_block__sm_random_image_block_random_image
 theme: accessibility
 region: featured_top
-weight: 0
+weight: -7
 provider: null
 plugin: 'views_block:sm_random_image-block_random_image'
 settings:

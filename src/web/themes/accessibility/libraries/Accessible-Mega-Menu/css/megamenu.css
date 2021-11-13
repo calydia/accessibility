@@ -448,7 +448,7 @@ limitations under the License.
   }
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1200px) {
   .accessible-megamenu-toggle {
     display: block;
     z-index: 3;
