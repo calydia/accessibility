@@ -140,10 +140,12 @@ footer {
 
 .field--name-field-source-material {
   margin-top: 3em;
-  padding: 2em;
+  padding: 32px;
   @media only screen and (min-width: $medium) {
     margin-top: 5em;
   }
+
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
