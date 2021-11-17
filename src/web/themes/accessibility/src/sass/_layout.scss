@@ -4,11 +4,11 @@
   -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
-  padding: 2em 0 2em 0;
+  padding: $gutter-32 0 $gutter-32 0;
   position: relative;
   text-align: center;
   @media only screen and (min-width: 500px) {
-    padding: 2em 0;
+    padding: $gutter-32 0;
   }
 }
 
@@ -21,12 +21,12 @@
     align-items: center;
     justify-content: space-between;
     max-width: 70em;
-    padding: 0.5em 0;
+    padding: $gutter-8 0;
     width: 90%;
   }
   @media only screen and (min-width: $large) {
     max-width: 74em;
-    padding: 1em 2em;
+    padding: $gutter-16 $gutter-32;
     width: calc(100% - 4em);
   }
 }
@@ -45,14 +45,16 @@
 
   .views-exposed-form {
     margin: 0 auto;
-    width: 80%;
+    padding: 0 20px;
+    width: calc(100% - 40px);
     @media only screen and (min-width: $medium) {
       max-width: 70em;
+      padding: 0;
       width: 90%;
     }
     @media only screen and (min-width: $large) {
       max-width: 74em;
-      padding: 0 2em;
+      padding: 0 $gutter-32;
       width: calc(100% - 4em);
     }
   }
@@ -71,11 +73,12 @@
 }
 .block-system-breadcrumb-block {
   margin: 1.5em auto 0 auto;
-  width: 80%;
+  padding: 0 20px;
+  width: calc(100% - 40px);
   @media only screen and (min-width: $large) {
     justify-content: space-between;
     max-width: 74em;
-    padding: 0 2em;
+    padding: 0 $gutter-32;
     width: calc(100% - 4em);
   }
 }
@@ -88,10 +91,11 @@
 }
 .layout-content {
   margin: 0 auto;
-  width: 80%;
+  padding: 0 20px;
+  width: calc(100% - 40px);
   @media only screen and (min-width: $large) {
     max-width: 74em;
-    padding: 0 2em;
+    padding: 0 $gutter-32;
     width: calc(100% - 4em);
   }
 }
@@ -100,7 +104,7 @@
   width: 80%;
   @media only screen and (min-width: $large) {
     max-width: 74em;
-    padding: 0 2em;
+    padding: 0 $gutter-32;
     width: calc(100% - 4em);
   }
 }
@@ -112,11 +116,11 @@ footer {
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 2em 0 1em 0;
+    padding: $gutter-32 0 $gutter-16 0;
     width: 90%;
     @media only screen and (min-width: $large) {
       max-width: 74em;
-      padding: 2em 2em 1em 2em;
+      padding: $gutter-32 $gutter-32 $gutter-16 $gutter-32;
       width: calc(100% - 4em);
     }
   }
@@ -134,15 +138,15 @@ footer {
 // Add more margin to the front page
 .path-frontpage {
   .region-content {
-    margin-top: 3em;
+    margin-top: 48px;
   }
 }
 
 .field--name-field-source-material {
-  margin-top: 3em;
-  padding: 32px;
+  margin-top: 48px;
+  padding: $gutter-32;
   @media only screen and (min-width: $medium) {
-    margin-top: 5em;
+    margin-top: 80px;
   }
 
 
