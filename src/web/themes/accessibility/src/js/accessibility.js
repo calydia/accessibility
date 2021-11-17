@@ -11,28 +11,8 @@
 
   Drupal.behaviors.accessibility = {
     attach: function (context, settings) {
-      var skip = $(".skip-link"),
-        $target = $("#main-content"),
-        darkMode = $("#setting-dark"),
-        lightMode = $("#setting-light");
-
-      skip.click(function (event) {
-        event.preventDefault();
-        $("html, body").animate(
-          { scrollTop: $target.offset().top },
-          1000,
-          function () {
-            location.hash = $target;
-            $target.focus();
-            if ($target.is(":focus")) {
-              return !1;
-            } else {
-              $target.attr("tabindex", "-1");
-              $target.focus();
-            }
-          }
-        );
-      });
+      var darkMode = $("#setting-dark"),
+          lightMode = $("#setting-light");
 
       // Megamenu
       $(".megamenu").accessibleMegaMenu({
