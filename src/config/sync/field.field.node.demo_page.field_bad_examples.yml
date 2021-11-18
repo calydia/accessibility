@@ -14,7 +14,7 @@ bundle: demo_page
 label: 'Bad examples'
 description: 'Bad accessibility examples.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

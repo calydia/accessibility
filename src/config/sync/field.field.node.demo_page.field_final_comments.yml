@@ -14,7 +14,7 @@ bundle: demo_page
 label: 'Final comments'
 description: 'Add final comments about the example.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

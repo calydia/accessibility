@@ -1,0 +1,20 @@
+uuid: ee3f536f-ffe7-4072-ada1-69ee40e28d4f
+langcode: fi
+status: true
+dependencies:
+  config:
+    - media.type.video
+  module:
+    - path
+id: media.video.path
+field_name: path
+entity_type: media
+bundle: video
+label: Osoitealias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

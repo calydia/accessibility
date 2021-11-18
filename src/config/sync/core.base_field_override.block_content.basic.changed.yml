@@ -1,0 +1,18 @@
+uuid: 0a2dfe7d-6029-4596-ac59-c7b076bc8378
+langcode: fi
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.changed
+field_name: changed
+entity_type: block_content
+bundle: basic
+label: Muuttunut
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

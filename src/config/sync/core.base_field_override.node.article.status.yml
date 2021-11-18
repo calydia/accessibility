@@ -1,0 +1,22 @@
+uuid: 54f0cf80-09ce-4c0e-bddb-c2ed94ee28d3
+langcode: fi
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.status
+field_name: status
+entity_type: node
+bundle: article
+label: Julkaistu
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Pois päältä'
+field_type: boolean

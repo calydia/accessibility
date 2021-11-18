@@ -1,0 +1,20 @@
+uuid: 7883c1f8-4e2f-42d5-af8b-ef399d2337c2
+langcode: fi
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - path
+id: taxonomy_term.tags.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tags
+label: Osoitealias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
