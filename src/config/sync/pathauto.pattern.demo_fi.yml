@@ -1,0 +1,33 @@
+uuid: 6953f581-abef-45dc-850d-64aa6c78541b
+langcode: fi
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: demo_fi
+label: 'Demo FI'
+type: 'canonical_entities:node'
+pattern: 'demot/[node:title]'
+selection_criteria:
+  8c0b354e-d092-4c33-ae7e-310d02a1c8ef:
+    id: node_type
+    bundles:
+      demo_page: demo_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8c0b354e-d092-4c33-ae7e-310d02a1c8ef
+  2905d66a-add9-4f6b-84fc-41139904ce47:
+    id: language
+    langcodes:
+      fi: fi
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 2905d66a-add9-4f6b-84fc-41139904ce47
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Kieli

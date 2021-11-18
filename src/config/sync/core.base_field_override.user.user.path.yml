@@ -1,0 +1,19 @@
+uuid: d59f25ab-8f40-4375-b489-eba06d94d647
+langcode: fi
+status: true
+dependencies:
+  module:
+    - path
+    - user
+id: user.user.path
+field_name: path
+entity_type: user
+bundle: user
+label: Osoitealias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

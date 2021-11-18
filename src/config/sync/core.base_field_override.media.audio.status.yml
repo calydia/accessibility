@@ -1,0 +1,22 @@
+uuid: 818d43d9-4e62-426a-9317-fc1f633dc399
+langcode: fi
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.status
+field_name: status
+entity_type: media
+bundle: audio
+label: Julkaistu
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Pois päältä'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: fdcab22b-9597-4b71-b8d0-bdc2fca2c9dc
+langcode: fi
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image.changed
+field_name: changed
+entity_type: media
+bundle: image
+label: Muuttunut
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

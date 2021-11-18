@@ -1,0 +1,20 @@
+uuid: 9e6878e7-7093-4dbd-a55d-47be3764e859
+langcode: fi
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.name
+field_name: name
+entity_type: media
+bundle: document
+label: Nimi
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^2.3",
         "drupal/advagg": "^4.1",
         "drupal/backup_migrate": "^5.0",
@@ -23,7 +24,7 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
-        "drupal/easy_breadcrumb": "^1.12",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/editor_advanced_link": "^1.8",
         "drupal/focal_point": "^1.5",
         "drupal/gin": "^3.0@alpha",
@@ -35,6 +36,7 @@
         "drupal/jquery_ui_tabs": "^1.1",
         "drupal/jquery_ui_tooltip": "^1.1",
         "drupal/linkit": "^6",
+        "drupal/menu_multilingual": "^1.0@alpha",
         "drupal/metatag": "^1.13",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
@@ -86,6 +88,8 @@
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
+        },
+        "patches": {
         },
         "drupal-core-project-message": {
             "include-keys": [

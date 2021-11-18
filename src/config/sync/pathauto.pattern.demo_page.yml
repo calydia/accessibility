@@ -3,20 +3,31 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: demo_page
 label: 'Demo page'
 type: 'canonical_entities:node'
 pattern: 'demos/[node:title]'
 selection_criteria:
-  f33013a0-6633-4d36-a892-cba454436ad9:
+  dee1967c-72a8-4490-9362-bbd1630565b4:
     id: node_type
     bundles:
       demo_page: demo_page
     negate: false
     context_mapping:
       node: node
-    uuid: f33013a0-6633-4d36-a892-cba454436ad9
+    uuid: dee1967c-72a8-4490-9362-bbd1630565b4
+  6cd919d8-c049-45fe-897e-f4bbf4b03286:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 6cd919d8-c049-45fe-897e-f4bbf4b03286
 selection_logic: and
 weight: -10
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Kieli

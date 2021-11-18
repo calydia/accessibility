@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - node.type.demo_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: node.demo_page
 target_entity_type_id: node
 target_bundle: demo_page

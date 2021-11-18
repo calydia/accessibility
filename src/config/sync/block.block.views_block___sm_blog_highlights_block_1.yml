@@ -6,6 +6,7 @@ dependencies:
     - views.view._sm_blog_highlights
   module:
     - block_class
+    - language
     - system
     - views
   theme:
@@ -31,3 +32,10 @@ visibility:
     id: request_path
     pages: '<front>'
     negate: false
+  language:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

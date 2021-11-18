@@ -79,10 +79,13 @@
         {{ page.footer_first }}
         <div class="color-wrapper">
           <label for="color-mode">{{ 'Select color mode'|t }}</label>
-          <select id="color-mode" class="color-mode-select">
+          <select id="color-mode" class="color-mode-select" aria-describedby="color-mode-info">
             <option value="dark">{{ 'Dark'|t }}</option>
             <option value="light">{{ 'Light'|t }}</option>
           </select>
+          <div id="color-mode-info" class="visually-hidden">
+            {{ 'Choose the color scheme of this website.'|t }}
+          </div>
         </div>
       </div>
     </footer>
