@@ -34,7 +34,7 @@
 %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-    <nav id="footer-menu" aria-label="Site info">
+    <nav id="footer-menu" aria-label="{{ 'Site info'|t }}">
       {{ content }}
     </nav>
   {% endblock %}
