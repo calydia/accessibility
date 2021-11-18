@@ -1,0 +1,11 @@
+display:
+  default:
+    display_options:
+      title: 'Kaikki demosivut'
+  block_all_demo_pages:
+    display_options:
+      block_description: 'Kaikki demosivut'
+  block_demo_pages:
+    display_options:
+      block_description: 'Demosivujen lista'
+      title: 'Muut demosivut'
