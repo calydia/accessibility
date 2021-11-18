@@ -1,0 +1,21 @@
+label: Sivustohaku
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Hae
+          reset_button_label: Tyhjennä
+          exposed_sorts_label: Järjestä
+          sort_asc_label: Nouseva
+          sort_desc_label: Laskeva
+      pager:
+        options:
+          tags:
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Hae sisältöä'
+      title: Sivustohaku
