@@ -43,7 +43,7 @@ plugins:
     enabled: true
     weight: 0
     settings:
-      title: 'Main navigation'
+      title: ''
       show_disabled: false
   'menu:tools':
     enabled: false
