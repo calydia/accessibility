@@ -51,13 +51,6 @@
         </a>
         {{ page.header }}
         {% if page.primary_menu %}
-          <div class="language-link">
-            {% if language.getId() == 'en' %}
-              <a href="/fi" lang="fi" aria-label="Vaihda kieli suomeksi">Suomeksi</a>
-            {% else %}
-              <a href="/" lang="en" aria-label="View content in English">In English</a>
-            {% endif %}
-          </div>
           <div class="primary-menu">
             {{ page.primary_menu }}
           </div>
