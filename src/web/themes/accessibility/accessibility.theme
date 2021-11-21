@@ -1,1 +1,21 @@
 <?php
+
+/**
+ * Implements hook_theme_preprocess_HOOK().
+ *
+ * @param array $variables
+ *   Array of language links.
+ */
+function accessibility_preprocess_links__language_block(&$variables) {
+  // get current language to display in the dropdown “active”
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['current_language'] = $language;
+  // Change the language link labels in the language switcher.
+  $variables['links']['en']['link']['#title'] = 'In English';
+  $variables['links']['fi']['link']['#title'] = 'Suomeksi';
+  // Add the language attributes to the language switcher items.
+  $variables['links']['fi']['link']['#options']['attributes']['lang'] = 'fi';
+  $variables['links']['en']['link']['#options']['attributes']['lang'] = 'en';
+  $variables['links']['fi']['link']['#options']['attributes']['xml:lang'] = 'fi';
+  $variables['links']['en']['link']['#options']['attributes']['xml:lang'] = 'en';
+}
