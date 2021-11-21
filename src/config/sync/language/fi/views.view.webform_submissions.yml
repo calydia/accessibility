@@ -51,6 +51,7 @@ display:
           label: Luotu
           separator: ', '
         completed:
+          label: Valmis
           separator: ', '
         remote_addr:
           separator: ', '
@@ -73,6 +74,7 @@ display:
           label: Luotu
           separator: ', '
         completed:
+          label: Valmis
           separator: ', '
         remote_addr:
           separator: ', '
@@ -95,6 +97,7 @@ display:
           label: Luotu
           separator: ', '
         completed:
+          label: Valmis
           separator: ', '
         remote_addr:
           separator: ', '
