@@ -25,5 +25,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /demos/all-demos
+    pages: "/demos/all-demos\r\n/demot/kaikki-demot"
     negate: false

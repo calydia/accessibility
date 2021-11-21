@@ -90,6 +90,9 @@
             ]
         },
         "patches": {
+            "drupal/linkit" : {
+                "#2886455: Add support for multilanguage" : "https://git.drupalcode.org/project/linkit/-/merge_requests/2.diff"
+            }
         },
         "drupal-core-project-message": {
             "include-keys": [

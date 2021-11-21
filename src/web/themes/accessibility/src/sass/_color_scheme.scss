@@ -34,7 +34,7 @@ body.dark {
   .accessible-megamenu .accessible-megamenu-panel,
   .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
     background-color: transparent !important;
-    @media only screen and (min-width: $narrow) {
+    @media only screen and (min-width: $medium) {
       background-color: $dark_complementary !important;
     }
   }
@@ -290,7 +290,7 @@ body.light {
   .accessible-megamenu .accessible-megamenu-panel,
   .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
     background-color: transparent !important;
-    @media only screen and (min-width: $narrow) {
+    @media only screen and (min-width: $medium) {
       background-color: $light !important;
     }
   }

@@ -1,0 +1,20 @@
+uuid: 1c659626-8d44-42fc-b872-b1c9aa42cdad
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - accessibility
+id: languageswitcher
+theme: accessibility
+region: primary_menu
+weight: -8
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Switch language'
+  provider: language
+  label_display: '0'
+visibility: {  }

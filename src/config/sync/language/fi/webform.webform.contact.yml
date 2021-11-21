@@ -1,0 +1,16 @@
+title: 'Ota yhteyttä'
+elements: |
+  markup:
+    '#markup': "<p>Olen parhaillaan saavutettavuustieni alkup&auml;&auml;ss&auml;. Olen toteuttanut useita saavutettavuusauditointeja, ja pyrin jatkuvasti vahvistamaan ymm&auml;rryst&auml;ni ja osaamistani saavutettavuudesta. Kaipasin yht&auml; paikkaa kaikille saavutettavuusaiheiselle sis&auml;ll&ouml;lle, mit&auml; olen ker&auml;nnyt muistiinpanoihini, joten kehitin t&auml;m&auml;n sivuston. Toivottavasti t&auml;&auml;lt&auml; l&ouml;ytyy hy&ouml;dyllist&auml; tietoa! Mik&auml;li tied&auml;t jotain hyv&auml;&auml; sis&auml;lt&ouml;&auml; tai materiaalia, mit&auml; voisin lis&auml;t&auml; sivustolle, otan mielell&auml;ni kaikki ideat vastaan!<br />\r\n<br />\r\nMik&auml;li et halua t&auml;ytt&auml;&auml; lomaketta,&nbsp;<a href=\"https://twitter.com/schalallalaa\" rel=\"noopener noreferrer\" target=\"_blank\">ota yhteytt&auml; Twitterin kautta (avautuu uuteen ikkunaan)</a>.</p>\r\n\r\n<p>Mik&auml;li haluat tarjota mahdollisuuden ottaa sinuun p&auml;in yhteytt&auml;, t&auml;yt&auml; nimesi ja s&auml;hk&ouml;postiosoitteesi lomakkeelle. Muutoin voit j&auml;tt&auml;&auml; n&auml;m&auml; kent&auml;t tyhj&auml;ksi. Viestikentt&auml; on pakollinen, kentt&auml; on merkitty t&auml;hdell&auml; (*).</p>"
+  name:
+    '#title': Nimi
+  email:
+    '#title': Sähköposti
+  message:
+    '#title': Viesti
+  markup_info:
+    '#markup': 'Viestej&auml; s&auml;ilytet&auml;&auml;n 60 p&auml;iv&auml;&auml;, jonka j&auml;lkeen ne poistetaan.'
+  actions:
+    '#submit__label': 'Lähetä viesti'
+settings:
+  confirmation_message: 'Viesti on l&auml;hetetty. Kiitos viestist&auml;si.'

@@ -18,6 +18,8 @@ display:
       fields:
         user_bulk_form:
           label: Massapäivitys
+        name:
+          label: Käyttäjätunnus
         status:
           label: Tila
           settings:

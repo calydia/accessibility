@@ -1,3 +1,4 @@
+label: Kommentit
 display:
   default:
     display_title: Oletus
@@ -24,6 +25,7 @@ display:
         comment_bulk_form:
           action_title: Toiminto
         subject:
+          label: Aihe
           separator: ', '
         uid:
           separator: ', '
@@ -40,15 +42,26 @@ display:
         name_1:
           separator: ', '
       filters:
+        subject:
+          expose:
+            label: Aihe
         combine:
           expose:
             label: 'Kirjoittajan nimi'
         langcode:
           expose:
             label: Kieli
+      title: Kommentit
+  page_published:
+    display_options:
+      menu:
+        title: Kommentit
   page_unapproved:
     display_options:
       filters:
+        subject:
+          expose:
+            label: Aihe
         langcode:
           expose:
             label: Kieli
@@ -56,6 +69,7 @@ display:
         comment_bulk_form:
           action_title: Toiminto
         subject:
+          label: Aihe
           separator: ', '
         uid:
           separator: ', '

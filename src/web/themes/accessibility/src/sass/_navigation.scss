@@ -13,6 +13,7 @@
 .accessible-megamenu {
   background-color: transparent !important;
   border: none !important;
+  height: auto;
   text-shadow: none !important;
   @media only screen and (max-width: $narrowmax) {
     margin-bottom: $gutter-16;
@@ -33,14 +34,11 @@
   }
 }
 .accessible-megamenu-toggle {
-  height: 3em !important;
+  height: 2rem !important;
   padding: $gutter-8 !important;
   right: 0 !important;
-  top: -2em !important;
-  width: 3em !important;
-  @media only screen and (min-width: $medium) and (max-width: $narrowmax) {
-    top: -75px !important;
-  }
+  top: -2.5em !important;
+  width: 2rem !important;
 }
 .accessible-megamenu-toggle > span {
   left: 2px;
@@ -56,25 +54,26 @@
   position: absolute;
 }
 .primary-menu {
-  @media only screen and (max-width: $narrowmax) {
-    min-height: 50px;
-    width: 100%;
-  }
-  @media only screen and (min-width: $medium) and (max-width: $narrowmax) {
-    margin-top: -35px;
+  width: 100%;
+  @media only screen and (min-width: $medium) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px;
   }
 }
 
 #main-menu {
   position: relative;
   @media only screen and (max-width: $narrowmax) {
-    margin-top: 2.5em;
+    margin-top: 3.5em;
   }
   ul.menu {
     margin-left: 0;
-    @media only screen and (min-width: $narrow) {
+    @media only screen and (min-width: $medium) {
       display: flex;
       flex-flow: row wrap;
+      justify-content: center;
       margin: 0;
     }
     li {
@@ -82,9 +81,12 @@
       margin: 0;
       padding: 5px;
       position: relative;
-      @media only screen and (min-width: $narrow) {
+      @media only screen and (min-width: $medium) {
         align-items: center;
         display: flex;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
         padding: 0;
       }
       &.accessible-megamenu-top-nav-item {
@@ -92,13 +94,13 @@
           border: 1px solid transparent;
           display: block;
           padding: $gutter-4 $gutter-16;
-          @media only screen and (min-width: $narrow) {
+          @media only screen and (min-width: $medium) {
             padding: $gutter-12 $gutter-16;
           }
         }
         > button {
           padding: $gutter-4 $gutter-em-double $gutter-4 $gutter-16;
-          @media only screen and (min-width: $narrow) {
+          @media only screen and (min-width: $medium) {
             padding: $gutter-12 $gutter-em-double $gutter-12 $gutter-16;
           }
         }

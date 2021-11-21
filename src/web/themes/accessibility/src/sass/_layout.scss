@@ -12,10 +12,33 @@
   }
 }
 
+.language-switcher-language-url {
+  position: absolute;
+  text-align: left;
+  top: 7rem;
+  width: 50%;
+  z-index: 2;
+  @media only screen and (min-width: $medium) {
+    right: 0;
+    top: 35px;
+    width: auto;
+  }
+
+  .links {
+    list-style: none;
+  }
+
+  .is-active {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .main-header {
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
+  position: relative;
   width: 90%;
   @media only screen and (min-width: $medium) {
     align-items: center;
@@ -34,9 +57,6 @@
 .region-header {
   text-align: center;
   width: 100%;
-  @media only screen and (min-width: $medium) {
-    width: auto;
-  }
 }
 
 .region-featured-top {
