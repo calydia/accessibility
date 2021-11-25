@@ -827,7 +827,6 @@ limitations under the License.
                     if (topnavitempanel.length) {
                         _addUniqueId.call(that, topnavitempanel);
                         topnavitemlink.attr({
-                            "role": "button",
                             "aria-controls": topnavitempanel.attr("id"),
                             "aria-expanded": false,
                             "tabindex": 0
