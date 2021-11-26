@@ -79,6 +79,7 @@ body.dark {
     &:hover {
       @include transition(color 0.5s ease);
       color: $dark_link_hover;
+      text-decoration-color: $dark_link_hover;
     }
     &:focus {
       border-bottom: 2px solid $dark_link_hover;
@@ -338,6 +339,7 @@ body.light {
     &:hover {
       @include transition(color 0.5s ease);
       color: $link_hover;
+      text-decoration-color: $link_hover;
     }
     &:focus {
       border-bottom: 2px solid $link_hover;

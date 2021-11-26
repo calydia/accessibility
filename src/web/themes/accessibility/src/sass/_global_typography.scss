@@ -57,7 +57,7 @@ h4 {
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
     &:hover {
-      text-decoration: none;
+      text-decoration-thickness: 4px;
     }
     &:focus {
       outline: none;
