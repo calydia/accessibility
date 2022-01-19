@@ -17,8 +17,8 @@ plugin: 'views_block:sm_random_image-block_random_image'
 settings:
   id: 'views_block:sm_random_image-block_random_image'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: none
 visibility: {  }

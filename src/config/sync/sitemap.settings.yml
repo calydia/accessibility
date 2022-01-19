@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: Pq64GZUb-bJckfjkDVfY82wzyy-XmRDovFeC0rFIBBc
 page_title: Sitemap
 message:
   value: ''
@@ -58,8 +60,6 @@ plugins:
       title: 'Front page'
       rss: /rss.xml
 include_css: true
-_core:
-  default_config_hash: Pq64GZUb-bJckfjkDVfY82wzyy-XmRDovFeC0rFIBBc
 plugin_settings__active_tab: edit-plugins-menumain-settings
 submit: 'Save configuration'
 form_build_id: form-gIDa22xUm53qMHz2v_lP1YCEcU6_a-UaCB5WUYq-jcI

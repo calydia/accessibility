@@ -18,10 +18,10 @@ bundle: page
 mode: search_result
 content:
   search_api_excerpt:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   field_meta_tags: true

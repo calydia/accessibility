@@ -17,63 +17,12 @@ base_table: search_api_index_site_index
 base_field: search_api_id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Default
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: none
-        options: {  }
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          bypass_access: false
-          skip_access: false
-          preserve_facet_query_args: false
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Search
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: full
-        options:
-          items_per_page: 10
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
-      style:
-        type: default
-      row:
-        type: search_api
-        options:
-          view_modes:
-            'entity:node':
-              demo_page: search_index
-              page: search_index
+      title: 'Site search'
       fields:
         body:
           id: body
@@ -82,6 +31,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
           label: ''
           exclude: false
           alter:
@@ -143,9 +95,59 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api_field
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Search
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_site_index
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: search_api_relevance
+          exposed: false
+      arguments: {  }
       filters:
         search_api_fulltext:
           id: search_api_fulltext
@@ -154,6 +156,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_fulltext
           operator: or
           value: ''
           group: 1
@@ -174,8 +177,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
             expose_fields: false
+            placeholder: ''
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:
@@ -192,7 +195,6 @@ display:
           parse_mode: terms
           min_length: null
           fields: {  }
-          plugin_id: search_api_fulltext
         search_api_language:
           id: search_api_language
           table: search_api_index_site_index
@@ -200,6 +202,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_language
           operator: in
           value:
             '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
@@ -232,26 +235,24 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: search_api_language
-      sorts:
-        search_api_relevance:
-          id: search_api_relevance
-          table: search_api_index_site_index
-          field: search_api_relevance
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: search_api
-      title: 'Site search'
+      style:
+        type: default
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              demo_page: search_index
+              page: search_index
+      query:
+        type: views_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+      relationships: {  }
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -265,14 +266,14 @@ display:
         - 'config:field.storage.node.body'
         - 'config:search_api.index.site_index'
   page_search:
-    display_plugin: page
     id: page_search
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
+      exposed_block: true
       display_extenders: {  }
       path: search
-      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:

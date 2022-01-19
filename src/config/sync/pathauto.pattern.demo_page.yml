@@ -12,20 +12,20 @@ pattern: 'demos/[node:title]'
 selection_criteria:
   dee1967c-72a8-4490-9362-bbd1630565b4:
     id: node_type
-    bundles:
-      demo_page: demo_page
     negate: false
+    uuid: dee1967c-72a8-4490-9362-bbd1630565b4
     context_mapping:
       node: node
-    uuid: dee1967c-72a8-4490-9362-bbd1630565b4
+    bundles:
+      demo_page: demo_page
   6cd919d8-c049-45fe-897e-f4bbf4b03286:
     id: language
-    langcodes:
-      en: en
     negate: false
+    uuid: 6cd919d8-c049-45fe-897e-f4bbf4b03286
     context_mapping:
       language: 'node:langcode:language'
-    uuid: 6cd919d8-c049-45fe-897e-f4bbf4b03286
+    langcodes:
+      en: en
 selection_logic: and
 weight: -10
 relationships:
