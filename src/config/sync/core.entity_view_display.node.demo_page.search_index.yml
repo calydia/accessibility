@@ -20,12 +20,12 @@ mode: search_index
 content:
   body:
     type: text_summary_or_trimmed
-    weight: 0
-    region: content
     label: above
     settings:
       trim_length: 150
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_bad_examples: true
   field_better_examples: true

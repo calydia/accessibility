@@ -18,13 +18,13 @@ plugin: webform_block
 settings:
   id: webform_block
   label: Webform
-  provider: webform
   label_display: '0'
+  provider: webform
   webform_id: contact
   default_data: ''
   redirect: false
 visibility:
   request_path:
     id: request_path
-    pages: "/contact-me\r\n/ota-yhteytta"
     negate: false
+    pages: "/contact-me\r\n/ota-yhteytta"

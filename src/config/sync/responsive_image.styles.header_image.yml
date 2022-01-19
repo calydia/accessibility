@@ -16,39 +16,39 @@ id: header_image
 label: 'Header image'
 image_style_mappings:
   -
-    breakpoint_id: accessibility.xwide
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: header_image
-  -
-    breakpoint_id: accessibility.wide
+    breakpoint_id: accessibility.xwide
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: header_image_xwide
-  -
     breakpoint_id: accessibility.wide
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: header_image_retina_xwide
+    breakpoint_id: accessibility.wide
+    multiplier: 2x
   -
-    breakpoint_id: accessibility.medium
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: header_image_wide
-  -
     breakpoint_id: accessibility.medium
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: header_image_retina_wide
+    breakpoint_id: accessibility.medium
+    multiplier: 2x
   -
-    breakpoint_id: accessibility.small
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: header_image_small
-  -
     breakpoint_id: accessibility.small
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: header_image_retina_small
+    breakpoint_id: accessibility.small
+    multiplier: 2x
 breakpoint_group: accessibility
 fallback_image_style: header_image_small

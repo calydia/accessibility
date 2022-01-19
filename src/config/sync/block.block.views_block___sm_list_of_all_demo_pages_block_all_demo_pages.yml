@@ -18,12 +18,12 @@ plugin: 'views_block:_sm_list_of_all_demo_pages-block_all_demo_pages'
 settings:
   id: 'views_block:_sm_list_of_all_demo_pages-block_all_demo_pages'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: "/demos/all-demos\r\n/demot/kaikki-demot"
     negate: false
+    pages: "/demos/all-demos\r\n/demot/kaikki-demot"
