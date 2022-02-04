@@ -207,3 +207,7 @@ button.menu__link {
     }
   }
 }
+
+.breadcrumb li:before {
+  content: " \BB " / "";
+}
