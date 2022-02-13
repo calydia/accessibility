@@ -28,7 +28,6 @@
         "drupal/editor_advanced_link": "^1.8",
         "drupal/focal_point": "^1.5",
         "drupal/gin": "^3.0@alpha",
-        "drupal/gutenberg": "^2.0",
         "drupal/honeypot": "^2.0",
         "drupal/jquery_ui": "^1.4",
         "drupal/jquery_ui_checkboxradio": "^1.2",
