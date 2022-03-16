@@ -1706,16 +1706,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.7",
+            "version": "9.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a768174b00fa088027d460a80a13550e624b9bf8"
+                "reference": "e8e3b7e5b3353f7ebf24de9d39087df75bd66afe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a768174b00fa088027d460a80a13550e624b9bf8",
-                "reference": "a768174b00fa088027d460a80a13550e624b9bf8",
+                "url": "https://api.github.com/repos/drupal/core/zipball/e8e3b7e5b3353f7ebf24de9d39087df75bd66afe",
+                "reference": "e8e3b7e5b3353f7ebf24de9d39087df75bd66afe",
                 "shasum": ""
             },
             "require": {
@@ -1957,13 +1957,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.3.7"
+                "source": "https://github.com/drupal/core/tree/9.3.8"
             },
-            "time": "2022-03-03T09:23:53+00:00"
+            "time": "2022-03-16T15:34:53+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.3.7",
+            "version": "9.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2007,13 +2007,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.7"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.8"
             },
             "time": "2022-02-24T17:40:56+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.3.7",
+            "version": "9.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -2048,22 +2048,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/9.3.7"
+                "source": "https://github.com/drupal/core-project-message/tree/9.3.8"
             },
             "time": "2022-02-24T17:40:56+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.3.7",
+            "version": "9.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "29f6f29672861a5719701a59aae26aafbb4c9495"
+                "reference": "98048032809157c723131ecc2394ff55421d5dc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/29f6f29672861a5719701a59aae26aafbb4c9495",
-                "reference": "29f6f29672861a5719701a59aae26aafbb4c9495",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/98048032809157c723131ecc2394ff55421d5dc6",
+                "reference": "98048032809157c723131ecc2394ff55421d5dc6",
                 "shasum": ""
             },
             "require": {
@@ -2072,7 +2072,7 @@
                 "doctrine/annotations": "1.13.2",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.3.7",
+                "drupal/core": "9.3.8",
                 "egulias/email-validator": "3.1.2",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.5.1",
@@ -2134,9 +2134,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.3.7"
+                "source": "https://github.com/drupal/core-recommended/tree/9.3.8"
             },
-            "time": "2022-03-03T09:23:53+00:00"
+            "time": "2022-03-16T15:34:53+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2464,30 +2464,30 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha37",
+            "version": "3.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha37"
+                "reference": "8.x-3.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha37.zip",
-                "reference": "8.x-3.0-alpha37",
-                "shasum": "56f7226618f7e45697ee799e5e02c57d79cb3b1a"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-beta1.zip",
+                "reference": "8.x-3.0-beta1",
+                "shasum": "dbe47c411408c6877b8b4c04e45f82b7c229a786"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/core": "^8.9 || ^9 || ^10",
                 "drupal/gin_toolbar": "^1.0@beta"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-alpha37",
-                    "datestamp": "1632767973",
+                    "version": "8.x-3.0-beta1",
+                    "datestamp": "1646986688",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2521,17 +2521,17 @@
         },
         {
             "name": "drupal/gin_toolbar",
-            "version": "1.0.0-beta20",
+            "version": "1.0.0-beta21",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_toolbar.git",
-                "reference": "8.x-1.0-beta20"
+                "reference": "8.x-1.0-beta21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta20.zip",
-                "reference": "8.x-1.0-beta20",
-                "shasum": "770d6945de7ae001e3981db83daace610d4db5c4"
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta21.zip",
+                "reference": "8.x-1.0-beta21",
+                "shasum": "25522839cc22b25410cd478902096a649fd9ab61"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -2539,8 +2539,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta20",
-                    "datestamp": "1635149692",
+                    "version": "8.x-1.0-beta21",
+                    "datestamp": "1646929714",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3383,17 +3383,17 @@
         },
         {
             "name": "drupal/sitemap",
-            "version": "2.0.0-beta2",
+            "version": "2.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sitemap.git",
-                "reference": "8.x-2.0-beta2"
+                "reference": "8.x-2.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sitemap-8.x-2.0-beta2.zip",
-                "reference": "8.x-2.0-beta2",
-                "shasum": "0da73151b43c6c1923c75dfad5906d8e65af083b"
+                "url": "https://ftp.drupal.org/files/projects/sitemap-8.x-2.0-beta3.zip",
+                "reference": "8.x-2.0-beta3",
+                "shasum": "06df1e03058c4e42336a726edacfd53bca00a28d"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -3401,8 +3401,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-beta2",
-                    "datestamp": "1603126195",
+                    "version": "8.x-2.0-beta3",
+                    "datestamp": "1646936820",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6371,16 +6371,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.37",
+            "version": "v4.4.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "c59f37705c3e513ae55b2735f128f4ce363c82ec"
+                "reference": "72a5b35fecaa670b13954e6eaf414acbe2a67b35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/c59f37705c3e513ae55b2735f128f4ce363c82ec",
-                "reference": "c59f37705c3e513ae55b2735f128f4ce363c82ec",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/72a5b35fecaa670b13954e6eaf414acbe2a67b35",
+                "reference": "72a5b35fecaa670b13954e6eaf414acbe2a67b35",
                 "shasum": ""
             },
             "require": {
@@ -6414,7 +6414,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v4.4.37"
+                "source": "https://github.com/symfony/filesystem/tree/v4.4.39"
             },
             "funding": [
                 {
@@ -6430,7 +6430,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:41:36+00:00"
+            "time": "2022-02-25T10:38:15+00:00"
         },
         {
             "name": "symfony/finder",
