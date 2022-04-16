@@ -1,24 +1,48 @@
 // Drupal edit tools
-.block-local-tasks-block {
-  position: fixed;
-  right: 0;
-  top: 100px;
-  z-index: 100;
-  ul.primary {
-    background: rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 10px;
-    li {
-      margin: 0;
+.layout-container {
+  .block-local-tasks-block {
+    ul.primary {
+      display: flex;
+      flex-flow: row wrap;
+      li {
+        background-color: white;
+        border: 1px solid black;
+        margin: 0;
+        padding: 5px;
+      }
+    }
+    a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+      &:hover {
+        background-color: #454545;
+        text-decoration-thickness: 2px;
+        text-decoration: underline;
+      }
+    }
+    a.is-active {
+      background-color: black;
+      color: white;
     }
   }
+}
+
+body.dark .layout-container .block-local-tasks-block {
   a {
+    color: black;
+
     &:hover {
-      background: white;
+      color: wheat;
+      text-decoration-thickness: 2px;
     }
-  }
-  a.is-active {
-    background: #eee;
+
+    &.is-active {
+      color: white;
+
+      &:hover {
+        color: wheat;
+      }
+    }
   }
 }
