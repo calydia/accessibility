@@ -65,9 +65,11 @@ body.dark {
     select {
       &:hover {
         outline: 5px solid $dark_grey;
+        outline-offset: 2px;
       }
       &:focus {
         outline: 5px dashed $dark_grey;
+        outline-offset: 2px;
       }
     }
   }
@@ -325,9 +327,11 @@ body.light {
     select {
       &:hover {
         outline: 5px solid $grey;
+        outline-offset: 2px;
       }
       &:focus {
         outline: 5px dashed $grey;
+        outline-offset: 2px;
       }
     }
   }

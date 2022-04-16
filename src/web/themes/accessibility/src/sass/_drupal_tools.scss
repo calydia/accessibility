@@ -46,3 +46,12 @@ body.dark .layout-container .block-local-tasks-block {
     }
   }
 }
+
+body.light .layout-container .block-local-tasks-block {
+  a {
+    &:hover {
+      color: white;
+      text-decoration-color: white;
+    }
+  }
+}
