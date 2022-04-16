@@ -4,6 +4,7 @@ body {
   @include fontSize(18px);
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
+  hyphens: auto;
   line-height: 1.6;
 }
 
