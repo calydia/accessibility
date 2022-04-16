@@ -157,3 +157,18 @@ cite {
     }
   }
 }
+
+body.light {
+  .layout-container {
+    #main-menu {
+      a.menu__link {
+        font-weight: 500;
+      }
+      .menu--level-1 {
+        a.menu__link {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
