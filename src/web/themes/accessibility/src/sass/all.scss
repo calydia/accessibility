@@ -1,5 +1,4 @@
 @import "branding";
-@import "drupal_tools";
 @import "global_typography";
 @import "layout";
 @import "navigation";
@@ -11,6 +10,7 @@
 @import "blog_highlights";
 @import "site_search";
 @import "sitemap";
+@import "drupal_tools";
 
 @media only screen and (max-width: $narrowmax) {
   .megamenu {
