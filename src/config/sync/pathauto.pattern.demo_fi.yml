@@ -11,7 +11,7 @@ type: 'canonical_entities:node'
 pattern: 'demot/[node:title]'
 selection_criteria:
   8c0b354e-d092-4c33-ae7e-310d02a1c8ef:
-    id: node_type
+    id: 'entity_bundle:node'
     negate: false
     uuid: 8c0b354e-d092-4c33-ae7e-310d02a1c8ef
     context_mapping:
