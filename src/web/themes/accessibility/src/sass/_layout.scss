@@ -94,11 +94,11 @@
 }
 .block-system-breadcrumb-block {
   margin: 1.5em auto 0 auto;
+  max-width: 47rem;
   padding: 0 20px;
   width: calc(100% - 40px);
   @media only screen and (min-width: $large) {
     justify-content: space-between;
-    max-width: 74em;
     padding: 0 $gutter-32;
     width: calc(100% - 4em);
   }
@@ -112,19 +112,19 @@
 }
 .layout-content {
   margin: 0 auto;
+  max-width: 47rem;
   padding: 0 20px;
   width: calc(100% - 40px);
   @media only screen and (min-width: $large) {
-    max-width: 74em;
     padding: 0 $gutter-32;
     width: calc(100% - 4em);
   }
 }
 .region-featured-bottom-first {
   margin: 0 auto;
+  max-width: 47rem;
   width: 80%;
   @media only screen and (min-width: $large) {
-    max-width: 74em;
     padding: 0 $gutter-32;
     width: calc(100% - 4em);
   }
