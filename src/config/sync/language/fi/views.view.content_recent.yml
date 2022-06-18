@@ -2,6 +2,9 @@ display:
   default:
     display_title: Oletus
     display_options:
+      fields:
+        changed:
+          separator: ', '
       exposed_form:
         options:
           submit_button: Käytä
@@ -9,7 +12,4 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
           sort_desc_label: Desc
-      fields:
-        changed:
-          separator: ', '
       use_more_text: Lisää

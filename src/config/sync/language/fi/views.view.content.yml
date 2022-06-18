@@ -1,14 +1,9 @@
 label: Sisältö
 display:
   default:
+    display_title: Oletus
     display_options:
-      exposed_form:
-        options:
-          submit_button: Suodatus
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+      title: Sisältö
       fields:
         title:
           label: Otsikko
@@ -20,12 +15,19 @@ display:
         status:
           label: Tila
           settings:
-            format_custom_true: Julkaistu
             format_custom_false: Julkaisematon
+            format_custom_true: Julkaistu
         changed:
           label: Päivitetty
         operations:
           label: Toimenpiteet
+      exposed_form:
+        options:
+          submit_button: Suodatus
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         title:
           expose:
@@ -46,12 +48,10 @@ display:
         langcode:
           expose:
             label: Kieli
-      title: Sisältö
-    display_title: Oletus
   page_1:
+    display_title: Sivu
     display_options:
       menu:
         title: Sisältö
       tab_options:
         title: Sisältö
-    display_title: Sivu

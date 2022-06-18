@@ -198,6 +198,8 @@ display:
           settings:
             image_link: ''
             image_style: blog_highlight_lg
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
