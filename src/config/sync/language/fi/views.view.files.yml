@@ -2,6 +2,18 @@ display:
   default:
     display_title: Oletus
     display_options:
+      fields:
+        filename:
+          label: Nimi
+          separator: ', '
+        status:
+          label: Tila
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       exposed_form:
         options:
           submit_button: Suodatus
@@ -9,18 +21,6 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Asc
           sort_desc_label: Desc
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
-            items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
-      fields:
-        filename:
-          label: Nimi
-          separator: ', '
-        status:
-          label: Tila
       filters:
         filename:
           expose:
@@ -30,15 +30,15 @@ display:
             label: Tila
   page_2:
     display_options:
+      fields:
+        type:
+          label: 'Entiteetin tyyppi'
       pager:
         options:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
-      fields:
-        type:
-          label: 'Entiteetin tyyppi'
       arguments:
         fid:
           exception:
