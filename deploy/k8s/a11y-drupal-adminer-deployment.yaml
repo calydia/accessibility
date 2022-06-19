@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: a11y-drupal-adminer
+  labels:
+    app: a11y-drupal-adminer
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: a11y-drupal-adminer
+  template:
+    metadata:
+      labels:
+        app: a11y-drupal-adminer
+    spec:
+      containers:
+        - name: adminer
+          image: adminer
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ADMINER_DEFAULT_SERVER
+              value: "a11y-drupal-mariadb"
+          resources:
+            requests:
+              cpu: 100m
+              memory: 100M
+            limits:
+              cpu: 2000m
+              memory: 4000M
