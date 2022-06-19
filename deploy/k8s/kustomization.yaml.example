@@ -24,14 +24,14 @@ secretGenerator:
 resources:
   - a11y-drupal-namespace.yaml
   - a11y-drupal-mariadb-deployment.yaml
-  - a11y-drupal-mariadb-pma-deployment.yaml
   - a11y-drupal-mariadb-pvc.yaml
   - a11y-drupal-mariadb-svc.yaml
   - a11y-drupal-app-deployment.yaml
   - a11y-drupal-app-ingress.yaml
   - a11y-drupal-app-pvc.yaml
   - a11y-drupal-app-svc.yaml
-  - a11y-drupal-circleci-sa.yaml
+  - a11y-drupal-github-actions-sa.yaml
+  - a11y-drupal-adminer-deployment.yaml
 
 vars:
   - name: SITE_URL
