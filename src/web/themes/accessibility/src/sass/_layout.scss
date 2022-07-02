@@ -73,7 +73,6 @@
       width: 90%;
     }
     @media only screen and (min-width: $large) {
-      max-width: 764px;
       padding: 0 $gutter-32;
       width: calc(100% - 64px);
     }
