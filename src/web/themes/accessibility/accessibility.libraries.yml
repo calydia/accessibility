@@ -15,7 +15,7 @@ fonts:
   version: VERSION
   css:
     theme:
-      '//fonts.bunny.net/css?family=quicksand:400,500,700|rock-salt:400': { type: external }
+      '//fonts.bunny.net/css?family=average-sans:400,500,700|rock-salt:400': { type: external }
 
 megamenu:
   version: VERSION
