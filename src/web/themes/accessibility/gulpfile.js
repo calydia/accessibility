@@ -1,14 +1,15 @@
-var gulp = require("gulp"),
-  livereload = require("gulp-livereload"),
-  sass = require("gulp-sass"),
-  uglify = require("gulp-uglify"),
-  autoprefixer = require("gulp-autoprefixer"),
-  imagemin = require("gulp-imagemin"),
-  pngquant = require("imagemin-pngquant"),
-  concat = require("gulp-concat"),
-  babel = require("gulp-babel");
+const gulp = require("gulp");
+const livereload = require("gulp-livereload");
+const uglify = require("gulp-uglify");
+const autoprefixer = require("gulp-autoprefixer");
+const pngquant = require("imagemin-pngquant");
+const concat = require("gulp-concat");
+const babel = require("gulp-babel");
+const sass = require('gulp-sass')(require('sass'));
 
-gulp.task("imagemin", function () {
+// https://github.com/imagemin/imagemin/issues/392#issuecomment-916160758
+gulp.task("imagemin", async function () {
+  const imagemin = (await import("gulp-imagemin")).default;
   return gulp
     .src("./src/images/*")
     .pipe(
