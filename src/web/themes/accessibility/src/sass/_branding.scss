@@ -1,8 +1,17 @@
 @import "mixins";
 @import "variables";
 
+:root.light {
+  --logo-color: #000;
+}
+
+:root.dark {
+  --logo-color: #fff;
+}
+
 .site-name {
   @include fontSize(22px);
+  color: var(--logo-color);
   font-family: "Rock Salt", cursive;
   margin: 10px 0 5px 0;
   text-decoration: none;
@@ -13,6 +22,7 @@
 
 .site-slogan {
   @include fontSize(18px);
+  color: var(--logo-color);
   letter-spacing: 0.5px;
   margin: 5px 0 10px 0;
   text-decoration: none;

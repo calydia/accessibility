@@ -12,6 +12,8 @@
 @import "sitemap";
 @import "drupal_tools";
 @import "code_block";
+@import "skip_link";
+@import "color_scheme_select";
 
 @media only screen and (max-width: $narrowmax) {
   .megamenu {

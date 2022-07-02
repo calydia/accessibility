@@ -1,3 +1,13 @@
+:root.light {
+  --code-block-bg-color: #DFE7FC;
+  --code-block-border-color: #BBC9F7;
+}
+
+:root.dark {
+  --code-block-bg-color: #070038;
+  --code-block-border-color: #18399A;
+}
+
 code {
   background-color: var(--code-block-bg-color);
   border: 1px solid var(--code-block-border-color);

@@ -1,0 +1,27 @@
+:root.light {
+  --scheme-selector-color: #545454;
+}
+
+:root.dark {
+  --scheme-selector-color: #bababa;
+}
+
+.color-wrapper {
+  padding: 16px 0;
+  label {
+    margin-right: 6px;
+  }
+  select {
+    color: initial;
+    border: 10px solid white;
+    outline: 1px solid black;
+    &:hover {
+      outline: 5px solid var(--scheme-selector-color);
+      outline-offset: 2px;
+    }
+    &:focus {
+      outline: 5px dashed var(--scheme-selector-color);
+      outline-offset: 2px;
+    }
+  }
+}

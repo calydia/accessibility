@@ -1,14 +1,5 @@
 @import "variables";
 
-.skip-link.visually-hidden.focusable:active,
-.skip-link.visually-hidden.focusable:focus {
-  left: 0;
-  padding: $gutter-8 $gutter-16;
-  position: absolute !important;
-  top: 25px;
-  z-index: 2;
-}
-
 // Reset some of the menu
 .accessible-megamenu {
   background-color: transparent !important;

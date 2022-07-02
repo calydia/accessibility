@@ -62,10 +62,10 @@
     border-radius: 30px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
     margin: 0 auto;
-    padding: 3em;
-    width: calc(80% - 6em);
+    padding: 48px;
+    width: calc(80% - 72px);
     @media only screen and (max-width: $mediummax) {
-      padding: 2em;
+      padding: 32px;
     }
   }
   h1,
