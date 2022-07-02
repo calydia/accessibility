@@ -15,8 +15,7 @@ fonts:
   version: VERSION
   css:
     theme:
-      ? //fonts.googleapis.com/css?family=Rock+Salt%7CQuicksand:400,500,700&display=swap
-      : { type: external, minified: true }
+      '//fonts.bunny.net/css?family=quicksand:400,500,700|rock-salt:400': { type: external }
 
 megamenu:
   version: VERSION
