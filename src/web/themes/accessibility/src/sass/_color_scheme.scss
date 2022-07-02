@@ -1,34 +1,54 @@
 @import "variables";
 @import "mixins";
-/**
- * Dark preference
- */
-body.dark {
-  background-color: $dark_background;
-  color: $dark_text;
+
+:root.light {
+  --bg-color: #fff;
+  --text-color: #333;
+  --logo-color: #000;
+  --header-gradient-first-color: #E6CAFC;
+  --header-gradient-second-color: #BBC9F7;
+  --skip-link-bg-color: #fff;
+  --skip-link-text-color: #033573;
+  --code-block-bg-color: #DFE7FC;
+  --code-block-border-color: #BBC9F7;
+}
+
+:root.dark {
+  --bg-color: #010017;
+  --text-color: #CFCFCF;
+  --logo-color: #fff;
+  --header-gradient-first-color: #35035E;
+  --header-gradient-second-color: #18399A;
+  --skip-link-bg-color: #000;
+  --skip-link-text-color: #ade5f8;
+  --code-block-bg-color: #070038;
+  --code-block-border-color: #18399A;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 
   .header-wrapper {
-    background: linear-gradient(to right, #35035E 0%, #18399A 50%, #35035E 100%);
-  }
-
-  .skip-link.visually-hidden.focusable:active,
-  .skip-link.visually-hidden.focusable:focus {
-    background: black;
-    color: $dark_link;
+    background: linear-gradient(to right, var(--header-gradient-first-color) 0%, var(--header-gradient-second-color) 50%, var(--header-gradient-first-color) 100%);
   }
 
   .site-name,
   .site-slogan {
-    color: white;
+    color: var(--logo-color);
   }
 
-  code {
-    background-color: $dark_complementary;
-    border: 1px solid #18399A;
-    display: inline-block;
-    margin: 0 0.2em;
-    padding: 0.2em 0.5em;
+  .skip-link.visually-hidden.focusable:active,
+  .skip-link.visually-hidden.focusable:focus {
+    background: var(--logo-color);
+    color: var(--skip-link-text-color);
   }
+}
+
+/**
+ * Dark preference
+ */
+body.dark {
 
   // Reset some of the AMM styles, menu styles
   .accessible-megamenu .accessible-megamenu-panel,
@@ -262,33 +282,6 @@ body.dark.path-sitemap {
  * Light preference
  */
 body.light {
-  background-color: $background;
-  color: $text;
-
-  .header-wrapper {
-    background: linear-gradient(to right, #E6CAFC 0%, #BBC9F7 50%, #E6CAFC 100%);
-  }
-
-  .site-name,
-  .site-slogan {
-    color: black;
-  }
-
-  .skip-link.visually-hidden.focusable:active,
-  .skip-link.visually-hidden.focusable:focus {
-    background: white;
-    color: $link;
-  }
-
-  code {
-    background-color: #DFE7FC;
-    border: 1px solid #BBC9F7;
-    display: inline-block;
-    letter-spacing: 0.5px;
-    margin: 0 0.2em;
-    padding: 0.2em 0.5em;
-  }
-
   // Reset some of the AMM styles, menu styles
   .accessible-megamenu .accessible-megamenu-panel,
   .mobile-menu-toggle[aria-expanded="true"] + ul.menu--level-1 {
