@@ -5,6 +5,8 @@
     $("#color-mode option[value='" + remove + "']").attr("selected", false);
     $("html").addClass(colorMode);
     $("html").removeClass(remove);
+    $("body").addClass(colorMode);
+    $("body").removeClass(remove);
     sessionStorage.mode = colorMode;
     sessionStorage.remove = remove;
   }
