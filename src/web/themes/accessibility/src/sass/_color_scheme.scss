@@ -4,46 +4,26 @@
 :root.light {
   --bg-color: #fff;
   --text-color: #333;
-  --logo-color: #000;
   --header-gradient-first-color: #E6CAFC;
   --header-gradient-second-color: #BBC9F7;
-  --skip-link-bg-color: #fff;
-  --skip-link-text-color: #033573;
-  --code-block-bg-color: #DFE7FC;
-  --code-block-border-color: #BBC9F7;
 }
 
 :root.dark {
   --bg-color: #010017;
   --text-color: #CFCFCF;
-  --logo-color: #fff;
   --header-gradient-first-color: #35035E;
   --header-gradient-second-color: #18399A;
-  --skip-link-bg-color: #000;
-  --skip-link-text-color: #ade5f8;
-  --code-block-bg-color: #070038;
-  --code-block-border-color: #18399A;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-
-  .header-wrapper {
-    background: linear-gradient(to right, var(--header-gradient-first-color) 0%, var(--header-gradient-second-color) 50%, var(--header-gradient-first-color) 100%);
-  }
-
-  .site-name,
-  .site-slogan {
-    color: var(--logo-color);
-  }
-
-  .skip-link.visually-hidden.focusable:active,
-  .skip-link.visually-hidden.focusable:focus {
-    background: var(--logo-color);
-    color: var(--skip-link-text-color);
-  }
 }
+
+.header-wrapper {
+  background: linear-gradient(to right, var(--header-gradient-first-color) 0%, var(--header-gradient-second-color) 50%, var(--header-gradient-first-color) 100%);
+}
+
 
 /**
  * Dark preference
@@ -77,19 +57,6 @@ body.dark {
             border: 2px solid $dark_grey;
           }
         }
-      }
-    }
-  }
-
-  .color-wrapper {
-    select {
-      &:hover {
-        outline: 5px solid $dark_grey;
-        outline-offset: 2px;
-      }
-      &:focus {
-        outline: 5px dashed $dark_grey;
-        outline-offset: 2px;
       }
     }
   }
@@ -312,19 +279,6 @@ body.light {
             border: 2px solid $grey;
           }
         }
-      }
-    }
-  }
-
-  .color-wrapper {
-    select {
-      &:hover {
-        outline: 5px solid $grey;
-        outline-offset: 2px;
-      }
-      &:focus {
-        outline: 5px dashed $grey;
-        outline-offset: 2px;
       }
     }
   }

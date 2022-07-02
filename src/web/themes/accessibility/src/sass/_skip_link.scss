@@ -1,0 +1,20 @@
+:root.light {
+  --skip-link-bg-color: #fff;
+  --skip-link-text-color: #033573;
+}
+
+:root.dark {
+  --skip-link-bg-color: #000;
+  --skip-link-text-color: #ade5f8;
+}
+
+.skip-link.visually-hidden.focusable:active,
+.skip-link.visually-hidden.focusable:focus {
+  background: var(--logo-color);
+  color: var(--skip-link-text-color);
+  left: 0;
+  padding: $gutter-8 $gutter-16;
+  position: absolute !important;
+  top: 25px;
+  z-index: 2;
+}
