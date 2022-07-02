@@ -3,8 +3,8 @@
     let select = $("#color-mode");
     $("#color-mode option[value='" + colorMode + "']").attr("selected", true);
     $("#color-mode option[value='" + remove + "']").attr("selected", false);
-    $("body").addClass(colorMode);
-    $("body").removeClass(remove);
+    $("html").addClass(colorMode);
+    $("html").removeClass(remove);
     sessionStorage.mode = colorMode;
     sessionStorage.remove = remove;
   }
