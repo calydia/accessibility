@@ -53,7 +53,6 @@ display:
         delete_media:
           text: Poista
   widget:
-    display_title: Widget
     display_options:
       arguments:
         bundle:
