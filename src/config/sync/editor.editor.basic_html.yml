@@ -45,8 +45,6 @@ settings:
             - Source
             - Language
   plugins:
-    stylescombo:
-      styles: ''
     language:
       language_list: all
     drupallink:
