@@ -8,7 +8,7 @@ id: node
 label: Content
 tags:
   canonical_url: '[node:url]'
-  title: '[node:title] | Accessibility - [site:name]'
   description: '[node:summary]'
   og_description: '[node:summary]'
+  title: '[node:title] | [site:slogan] - [site:name]'
   twitter_cards_description: '[node:summary]'
