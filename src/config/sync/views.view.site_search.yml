@@ -251,6 +251,7 @@ display:
           skip_access: false
           preserve_facet_query_args: false
       relationships: {  }
+      use_ajax: false
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -272,7 +273,11 @@ display:
     position: 1
     display_options:
       exposed_block: true
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: '[current-page:query:search_api_fulltext] - Site search | [site:slogan] - [site:name]'
+          tokenize: false
       path: search
     cache_metadata:
       max-age: -1
