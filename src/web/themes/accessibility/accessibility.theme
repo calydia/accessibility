@@ -26,12 +26,9 @@ function accessibility_views_pre_render(ViewExecutable $view) {
   if ($view->id() == 'site_search') {
     $search_title = t('Search results for ');
     $search_query = \Drupal::request()->query->get('search_api_fulltext');
-    $view->setTitle($search_title . $search_query);
+
+    if ($search_query) {
+      $view->setTitle($search_title . $search_query);
+    }
   }
-}
-
-function accessibility_preprocess_page_title(&$variables) {
- // dump($variables);
-
-
 }
