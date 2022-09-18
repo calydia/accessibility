@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\views\ViewExecutable;
+
 /**
  * Implements hook_theme_preprocess_HOOK().
  *
@@ -18,4 +20,18 @@ function accessibility_preprocess_links__language_block(&$variables) {
   $variables['links']['en']['link']['#options']['attributes']['lang'] = 'en';
   $variables['links']['fi']['link']['#options']['attributes']['xml:lang'] = 'fi';
   $variables['links']['en']['link']['#options']['attributes']['xml:lang'] = 'en';
+}
+
+function accessibility_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'site_search') {
+    $search_title = t('Search results for ');
+    $search_query = \Drupal::request()->query->get('search_api_fulltext');
+    $view->setTitle($search_title . $search_query);
+  }
+}
+
+function accessibility_preprocess_page_title(&$variables) {
+ // dump($variables);
+
+
 }
