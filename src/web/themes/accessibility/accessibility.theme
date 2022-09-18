@@ -32,3 +32,4 @@ function accessibility_views_pre_render(ViewExecutable $view) {
     }
   }
 }
+
