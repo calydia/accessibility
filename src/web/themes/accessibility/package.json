@@ -10,6 +10,7 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
     "babel-polyfill": "^6.26.0",
+    "cypress": "^10.3.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
@@ -29,7 +30,12 @@
     "gulp": "gulp watch",
     "watch": "gulp watch",
     "imagemin": "gulp imagemin",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open --e2e --browser electron",
+    "cy:testuser:create": "ddev drush user:create testuser --password=testpassword",
+    "cy:testuser:delete": "ddev drush user:cancel testuser --delete-content --yes",
+    "drupal:upgrade": "ddev composer install && ddev drush updb --yes && ddev drush cim --yes && ddev drush cr"
   },
   "author": "",
   "license": "ISC"
