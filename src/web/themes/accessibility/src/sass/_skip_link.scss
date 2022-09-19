@@ -10,7 +10,7 @@
 
 .skip-link.visually-hidden.focusable:active,
 .skip-link.visually-hidden.focusable:focus {
-  background: var(--logo-color);
+  background: var(--skip-link-bg-color);
   color: var(--skip-link-text-color);
   left: 0;
   padding: $gutter-8 $gutter-16;
