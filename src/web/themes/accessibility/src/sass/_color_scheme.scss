@@ -6,6 +6,12 @@
   --text-color: #333;
   --header-gradient-first-color: #E6CAFC;
   --header-gradient-second-color: #BBC9F7;
+  --link-color: #033573;
+  --link-hover-color: #54007b;
+  --source-bg-color: #DFE7FC;
+  --source-border-color: #BBC9F7;
+  --code-border-color: #545454;
+  --external-link-icon: url(../images/icons8-external-link.svg);
 }
 
 :root.dark {
@@ -13,6 +19,12 @@
   --text-color: #CFCFCF;
   --header-gradient-first-color: #35035E;
   --header-gradient-second-color: #18399A;
+  --link-color: #ade5f8;
+  --link-hover-color: wheat;
+  --source-bg-color: #070038;
+  --source-border-color: #18399A;
+  --code-border-color: #bababa;
+  --external-link-icon: url(../images/icons8-external-link-white.svg);
 }
 
 body {
@@ -24,6 +36,43 @@ body {
   background: linear-gradient(to right, var(--header-gradient-first-color) 0%, var(--header-gradient-second-color) 50%, var(--header-gradient-first-color) 100%);
 }
 
+.layout-container a {
+  @include transition(color 0.5s ease);
+  color: var(--link-color);
+  text-decoration-color: var(--link-color);
+  &:hover {
+    @include transition(color 0.5s ease);
+    color: var(--link-hover-color);
+    text-decoration-color: var(--link-hover-color);
+  }
+  &:focus {
+    border-bottom: 2px solid var(--link-hover-color);
+    border-top: 2px solid var(--link-hover-color);
+    color: var(--link-hover-color);
+    outline: none;
+    padding: 5px 0;
+    text-decoration: none;
+  }
+}
+
+.layout-container a[href^="https://"]:after
+{
+  background-image: var(--external-link-icon);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 1.25em 1.25em;
+}
+
+.field--name-field-source-material {
+  background-color: var(--source-bg-color);
+  border: 5px solid var(--source-border-color);
+}
+
+.code-container {
+  border: 1px solid var(--code-border-color);
+  border-radius: 5px;
+  padding: 1em;
+}
 
 /**
  * Dark preference
@@ -61,24 +110,6 @@ body.dark {
     }
   }
 
-  .layout-container a {
-    @include transition(color 0.5s ease);
-    color: $dark_link;
-    text-decoration-color: $dark_link;
-    &:hover {
-      @include transition(color 0.5s ease);
-      color: $dark_link_hover;
-      text-decoration-color: $dark_link_hover;
-    }
-    &:focus {
-      border-bottom: 2px solid $dark_link_hover;
-      border-top: 2px solid $dark_link_hover;
-      color: $dark_link_hover;
-      outline: none;
-      padding: 5px 0;
-      text-decoration: none;
-    }
-  }
   .menu__link--button {
     &:focus {
       border-bottom: none;
@@ -177,67 +208,9 @@ body.dark {
       }
     }
   }
-  .layout-container a[href^="https://"]:after
-  {
-    background-image: url(../images/icons8-external-link-white.svg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 1.25em 1.25em;
-  }
-  blockquote {
-    border-left: 4px solid $dark_link;
-  }
-  cite {
-    color: $dark_grey;
-  }
-  code {
-    color: $dark_text;
-  }
-  footer {
-    background-color: #18032B;
-  }
 
-  .js-form-type-textfield,
-  .js-form-type-email,
-  .js-form-type-password {
-    input {
-      color: black;
-    }
-  }
-  .js-form-type-textarea {
-    textarea {
-      color: black;
-    }
-  }
 
-  .webform-button--submit,
-  .js-form-submit {
-    @include transition(background-color 0.5s ease);
-    background-color: $dark_button;
-    border: none;
-    color: black;
-    &:focus,
-    &:hover {
-      @include transition(background-color 0.5s ease);
-      background-color: $dark_link_hover;
-      text-decoration: underline;
-      text-decoration-color: black;
-      text-underline-offset: 6px;
-      text-decoration-thickness: 2px;
 
-    }
-  }
-
-  .field--name-field-source-material {
-    background-color: $dark_complementary;
-    border: 5px solid #18399A;
-  }
-
-  .code-container {
-    border: 1px solid $dark_grey;
-    border-radius: 5px;
-    padding: 1em;
-  }
 }
 body.dark.path-sitemap {
   .menu-item--expanded {
@@ -283,24 +256,6 @@ body.light {
     }
   }
 
-  .layout-container a {
-    @include transition(color 0.5s ease);
-    color: $link;
-    text-decoration-color: $link;
-    &:hover {
-      @include transition(color 0.5s ease);
-      color: $link_hover;
-      text-decoration-color: $link_hover;
-    }
-    &:focus {
-      border-bottom: 2px solid $link_hover;
-      border-top: 2px solid $link_hover;
-      color: $link_hover;
-      outline: none;
-      padding: 5px 0;
-      text-decoration: none;
-    }
-  }
   .menu__link--button {
     &:focus {
       @include transition(color 0.5s ease);
@@ -395,54 +350,5 @@ body.light {
       }
     }
   }
-  .layout-container a[href^="https://"]:after
-  {
-    background-image: url(../images/icons8-external-link.svg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 1.25em 1.25em;
-  }
 
-  blockquote {
-    border-left: 4px solid $link;
-  }
-  cite {
-    color: $grey;
-  }
-  code {
-    color: $text;
-  }
-  footer {
-    background-color: #BBC9F7;
-  }
-  .webform-button--submit,
-  .js-form-submit {
-    @include transition(background-color 0.5s ease);
-    background-color: $button;
-    border: none;
-    color: white;
-    &:focus,
-    &:hover {
-      @include transition(background-color 0.5s ease);
-      background-color: $link_hover;
-      text-decoration: underline;
-      text-decoration-color: white;
-      text-underline-offset: 6px;
-      text-decoration-thickness: 2px;
-    }
-    &:focus {
-      outline: 5px solid black;
-    }
-  }
-
-  .field--name-field-source-material {
-    background-color: #DFE7FC;
-    border: 5px solid #BBC9F7;
-  }
-
-  .code-container {
-    border: 1px solid $grey;
-    border-radius: 5px;
-    padding: 1em;
-  }
 }

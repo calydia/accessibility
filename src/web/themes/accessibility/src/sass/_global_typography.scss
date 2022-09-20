@@ -1,5 +1,15 @@
 @import "variables";
 
+:root.light {
+  --cite-color: #545454;
+  --blockquote-border-color: #033573;
+}
+
+:root.dark {
+  --cite-color: #bababa;
+  --blockquote-border-color: #ade5f8;
+}
+
 body {
   @include fontSize(18px);
   font-family: "Average Sans", sans-serif;
@@ -123,6 +133,7 @@ header {
 
 blockquote {
   @include fontSize(20px);
+  border-left: 4px solid var(--blockquote-border-color);
   font-style: italic;
   margin: 0;
   padding: 0.2em 0 0.2em 16px;
@@ -133,6 +144,7 @@ blockquote {
 }
 cite {
   @include fontSize(16px);
+  color: var(--cite-color);
   font-style: normal;
 }
 

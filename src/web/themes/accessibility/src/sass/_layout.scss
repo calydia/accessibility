@@ -1,5 +1,13 @@
 @import "variables";
 
+:root.light {
+  --footer-bg-color: #BBC9F7;
+}
+
+:root.dark {
+  --footer-bg-color: #18032B;
+}
+
 .header-wrapper {
   -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
@@ -118,6 +126,7 @@
 }
 
 footer {
+  background-color: var(--footer-bg-color);
   margin-top: 5em;
   .footer-container {
     display: flex;
