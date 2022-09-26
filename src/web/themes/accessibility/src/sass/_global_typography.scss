@@ -1,5 +1,9 @@
 @import "variables";
 
+:root {
+  --text-margin: 1.5rem;
+}
+
 :root.light {
   --cite-color: #545454;
   --blockquote-border-color: #033573;
@@ -16,6 +20,10 @@ body {
   font-weight: 500;
   hyphens: auto;
   line-height: 1.6;
+}
+
+p {
+  margin: var(--text-margin) 0;
 }
 
 h1 {
@@ -39,7 +47,7 @@ h3 {
   }
 }
 
-h3 {
+h4 {
   @include fontSize(22px);
   @media only screen and (min-width: $medium) {
     @include fontSize(26px);
