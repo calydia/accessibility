@@ -1,3 +1,13 @@
+:root.light {
+  --button-bg-color: #014cbc;
+  --button-bg-hover-color: #54007b;
+}
+
+:root.dark {
+  --button-bg-color: #9edcff;
+  --button-bg-hover-color: wheat;
+}
+
 .js-form-type-textfield,
 .js-form-type-email,
 .js-form-type-password {
@@ -5,19 +15,34 @@
     display: block;
   }
   input {
+    color: black;
     padding: 10px 13px;
   }
 }
 .js-form-type-textarea {
   textarea {
+    color: black;
     padding: 10px 13px;
   }
 }
 
 .webform-button--submit,
 .js-form-submit {
+  @include transition(background-color 0.5s ease);
+  background-color: var(--button-bg-color);
+  border: none;
+  color: black;
   font-weight: 700;
   padding: 12px 19px;
+  &:focus,
+  &:hover {
+    @include transition(background-color 0.5s ease);
+    background-color: var(--button-bg-hover-color);
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+  }
 }
 .views-exposed-form {
   .form--inline {

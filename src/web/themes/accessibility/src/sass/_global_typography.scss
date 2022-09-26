@@ -1,11 +1,29 @@
 @import "variables";
 
+:root {
+  --text-margin: 1.5rem;
+}
+
+:root.light {
+  --cite-color: #545454;
+  --blockquote-border-color: #033573;
+}
+
+:root.dark {
+  --cite-color: #bababa;
+  --blockquote-border-color: #ade5f8;
+}
+
 body {
   @include fontSize(18px);
   font-family: "Average Sans", sans-serif;
   font-weight: 500;
   hyphens: auto;
   line-height: 1.6;
+}
+
+p {
+  margin: var(--text-margin) 0;
 }
 
 h1 {
@@ -29,7 +47,7 @@ h3 {
   }
 }
 
-h3 {
+h4 {
   @include fontSize(22px);
   @media only screen and (min-width: $medium) {
     @include fontSize(26px);
@@ -123,6 +141,7 @@ header {
 
 blockquote {
   @include fontSize(20px);
+  border-left: 4px solid var(--blockquote-border-color);
   font-style: italic;
   margin: 0;
   padding: 0.2em 0 0.2em 16px;
@@ -133,6 +152,7 @@ blockquote {
 }
 cite {
   @include fontSize(16px);
+  color: var(--cite-color);
   font-style: normal;
 }
 
