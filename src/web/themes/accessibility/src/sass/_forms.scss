@@ -1,9 +1,11 @@
 :root.light {
+  --button-color: white;
   --button-bg-color: #014cbc;
   --button-bg-hover-color: #54007b;
 }
 
 :root.dark {
+  --button-color: black;
   --button-bg-color: #9edcff;
   --button-bg-hover-color: wheat;
 }
@@ -31,7 +33,7 @@
   @include transition(background-color 0.5s ease);
   background-color: var(--button-bg-color);
   border: none;
-  color: black;
+  color: var(--button-color);
   font-weight: 700;
   padding: 12px 19px;
   &:focus,
@@ -39,7 +41,7 @@
     @include transition(background-color 0.5s ease);
     background-color: var(--button-bg-hover-color);
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: var(--button-color);
     text-underline-offset: 6px;
     text-decoration-thickness: 2px;
   }
