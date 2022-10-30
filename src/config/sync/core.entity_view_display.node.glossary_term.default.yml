@@ -1,0 +1,30 @@
+uuid: 098b40f6-4cae-4b32-92c6-19db44dbfd64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.glossary_term.field_description
+    - node.type.glossary_term
+  module:
+    - text
+    - user
+id: node.glossary_term.default
+targetEntityType: node
+bundle: glossary_term
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
