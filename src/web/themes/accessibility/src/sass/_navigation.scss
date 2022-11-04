@@ -202,3 +202,11 @@ button.menu__link {
 .breadcrumb li:before {
   content: " \BB " / "";
 }
+
+footer {
+  ul.menu a.is-active {
+    color: var(--link-hover-color);
+    text-decoration-color: var(--link-hover-color);
+    text-decoration-thickness: 4px;
+  }
+}
