@@ -101,10 +101,6 @@
             ]
         },
         "patches": {
-            "drupal/easy_breadcrumb" : {
-                "#3161100: Allow hyphen and underscore in breadcrumb links from titles and menus" : "https://www.drupal.org/files/issues/2020-07-23/easy_breadcrumb-allow_hyphens_underscores-3161100-2.patch"
-
-            },
             "drupal/linkit" : {
                 "#2886455: Add support for multilanguage" : "https://git.drupalcode.org/project/linkit/-/merge_requests/2.diff"
             }
