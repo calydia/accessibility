@@ -9,6 +9,9 @@ dependencies:
     - views
   theme:
     - accessibility
+third_party_settings:
+  block_class:
+    classes: null
 id: views_block___sm_list_of_all_demo_pages_block_all_demo_pages
 theme: accessibility
 region: content

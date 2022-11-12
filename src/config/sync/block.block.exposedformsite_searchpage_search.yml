@@ -9,6 +9,9 @@ dependencies:
     - views
   theme:
     - accessibility
+third_party_settings:
+  block_class:
+    classes: null
 id: exposedformsite_searchpage_search
 theme: accessibility
 region: featured_top

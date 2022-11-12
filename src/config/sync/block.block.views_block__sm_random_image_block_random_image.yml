@@ -8,6 +8,9 @@ dependencies:
     - views
   theme:
     - accessibility
+third_party_settings:
+  block_class:
+    classes: null
 id: views_block__sm_random_image_block_random_image
 theme: accessibility
 region: featured_top
