@@ -16,6 +16,33 @@
   .pager {
     margin-top: 4em;
   }
+
+  .pager__item {
+    a {
+      padding: 0.5em;
+    }
+  }
+  .pager__item:not(.is-active) {
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 4px;
+      }
+    }
+  }
+  .pager__item.is-active {
+    a {
+      border: 1px solid var(--link-color);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 4px;
+      }
+    }
+  }
 }
 
 .node--view-mode-search-index {
@@ -23,3 +50,4 @@
     margin-bottom: 0;
   }
 }
+
