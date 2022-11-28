@@ -58,7 +58,9 @@
           setColorMode(sessionStorage.mode, sessionStorage.remove);
         }
 
-        $('form').attr('role', 'search');
+        const searchForm = $('#views-exposed-form-site-search-page-search .form--inline');
+
+        searchForm.attr('role', 'search');
 
         $("#color-mode")
           .unbind()
