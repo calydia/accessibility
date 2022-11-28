@@ -28,7 +28,7 @@ function accessibility_views_pre_render(ViewExecutable $view) {
     $search_query = \Drupal::request()->query->get('search_api_fulltext');
 
     if ($search_query) {
-      $view->setTitle($search_title . $search_query);
+      $view->setTitle($search_title . '"' . $search_query . '"');
     }
   }
 }
