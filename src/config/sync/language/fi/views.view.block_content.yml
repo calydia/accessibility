@@ -1,7 +1,9 @@
+label: 'Custom block library'
 display:
   default:
     display_title: Oletus
     display_options:
+      title: 'Custom block library'
       fields:
         info:
           separator: ', '
@@ -26,3 +28,6 @@ display:
           sort_desc_label: Desc
   page_1:
     display_title: Sivu
+    display_options:
+      menu:
+        title: 'Custom block library'

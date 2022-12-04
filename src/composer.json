@@ -38,6 +38,7 @@
         "drupal/linkit": "^6",
         "drupal/menu_multilingual": "^1.0@alpha",
         "drupal/metatag": "^1.13",
+        "drupal/next": "^1.5",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drupal/scheduler": "^1.3",
@@ -102,6 +103,9 @@
         "patches": {
             "drupal/linkit" : {
                 "#2886455: Add support for multilanguage" : "https://git.drupalcode.org/project/linkit/-/merge_requests/2.diff"
+            },
+            "drupal/subrequests": {
+                "Get same results on different request": "https://www.drupal.org/files/issues/2019-07-18/change_request_type-63049395-09.patch"
             }
         },
         "drupal-core-project-message": {

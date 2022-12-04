@@ -2,6 +2,7 @@ display:
   default:
     display_title: Oletus
     display_options:
+      title: Media
       fields:
         media_bulk_form:
           action_title: Toiminto
@@ -22,6 +23,8 @@ display:
           sort_desc_label: Desc
       filters:
         status:
+          expose:
+            label: 'Julkaisun tila'
           group_info:
             label: Julkaistu
             group_items:
