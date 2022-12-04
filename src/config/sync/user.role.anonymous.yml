@@ -13,6 +13,5 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access sitemap'
-  - 'search content'
   - 'use text format restricted_html'
   - 'view media'
