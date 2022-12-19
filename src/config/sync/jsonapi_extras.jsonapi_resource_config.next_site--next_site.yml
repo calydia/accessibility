@@ -1,0 +1,89 @@
+uuid: a042540a-d09b-49c7-a825-2d58c8147ab5
+langcode: en
+status: true
+dependencies:
+  module:
+    - next
+id: next_site--next_site
+disabled: true
+path: next_site/next_site
+resourceType: next_site--next_site
+resourceFields:
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  dependencies:
+    disabled: false
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: false
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: false
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  label:
+    disabled: false
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+  base_url:
+    disabled: false
+    fieldName: base_url
+    publicName: base_url
+    enhancer:
+      id: ''
+  preview_url:
+    disabled: false
+    fieldName: preview_url
+    publicName: preview_url
+    enhancer:
+      id: ''
+  preview_secret:
+    disabled: false
+    fieldName: preview_secret
+    publicName: preview_secret
+    enhancer:
+      id: ''
+  revalidate_url:
+    disabled: false
+    fieldName: revalidate_url
+    publicName: revalidate_url
+    enhancer:
+      id: ''
+  revalidate_secret:
+    disabled: false
+    fieldName: revalidate_secret
+    publicName: revalidate_secret
+    enhancer:
+      id: ''

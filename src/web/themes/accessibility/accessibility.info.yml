@@ -4,6 +4,8 @@ description: This is a accessibility sub theme of Classy
 core_version_requirement: ^8 || ^9 || ^10
 # Defines the base theme
 base theme: classy
+dependencies:
+  - classy:classy
 # Defines libraries group in which we can add css/js.
 libraries:
   - accessibility/megamenu

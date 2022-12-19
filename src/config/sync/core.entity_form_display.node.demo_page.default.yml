@@ -12,7 +12,6 @@ dependencies:
   module:
     - metatag
     - path
-    - scheduler
     - text
 id: node.demo_page.default
 targetEntityType: node
@@ -86,12 +85,6 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 120
@@ -129,15 +122,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   url_redirects:
     weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true
