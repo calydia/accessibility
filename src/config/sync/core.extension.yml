@@ -92,7 +92,6 @@ module:
   views: 10
   standard: 1000
 theme:
-  bartik: 0
   stable: 0
   classy: 0
   accessibility: 0

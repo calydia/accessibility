@@ -22,6 +22,7 @@
         "drupal/aria_current": "^1.2",
         "drupal/backup_migrate": "^5.0",
         "drupal/block_class": "*",
+        "drupal/classy": "^1.0",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
