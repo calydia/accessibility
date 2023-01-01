@@ -64,8 +64,6 @@ display:
     display_title: Isäntä
   overview:
     display_options:
-      menu:
-        title: Ajastettu
       tab_options:
         title: Sisältö
   user_page:
@@ -78,3 +76,4 @@ display:
         uid:
           exception:
             title: Kaikki
+    display_title: Käyttäjä
