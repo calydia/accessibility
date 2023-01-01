@@ -4,7 +4,7 @@ base:
     - core/jquery
     - core/drupal
     - core/drupalSettings
-    - core/jquery.once
+    - core/once
   css:
     theme:
       css/styles.css: {}
@@ -23,7 +23,7 @@ megamenu:
     - core/jquery
     - core/drupal
     - core/drupalSettings
-    - core/jquery.once
+    - core/once
   css:
     theme:
       libraries/Accessible-Mega-Menu/css/megamenu.css: {}
