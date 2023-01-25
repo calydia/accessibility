@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.media.wysiwyg_media
   module:
     - editor
-    - linkit
     - media
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
@@ -51,10 +50,3 @@ filters:
       allowed_view_modes:
         wysiwyg_media: wysiwyg_media
       allowed_media_types: {  }
-  linkit:
-    id: linkit
-    provider: linkit
-    status: true
-    weight: 0
-    settings:
-      title: true
