@@ -78,4 +78,25 @@
       });
     },
   };
+
+  // Copy the functionality from aria_current so we can update to Drupal 10
+  Drupal.behaviors.ariaCurrentLinks = {
+    attach: function attach(context) {
+      var activeLinks = context.querySelectorAll('nav a.is-active');
+      var il = activeLinks.length;
+      for (var i = 0; i < il; i++) {
+        activeLinks[i].setAttribute('aria-current', 'page');
+      }
+    },
+    detach: function detach(context, settings, trigger) {
+      if (trigger === 'unload') {
+        var activeLinks = context.querySelectorAll('a[aria-current="page"]');
+        var il = activeLinks.length;
+        for (var i = 0; i < il; i++) {
+          activeLinks[i].removeAttribute('aria-current');
+        }
+      }
+    }
+  };
+
 })(jQuery, Drupal);
