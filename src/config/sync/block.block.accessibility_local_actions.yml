@@ -4,9 +4,6 @@ status: true
 dependencies:
   theme:
     - accessibility
-third_party_settings:
-  block_class:
-    classes: null
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: accessibility_local_actions

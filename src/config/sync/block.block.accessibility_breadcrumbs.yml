@@ -6,9 +6,6 @@ dependencies:
     - system
   theme:
     - accessibility
-third_party_settings:
-  block_class:
-    classes: null
 id: accessibility_breadcrumbs
 theme: accessibility
 region: breadcrumb

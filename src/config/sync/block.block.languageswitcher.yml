@@ -6,9 +6,6 @@ dependencies:
     - language
   theme:
     - accessibility
-third_party_settings:
-  block_class:
-    classes: null
 id: languageswitcher
 theme: accessibility
 region: primary_menu

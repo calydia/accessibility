@@ -8,9 +8,6 @@ dependencies:
     - system
   theme:
     - accessibility
-third_party_settings:
-  block_class:
-    classes: null
 _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: accessibility_main_menu
